@@ -7,50 +7,7 @@ $(document).ready(function(){
     
     // Set the size of strats
     $('.strat').css({width: width - 15, height: height});
-    
-    // Déroulement/animation du menu
-    setTimeout(function(){
-	$('#menu').animate({height: (height/2) + 'px'}, 700, function(){
-	    $('#menu2').animate({width: (width-200) + 'px'}, 700, function(){
-		$('#menu3').css({'margin-left': (width-100) + 'px'});
-		$('#menu3').animate({height: (height/2 + 10) + 'px'}, 700, function(){
-		    
-		    $('#bubble0').animate({height: '200px', width: '200px'}, 300, function(){
-			$('#bubble1').animate({height: '200px', width: '200px'}, 300, function(){
-			    $('#bubble2').animate({height: '200px', width: '200px'}, 300, function(){
-				$('#bubble3').animate({height: '200px', width: '200px'}, 300, function(){
-				    $('#bubble4').animate({height: '200px', width: '200px'}, 300, function(){
-					$('.bubble a').fadeIn('slow');
-					$('.bubble').css({height: '115px', 'padding-top': '85px'});
-				    });
-				});
-			    });
-			});
-		    });
-		});
-	    });
-	});
-    },200);
-    
-    // Select menu
-    /*$('.bubble').hover(function(){
-	var p = $(this).position();
-	$('.selectorTop').css({left: (p.left + 160) + 'px'});
-	$('.selectorTop').stop().animate({height: (height/2) + 'px'}, 300);
-	$('.selectorBottom').css({left: (p.left + 160) + 'px'});
-	$('.selectorBottom').stop().animate({height: (height/2) + 'px'}, 300);
-    }, function(){
-	$('.selectorTop').stop().animate({height: '5px'}, 300);
-	$('.selectorBottom').stop().animate({height: '5px'}, 300, function(){
-	});
-    });*/
-    
-    // Avion
-    $('#plane').animate({left: width}, 10000, function(){
-	$('#plane').addClass('scaleClass');
-	$('#plane').css({top: '600px'});
-	$('#plane').animate({left: -180 + 'px'}, 10000);
-    });
+   
     
     // Menu effect
     $('.bubble').click(function(){
