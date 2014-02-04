@@ -11,6 +11,14 @@
 
 <div class="homePage">    
     <div id="menuStrat" class="strat activeStrat">
+	<h1 class="title">Bienvenue sur mon portfolio !</h1>
+	<div class="imgContainer">
+	    <img src="<?php echo __image_directory__; ?>/moi.jpg" alt="Image de Thibault Dulon" />
+	</div>
+	<p class="contenu">
+	    Je suis un passionné de web MAIS PAS QUE !
+	</p>
+	
 	<?php
 	    include __partial_directory__ . '/nav.php';
 	?>

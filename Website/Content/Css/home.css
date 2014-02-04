@@ -65,3 +65,39 @@
     filter: FlipH;
     -ms-filter: "FlipH";
 }
+
+/* 1er STRAT */
+#menuStrat h1.title{
+    font-size: 62px;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+#menuStrat p.contenu{
+    font-size: 28px;
+    color: #f1f1f1;
+    text-align: center;
+    margin-top: 40px;
+}
+.imgContainer{
+    width: 150px;
+    height: 150px;
+    margin: 40px auto;
+    overflow: hidden;
+    
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -o-border-radius: 80px;
+    -ms-border-radius: 80px;
+}
+.imgContainer > img{
+    margin-left: -45px;
+}
+nav, nav ul{
+    text-align: center;
+    margin-top: 60px;
+}
+nav ul li{
+    display: inline-block;
+}
