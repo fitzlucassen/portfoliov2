@@ -4,7 +4,7 @@
       Déscription : Permet de gérer les strings
      */
 
-    class StringHelper {
+    class StringAdapter {
 	
 	/**
 	 * Sanitize -> Clean une string pour faire une URL
