@@ -7,6 +7,7 @@
 	public $_skills = null;
 	public $_skillsCategories = null;
 	public $_skillsCategoriesColor = null;
+	public $_projects = null;
 	
 	public function __construct($manager) {
 	    parent::__construct($manager);

@@ -100,6 +100,13 @@
     <div id="portfolioStrat" class="strat">
 	<h2 class="title">Mes réalisations</h2>
 	
+	<?php
+	    foreach($Model->_projects as $project){
+	?>
+	
+	<?php
+	    }
+	?>
 	<div class="returnTop"><a href="#menuStrat">^</a></div>
     </div>
     
