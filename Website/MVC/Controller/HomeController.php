@@ -14,11 +14,15 @@
 	    $Model = new HomeModel($this->_repositoryManager);
 	    
 	    $SkillRepository = $this->_repositoryManager->get('Skills');
+	    $ProjectRepository = $this->_repositoryManager->get('Project');
 	    $skills = $SkillRepository->getAll();
+	    $projects = $ProjectRepository->getAll();
 	    
 	    $Model->_skillsCategories = $this->GetCategories($skills);
 	    $Model->_skills = $skills;
 	    $Model->_skillsCategoriesColor = $this->GetCategoriesColor($Model->_skillsCategories);
+	    
+	    $Model->_projects = $projects;
 	    
 	    // Une action finira toujours par un $this->_view->ViewCompact contenant : 
 	    // - La clef "Model" contenant le modèle de données à fournir à la vue
