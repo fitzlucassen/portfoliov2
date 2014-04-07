@@ -21,7 +21,7 @@
 		public function getAll(){
 			$query = "SELECT * FROM project";
 			try {
-				return $this->_pdo->SelectTable($query);
+				return $this->_pdoHelper->SelectTable($query);
 			}
 			catch(PDOException $e){
 				print $e->getMessage();
@@ -32,7 +32,7 @@
 		public function getById($id){
 			$query = "SELECT * FROM project WHERE id=" . $id;
 			try {
-				$properties = $this->_pdo->Select($query);
+				$properties = $this->_pdoHelper->Select($query);
 				$object = new Project();
 				$object->fillObject($properties);
 				return $object;
@@ -46,7 +46,7 @@
 		public function delete($id) {
 			$query = "DELETE FROM project WHERE id=" . $id;
 			try {
-				return $this->_pdo->Query($query);
+				return $this->_pdoHelper->Query($query);
 			}
 			catch(PDOException $e){
 				print $e->getMessage();
@@ -58,7 +58,7 @@
 			$query = "INSERT INTO project('id', 'title', 'description', 'link', 'image', 'dCrea')
 				VALUES(" . $properties["id"] . ", '" . $properties["title"] . "', '" . $properties["description"] . "', '" . $properties["link"] . "', '" . $properties["image"] . "', '" . $properties["dCrea"] . "')";
 			try {
-				return $this->_pdo->Query($query);
+				return $this->_pdoHelper->Query($query);
 			}
 			catch(PDOException $e){
 				print $e->getMessage();
@@ -71,7 +71,7 @@
 				SET id = " . $properties["id"] . ", title = '" . $properties["title"] . "', description = '" . $properties["description"] . "', link = '" . $properties["link"] . "', image = '" . $properties["image"] . "', dCrea = '" . $properties["dCrea"] . "'
 				WHERE id=" . $id;
 			try {
-				return $this->_pdo->Query($query);
+				return $this->_pdoHelper->Query($query);
 			}
 			catch(PDOException $e){
 				print $e->getMessage();
