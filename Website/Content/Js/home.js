@@ -47,48 +47,67 @@ $(document).ready(function(){
     
     // Scroll animation
     $(window).scroll(function(){
-	if($(window).scrollTop() > $('nav').position().top){
-	    $('nav').stop().fadeOut('slow',function(){
-		$('nav').addClass('fixed');
-		$('nav').stop().fadeIn('slows');
-	    });
-	}
-	else {
-	    $('nav').stop().fadeOut('slow',function(){
-		$('nav').removeClass('fixed');
-		$('nav').stop().fadeIn('slows');
-	    });
-	}
-	if(!isAnim && $(window).scrollTop() > currentStrat.position().top){
-	    // scroll down
-	    isAnim = true;
-	    cptStrat++;
-	    currentStrat = $('.strat:nth-child(' + cptStrat + ')');
-	    $('html,body').stop().animate({
-		scrollTop:currentStrat.position().top
-	    },1000);
-	    setTimeout(function(){
-		isAnim = false;
-	    },1100);
-	}
-	else if(!isAnim && $(window).scrollTop() < currentStrat.position().top) {
-	    // scroll up
-	    isAnim = true;
-	    cptStrat--;
-	    currentStrat = $('.strat:nth-child(' + cptStrat + ')');
-	    $('html,body').stop().animate({
-		scrollTop:currentStrat.position().top
-	    },1000);
-	    setTimeout(function(){
-		isAnim = false;
-	    },1100);
-	}
+
+		if($(window).scrollTop() > $('nav').position().top){
+		    $('nav').stop().fadeOut('slow',function(){
+				$('nav').addClass('fixed');
+				$('nav').stop().fadeIn('slows');
+		    });
+		}
+		else {
+		    $('nav').stop().fadeOut('slow',function(){
+				$('nav').removeClass('fixed');
+				$('nav').stop().fadeIn('slows');
+		    });
+		}
+		if(!isAnim && $(window).scrollTop() > currentStrat.position().top){
+		    // scroll down
+		    isAnim = true;
+		    cptStrat++;
+		    currentStrat = $('.strat:nth-child(' + cptStrat + ')');
+			
+		    $('html,body').stop().animate({
+				scrollTop:currentStrat.position().top
+		    },1000);
+		    setTimeout(function(){
+				isAnim = false;
+		    },1100);
+		}
+		else if(!isAnim && $(window).scrollTop() < currentStrat.position().top) {
+		    // scroll up
+		    isAnim = true;
+		    cptStrat--;
+		    currentStrat = $('.strat:nth-child(' + cptStrat + ')');
+
+		    $('html,body').stop().animate({
+				scrollTop:currentStrat.position().top
+		    },1000);
+		    setTimeout(function(){
+				isAnim = false;
+		    },1100);
+		}
     });
     
     // Skills
     $('.skillbar').each(function(){
-	$(this).find('.skillbar-bar').animate({
-	    width:$(this).attr('data-percent')
-	},6000);
+		$(this).find('.skillbar-bar').animate({
+		    width:$(this).attr('data-percent')
+		},6000);
     });
 });
+
+
+function disable_scroll() {
+  if (window.addEventListener) {
+      window.addEventListener('DOMMouseScroll', wheel, false);
+  }
+  window.onmousewheel = document.onmousewheel = wheel;
+  document.onkeydown = keydown;
+}
+
+function enable_scroll() {
+    if (window.removeEventListener) {
+        window.removeEventListener('DOMMouseScroll', wheel, false);
+    }
+    window.onmousewheel = document.onmousewheel = document.onkeydown = null;  
+}
