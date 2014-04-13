@@ -265,3 +265,7 @@ h3.title{
 	color:#444;
 	color:rgba(0, 0, 0, 0.6);
 }
+.contentImg{
+    min-width: 360px;
+    margin: auto;
+}

@@ -22,33 +22,35 @@
 	<p class="contenu">
 	    Je suis un passionné de web MAIS PAS QUE !<br/>Grand cinéphile et musicien invétéré, j'ai plus d'une corde à mon arc !<br/><br/>
 	</p>
-	<div class="presentationContainer suricate">
-	    <p class="contenu presentation">
-		J'ai la curiosité du suricate,
-	    </p>
-	    <div class="imgContainer presentation">
-		<img src="<?php echo __image_directory__; ?>/suricate.png" alt="image de suricate"/>
-	    </div>
-	    <div class="cl"></div>
-	</div>
-	<div class="presentationContainer ane">
-	    <p class="contenu presentation">
-		L'obstination d'un âne,
-	    </p>
-	    <div class="imgContainer presentation">
-		<img src="<?php echo __image_directory__; ?>/ane.png" alt="image d'un âne"/>
-	    </div>
-	    <div class="cl"></div>
-	</div>
-	<div class="presentationContainer pingouin">
-	    <p class="contenu presentation">
-		Et l'esprit social du pingouin.
-	    </p>
-	    <div class="imgContainer presentation">
-		<img src="<?php echo __image_directory__; ?>/pingouin.png" alt="image d'un âne"/>
-	    </div>
-	    <div class="cl"></div>
-	</div>
+	<div class="contentImg">
+		<div class="presentationContainer suricate">
+		    <p class="contenu presentation">
+			J'ai la curiosité du suricate,
+		    </p>
+		    <div class="imgContainer presentation">
+			<img src="<?php echo __image_directory__; ?>/suricate.png" alt="image de suricate"/>
+		    </div>
+		    <div class="cl"></div>
+		</div>
+		<div class="presentationContainer ane">
+		    <p class="contenu presentation">
+			L'obstination d'un âne,
+		    </p>
+		    <div class="imgContainer presentation">
+			<img src="<?php echo __image_directory__; ?>/ane.png" alt="image d'un âne"/>
+		    </div>
+		    <div class="cl"></div>
+		</div>
+		<div class="presentationContainer pingouin">
+		    <p class="contenu presentation">
+			Et l'esprit social du pingouin.
+		    </p>
+		    <div class="imgContainer presentation">
+			<img src="<?php echo __image_directory__; ?>/pingouin.png" alt="image d'un âne"/>
+		    </div>
+		    <div class="cl"></div>
+		</div>
+	</div>a
 	<div class="returnTop"><a href="#menuStrat">^</a></div>
     </div>
     
