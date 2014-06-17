@@ -1,15 +1,13 @@
 <?php
+
+    namespace fitzlucassen\FLFramework\Website\MVC\Model;
+    
      /*
       Class : HomeModel
       Déscription : Model de donnée pour les pages du controller home
      */
     class HomeModel extends Model{
-	public $_skills = null;
-	public $_skillsCategories = null;
-	public $_skillsCategoriesColor = null;
-	public $_projects = null;
-	
-	public function __construct($manager) {
-	    parent::__construct($manager);
-	}
+        public function __construct($manager) {
+            parent::__construct($manager);
+        }
     }
