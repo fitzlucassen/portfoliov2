@@ -1,9 +1,21 @@
+.page{
+	margin: auto;
+	text-align: center;
+}
+.blocContainer{
+	display: inline-block;
+	height: 515px;
+	vertical-align: top;
+}
 .bloc{
+	display: inline-block;
+	vertical-align: top;
 	background: #f2f2f2;
 	width: 250px;
-	height: 400px;
+	height: 475px;
 
-	margin: 20px;
+	margin: 20px 0 0 20px;
+	padding: 10px;
 
 	box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
 	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
@@ -13,9 +25,10 @@
 }
 .hublot{
 	position: relative;
-	width: 80px;
-	height: 80px;
+	width: 100px;
+	height: 100px;
 	overflow: hidden;
+	margin: 10px auto;
 
 	border-radius: 80px;
 	-webkit-border-radius: 80px;
@@ -25,7 +38,148 @@
 }
 .hublot > img{
 	position: absolute;
-	top: 0;
-	left: 0px;
-	width: 180px; 
+	top: -6px;
+	left: -67px;
+	width: 215px; 
+}
+.bloc .title, .bloc .subtitle{
+	text-align: center;
+}
+.guillemet{
+	font-size: 40px;
+	display: block;
+	float: left;
+	margin-top: -4px;
+}
+.contenu span, .contenu i{
+	vertical-align: middle;
+	line-height: 30px;
+}
+.bloc .contenu i{
+	float: left;
+}
+.bloc .contenu{
+	margin-top: 20px;
+}
+
+
+.contactLine{
+	margin: 10px 0;
+	display: inline-block;
+}
+.contactLine img{
+	width: 38px;
+	vertical-align: middle;
+}
+.contactLine a{
+	color: #444;
+	padding: 0 10px;
+}
+.companyLine{
+	margin: 10px 0;
+	display: inline-block;
+}
+.companyLine img{
+	width: 200px;
+	vertical-align: middle;
+}
+.companyLine a{
+	color: #444;
+	padding: 0 10px;
+}
+
+
+/* BLOCS exception */
+#blocContact{
+	height: 195px;
+}
+#blocCompanies{
+	height: 240px;
+	text-align: center;
+}
+#blocSkills, #blocSkillsBack, #blocDegree{
+	width: 545px;
+}
+#blocMe .title, #blocMe .subtitle{
+	margin: 10px 0;
+}
+
+
+/* Skill plugin */
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:10px;
+	width:100%;
+	background:#ddd;
+	height:30px;
+
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+
+	width:110px;
+	font-weight:normal;
+	font-family: 'Segoe UI';
+	font-size:14px;
+	color:#ffffff;
+
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 5px;
+	height:30px;
+	line-height:30px;
+	text-align: center;
+
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:1px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	font-size: 24px;
+	height: 30px;
+	line-height: 30px;
+	color: #ffffff;
+	color: rgba(0, 0, 0, 0.4);
+	text-align: center;
+	font-family: 'Segoe UI';
 }

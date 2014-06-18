@@ -11,7 +11,7 @@
     spl_autoload_register("App::ManageAutoload");
     
     // Put your SQL config here
-    Core\Sql::SetDb("flframework");
+    Core\Sql::SetDb("portfoliov2");
     Core\Sql::SetHost("localhost");
     Core\Sql::SetUser("root");
     Core\Sql::SetPwd("");

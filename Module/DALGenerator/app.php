@@ -11,23 +11,23 @@
     $fm = DAL\FileManager::getInstance();
     
     if(PHP_SAPI == "cli"){
-	$Config->setDB($argv[1]);		// database
-	$Config->setHOST($argv[2]);		// database host
-	$Config->setUSER($argv[3]);		// user name
-	$Config->setPWD($argv[4]);		// password
-	$Config->setPATHENTITIES($argv[5]);	// The path where entities will be created
-	$Config->setPATHREPOSITORIES($argv[6]);	// The path where repositories will be created
+    	$Config->setDB($argv[1]);		// database
+    	$Config->setHOST($argv[2]);		// database host
+    	$Config->setUSER($argv[3]);		// user name
+    	$Config->setPWD($argv[4]);		// password
+    	$Config->setPATHENTITIES($argv[5]);	// The path where entities will be created
+    	$Config->setPATHREPOSITORIES($argv[6]);	// The path where repositories will be created
     }
     else {
 	/*************************
 	 * PUT YOUR CONFIGS HERE *
 	 *************************/
-       $Config->setDB("flframework");					    // database
+       $Config->setDB("portfoliov2");					    // database
        $Config->setHOST("localhost");					    // database host
-       $Config->setUSER("root");					    // user name
-       $Config->setPWD("");						    // password
-       $Config->setPATHENTITIES("C:/wamp/www/TEST/");			    // The path where entities will be created
-       $Config->setPATHREPOSITORIES("C:/wamp/www/TEST/");		    // The path where repositories will be created
+       $Config->setUSER("root");					        // user name
+       $Config->setPWD("");						           // password
+       $Config->setPATHENTITIES("C:/wamp/www/portfoliov2/Data/Entity/");			          // The path where entities will be created
+       $Config->setPATHREPOSITORIES("C:/wamp/www/portfoliov2/Data/Repository/");		    // The path where repositories will be created
        
        // If there is some links into your tables, you have to precise these right here.
        // 
@@ -48,7 +48,7 @@
     $Utilities->createClasses($Config->getPATHENTITIES(), $Config->getPATHREPOSITORIES(), $Config->getLink());
     
     if(defined('STDIN')){
-	exit(0);
+	   exit(0);
     }
     
     echo "<h1>Les classes ont &eacute;t&eacute; g&eacute;n&eacute;r&eacute;es avec succ&egrave;s !</h1>";
