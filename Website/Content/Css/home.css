@@ -63,9 +63,18 @@
 }
 
 
-.contactLine{
-	margin: 10px 0;
+.contactLine, .companyLine{
+	margin: 0;
 	display: inline-block;
+	background: #444;
+
+	transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+}
+.contactLine:hover, .companyLine:hover{
+	background: #c0392b;
 }
 .contactLine img{
 	width: 38px;
@@ -73,19 +82,14 @@
 }
 .contactLine a{
 	color: #444;
-	padding: 0 10px;
 }
-.companyLine{
-	margin: 10px 0;
-	display: inline-block;
-}
+
 .companyLine img{
 	width: 200px;
 	vertical-align: middle;
 }
 .companyLine a{
 	color: #444;
-	padding: 0 10px;
 }
 
 
@@ -102,6 +106,10 @@
 }
 #blocMe .title, #blocMe .subtitle{
 	margin: 10px 0;
+}
+#blocProject{
+	width: 1110px;
+	height: auto;
 }
 
 
@@ -182,4 +190,10 @@
 	color: rgba(0, 0, 0, 0.4);
 	text-align: center;
 	font-family: 'Segoe UI';
+}
+.spacer
+{
+	width:10px;
+	height: 1px;
+	display: inline-block;
 }

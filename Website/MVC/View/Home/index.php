@@ -1,4 +1,7 @@
 <link type="text/css" rel="stylesheet" href="<?php echo __css_directory__;?>/home.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo __css_directory__;?>/style_common.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo __css_directory__;?>/style10.css" />
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
 <title>FLFramework - Le framework PHP français</title>
 
 
@@ -36,26 +39,33 @@
 			<h2 class="title">Retrouvez-moi</h2>
 			<br/>
 			<br/>
+			<br/>
 
-			<div class="contactLine">
-				<a href="https://github.com/fitzlucassen" target="_blank">
-					<img src="<?php echo __image_directory__;?>/github.png" alt="">
-				</a>
-			</div>
-			<div class="contactLine">
-				<a href="http://fr.viadeo.com/fr/profile/thibault.dulon1" target="_blank">
-					<img src="<?php echo __image_directory__;?>/viadeo.png" alt="">
-				</a>
-			</div>
-			<div class="contactLine">
-				<a href="https://twitter.com/Fitz_Lucassen" target="_blank">
-					<img src="<?php echo __image_directory__;?>/twitter.png" alt="">
-				</a>
-			</div>
-			<div class="contactLine">
-				<a href="#blocContactForm">
-					<img src="<?php echo __image_directory__;?>/email.png" alt="">
-				</a>
+			<div class="socialContainer">
+				<div class="contactLine">
+					<a href="https://github.com/fitzlucassen" target="_blank">
+						<img src="<?php echo __image_directory__;?>/github.png" alt="Regardez mon github" title="Github">
+					</a>
+				</div>
+				<div class="spacer"></div>
+				<div class="contactLine">
+					<a href="http://fr.viadeo.com/fr/profile/thibault.dulon1" target="_blank">
+						<img src="<?php echo __image_directory__;?>/viadeo.png" alt="Retrouvez-moi sur viadeo" title="Viadeo">
+					</a>
+				</div>
+				<div class="spacer"></div>
+
+				<div class="contactLine">
+					<a href="https://twitter.com/Fitz_Lucassen" target="_blank">
+						<img src="<?php echo __image_directory__;?>/twitter.png" alt="Suivez-moi sur twitter" title="twitter">
+					</a>
+				</div>
+				<div class="spacer"></div>
+				<div class="contactLine">
+					<a href="#blocContactForm">
+						<img src="<?php echo __image_directory__;?>/email.png" alt="Joignez-moi par e-mail" title="e-mail">
+					</a>
+				</div>
 			</div>
 		</div>
 		<div class="bloc" id="blocCompanies">
@@ -67,9 +77,12 @@
 			?>
 					<div class="companyLine">
 						<a href="<?php echo $company->getUrl(); ?>" target="_blank">
-							<img src="<?php echo __image_directory__ . '/' . $company->getImage(); ?>" alt="">
+							<img src="<?php echo __image_directory__ . '/' . $company->getImage(); ?>" alt="j'ai travaillé pour <?php echo $company->getTitle(); ?>" title="<?php echo $company->getTitle(); ?>" >
 						</a>
 					</div>
+					<br/>
+					<br/>
+					<br/>
 			<?php
 				}
 			?>
@@ -165,6 +178,27 @@
 					<br/>
 
 				</div>
+		<?php
+			}
+		?>
+	</div>
+	<br/>
+	<div class="bloc" id="blocProject">
+	<h2 class="title">Mes réalisations</h2>
+		<br/>
+		<br/>
+
+		<?php
+			foreach ($this->Model->_projects as $project) {
+		?>
+				<div class="view view-tenth">
+                    <img src="<?php echo __image_directory__ . '/' . $project->getImage(); ?>" />
+                    <div class="mask">
+                        <h2><?php echo $project->getTitle(); ?></h2>
+                        <p><?php echo $project->getDescription(); ?></p>
+                        <a href="<?php echo $project->getLink();?>" class="info" target="_blank">Voir le site</a>
+                    </div>
+                </div>
 		<?php
 			}
 		?>
