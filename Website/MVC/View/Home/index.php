@@ -1,6 +1,7 @@
 <link type="text/css" rel="stylesheet" href="<?php echo __css_directory__;?>/home.css" />
-<link rel="stylesheet" type="text/css" href="<?php echo __css_directory__;?>/style_common.css" />
-<link rel="stylesheet" type="text/css" href="<?php echo __css_directory__;?>/style10.css" />
+<link type="text/css" rel="stylesheet" href="<?php echo __css_directory__;?>/home-responsive.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo __css_directory__;?>/Module/style_common.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo __css_directory__;?>/Module/style10.css" />
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
 <title>FLFramework - Le framework PHP français</title>
 
@@ -202,5 +203,9 @@
 		<?php
 			}
 		?>
+	</div>
+
+	<br/>
+	<div class="bloc" id="blocContactForm">
 	</div>
 </div>

@@ -1,0 +1,13 @@
+@media screen and (max-width:1024px){
+	#blocProject{
+		width: auto;
+		margin: 20px;
+	}
+}
+
+@media screen and (max-width:600px){
+	#blocSkills, #blocSkillsBack, #blocDegree{
+		width: auto;
+		margin: 20px;
+	}
+}

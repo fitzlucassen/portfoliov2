@@ -8,7 +8,7 @@ $(document).ready(function(){
 	setTimeout(function(){
 		$('#blocProject .view img').each(function(){
 			if($(this).outerWidth() > 300){
-				$(this).css({'margin-left':'-' + (($(this).outerWidth() - 300) / 2) + 'px'})
+				$(this).css({'margin-left':'-' + (($(this).outerWidth() - 300) / 2) + 'px'});
 			}
 		});
 	}, 1000);
