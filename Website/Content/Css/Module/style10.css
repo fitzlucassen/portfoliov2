@@ -21,7 +21,7 @@
    filter: alpha(opacity=0);
    opacity: 0;
 }
-.view-tenth h2 {
+.view-tenth h3 {
    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
    background: transparent;
    margin: 10px 40px 0px 40px;
@@ -87,7 +87,7 @@
    filter: alpha(opacity=100);
    opacity: 1;
 }
-.view-tenth:hover h2,.view-tenth:hover p,.view-tenth:hover a.info {
+.view-tenth:hover h3,.view-tenth:hover p,.view-tenth:hover a.info {
    -webkit-transform: scale(1);
    -moz-transform: scale(1);
    -o-transform: scale(1);

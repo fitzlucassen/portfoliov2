@@ -6,6 +6,7 @@
     use fitzlucassen\FLFramework\Library\Helper;
     use fitzlucassen\FLFramework\Library\Adapter;
     use fitzlucassen\FLFramework\Data\Repository;
+    use fitzlucassen\FLFramework\Library\Core;
     
      /*
 	Class : HomeController
@@ -20,6 +21,25 @@
 		    // Une action commencera toujours par l'initilisation de son modèle
 		    // Cette initialisation doit obligatoirement contenir le repository manager
 		    $Model = new Model\HomeModel($this->_repositoryManager);
+
+		    if(Core\Request::isPost()){
+		    	$data = Core\Request::cleanRequest();
+
+		    	$Email = new Helper\Email();
+		    	$Email->from($data['email']);
+		    	$Email->to('thibault.dulon@gmail.com');
+		    	$Email->subject($data['subject']);
+		    	$Email->fromName('thibaultdulon.com');
+		    	$Email->buildHeaders();
+
+		    	$Email->vars(array('text' =>
+		    		'Une personne vient de vous contacter sur votre portfolio thibaultdulon.com.<br/>
+		    		Voici son message : <br/><br/>' . $data['body']
+		    	));
+		    	$Email->send();
+
+		    	$Model->_message = 'Votre message a bien été envoyé !';
+		    }
 
 		    $skills = Repository\SkillsRepository::getAll($this->_repositoryManager->getConnection());
 		    $Model->_companies = Repository\CompanyRepository::getAll($this->_repositoryManager->getConnection());

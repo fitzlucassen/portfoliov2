@@ -2,7 +2,8 @@
    width: 300px;
    height: 200px;
    margin: 10px;
-   float: left;
+   display: inline-block;
+   vertical-align: top;
    border: 10px solid #fff;
    overflow: hidden;
    position: relative;
@@ -27,7 +28,7 @@
    position: relative;
    margin: auto;
 }
-.view h2 {
+.view h3 {
    text-transform: uppercase;
    color: #fff;
    text-align: center;
@@ -45,6 +46,10 @@
    color: #fff;
    padding: 10px 20px 10px;
    text-align: left;
+}
+
+.view p.btnP{
+   text-align: center;
 }
 .view a.info {
    display: inline-block;

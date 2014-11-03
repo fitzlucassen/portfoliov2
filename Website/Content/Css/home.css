@@ -101,14 +101,14 @@
 	height: 240px;
 	text-align: center;
 }
-#blocSkills, #blocSkillsBack, #blocDegree{
+#blocSkills, #blocSkillsBack, #blocDegree, #blocContactForm{
 	width: 545px;
 }
 #blocMe .title, #blocMe .subtitle{
 	margin: 10px 0;
 }
 #blocProject{
-	width: 1110px;
+	width: 1134px;
 	height: auto;
 }
 
@@ -196,4 +196,54 @@
 	width:10px;
 	height: 1px;
 	display: inline-block;
+}
+.contactForm{
+	text-align: left;
+}
+.contactForm input{
+	padding: 5px;
+	border: none;
+	background: #f2f2f2;
+	margin: 10px 0;
+	font-size: 16px;
+	border-bottom: 1px solid #d2d2d2;
+	color: #444;
+	font-family: 'Segoe UI';
+	width: 250px;
+}
+.contactForm textarea{
+	padding: 5px;
+	border: none;
+	background: #e2e2e2;
+	margin: 10px 0;
+	font-size: 16px;
+	border-bottom: 1px solid #d2d2d2;
+	color: #444;
+	font-family: 'Segoe UI';
+
+	width: 98%;
+
+}
+.contactForm input[type="submit"]{
+	border-bottom: 1px solid #c2c2c2;
+	margin: auto;
+	display: block;
+	width: 100px;
+	border-radius: 2px;
+	cursor: pointer;
+	padding: 10px;
+}
+.contactForm input[type="submit"]:hover{
+	background: #e2e2e2;
+	transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+}
+.message{
+	margin: 10px auto;
+	padding: 10px;
+	background: rgba(22, 160, 133,0.6);
+	color: white;
+	text-align: center;
 }

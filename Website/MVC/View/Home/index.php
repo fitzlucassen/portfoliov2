@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo __css_directory__;?>/Module/style_common.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo __css_directory__;?>/Module/style10.css" />
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
-<title>FLFramework - Le framework PHP français</title>
+<title>Thibault - Développeur web</title>
 
 
 <script type="text/javascript" src="<?php echo __js_directory__ ?>/home.js"></script>
@@ -14,6 +14,11 @@
     // Intégrer ci-dessous la vue
 ?>
 <div class="page">
+	<?php
+		if(isset($this->Model->_message) && !empty($this->Model->_message)){
+			echo '<div class="message">' . $this->Model->_message . '</div>';
+		}
+	?>
 	<div class="bloc" id="blocMe">
 		<div class="hublot">
 			<img src="<?php echo __image_directory__;?>/moi.jpg" alt="">
@@ -24,7 +29,7 @@
 		<p class="contenu" style="margin-top:40px;">
 			<span class="guillemet">«</span>
 			<i class="left">Développeur web depuis 3ans,</i>
-			<i> je me passione pour les nouvelles technologies du web. 
+			<i> je me passionne pour les nouvelles technologies du web. 
 				Auditeur de plusieurs Meetup et acteur dans quelques Hackathon, je suis spécialisé dans la conception de site, la veille 
 			</i>
 			<i class="left">
@@ -43,30 +48,30 @@
 			<br/>
 
 			<div class="socialContainer">
-				<div class="contactLine">
+				<p class="contactLine">
 					<a href="https://github.com/fitzlucassen" target="_blank">
 						<img src="<?php echo __image_directory__;?>/github.png" alt="Regardez mon github" title="Github">
 					</a>
-				</div>
+				</p>
 				<div class="spacer"></div>
-				<div class="contactLine">
+				<p class="contactLine">
 					<a href="http://fr.viadeo.com/fr/profile/thibault.dulon1" target="_blank">
 						<img src="<?php echo __image_directory__;?>/viadeo.png" alt="Retrouvez-moi sur viadeo" title="Viadeo">
 					</a>
-				</div>
+				</p>
 				<div class="spacer"></div>
 
-				<div class="contactLine">
+				<p class="contactLine">
 					<a href="https://twitter.com/Fitz_Lucassen" target="_blank">
 						<img src="<?php echo __image_directory__;?>/twitter.png" alt="Suivez-moi sur twitter" title="twitter">
 					</a>
-				</div>
+				</p>
 				<div class="spacer"></div>
-				<div class="contactLine">
+				<p class="contactLine">
 					<a href="#blocContactForm">
 						<img src="<?php echo __image_directory__;?>/email.png" alt="Joignez-moi par e-mail" title="e-mail">
 					</a>
-				</div>
+				</p>
 			</div>
 		</div>
 		<div class="bloc" id="blocCompanies">
@@ -76,11 +81,11 @@
 			<?php
 				foreach ($this->Model->_companies as $company) {
 			?>
-					<div class="companyLine">
+					<p class="companyLine">
 						<a href="<?php echo $company->getUrl(); ?>" target="_blank">
 							<img src="<?php echo __image_directory__ . '/' . $company->getImage(); ?>" alt="j'ai travaillé pour <?php echo $company->getTitle(); ?>" title="<?php echo $company->getTitle(); ?>" >
 						</a>
-					</div>
+					</p>
 					<br/>
 					<br/>
 					<br/>
@@ -185,7 +190,7 @@
 	</div>
 	<br/>
 	<div class="bloc" id="blocProject">
-	<h2 class="title">Mes réalisations</h2>
+		<h2 class="title">Mes réalisations</h2>
 		<br/>
 		<br/>
 
@@ -195,9 +200,10 @@
 				<div class="view view-tenth">
                     <img src="<?php echo __image_directory__ . '/' . $project->getImage(); ?>" />
                     <div class="mask">
-                        <h2><?php echo $project->getTitle(); ?></h2>
+                        <h3><?php echo $project->getTitle(); ?></h3>
                         <p><?php echo $project->getDescription(); ?></p>
-                        <a href="<?php echo $project->getLink();?>" class="info" target="_blank">Voir le site</a>
+                        
+                        <p class="btnP"><a href="<?php echo $project->getLink();?>" class="info" target="_blank">Voir le site</a></p>
                     </div>
                 </div>
 		<?php
@@ -207,5 +213,22 @@
 
 	<br/>
 	<div class="bloc" id="blocContactForm">
+		<h2 class="title">Contactez-moi</h2>
+		<br/>
+		<br/>
+
+		<div class="contactForm">
+			<form action="" method="POST">
+				<input type="email" name="email" placeholder="Votre adresse e-mail" />
+				<br/>
+				<input type="text" name="subject" placeholder="Sujet de votre demande" />
+				<textarea name="body" cols="10" rows="10" placeholder="Votre message"></textarea>
+
+				<br/>
+				<input type="submit" value="Envoyer" />
+			</form>
+		</div>
 	</div>
+	<br/>
+	<br/>
 </div>

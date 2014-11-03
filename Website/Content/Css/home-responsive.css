@@ -6,8 +6,39 @@
 }
 
 @media screen and (max-width:600px){
-	#blocSkills, #blocSkillsBack, #blocDegree{
+	#blocSkills, #blocSkillsBack, #blocDegree, #blocContactForm{
 		width: auto;
-		margin: 20px;
+		margin: 20px !important;
+	}
+}
+@media screen and (max-width:400px){
+	.bloc{
+		width: auto;
+		margin: 20px !important;
+		height: auto;
+	}
+	.blocContainer{
+		width: auto;
+		height: auto;
+	}
+	#blocDegree{
+		height: auto;
+	}
+	#blocProject{
+		padding: 10px 0;
+	}
+	#blocProject .view{
+		margin: 10px auto;
+	}
+}
+@media screen and (max-width:380px){
+	#blocProject .view{
+		border: none;
+		display: block;
+	}
+}
+@media screen and (max-width:360px){
+	#blocProject{
+		margin: 20px 0 !important;
 	}
 }

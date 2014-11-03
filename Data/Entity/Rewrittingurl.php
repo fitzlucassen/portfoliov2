@@ -8,7 +8,7 @@
 
 	use fitzlucassen\FLFramework\Library\Core as cores;
 
-	class Rewrittingurl {
+	class RewrittingUrl {
 		private $_id;
 		private $_routeurl;
 		private $_idRouteUrl;
@@ -32,7 +32,7 @@
 								->where(array(array("link" => "", "left" => "id", "operator" => "=", "right" => $this->_idRouteUrl)))->getQuery();
 			try {
 			    $result = $this->_pdo->Select($query);
-			    $o = new Routeurl();
+			    $o = new RouteUrl();
 			    $o->fillObject($result);
 			    return $o;
 			}

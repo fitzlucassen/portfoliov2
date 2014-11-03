@@ -12,6 +12,7 @@
         public $_companies = array();
         public $_studies = array();
         public $_projects = array();
+        public $_message = '';
 
         public function __construct($manager) {
             parent::__construct($manager);
