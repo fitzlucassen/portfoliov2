@@ -28,11 +28,9 @@
 		<h2 class="subtitle">Web Developer</h2>
 		<p class="contenu" style="margin-top:40px;">
 			<span class="guillemet">«</span>
-			<i class="left">Développeur web depuis 3ans,</i>
-			<i> je me passionne pour les nouvelles technologies du web. 
+			<i>Développeur web depuis 3ans, 
+				je me passionne pour les nouvelles technologies du web. 
 				Auditeur de plusieurs Meetup et acteur dans quelques Hackathon, je suis spécialisé dans la conception de site, la veille 
-			</i>
-			<i class="left">
 				technologique et le référencement.
 			</i>
 			<span class="guillemet">»</span>

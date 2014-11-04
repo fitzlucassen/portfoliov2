@@ -22,6 +22,12 @@
 	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
 	-o-box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
 	-ms-box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
 }
 .hublot{
 	position: relative;
@@ -38,25 +44,21 @@
 }
 .hublot > img{
 	position: absolute;
-	top: -6px;
-	left: -67px;
-	width: 215px; 
+	top: 0px;
+	left: -5px;
+	width: 128px;
 }
 .bloc .title, .bloc .subtitle{
 	text-align: center;
 }
 .guillemet{
 	font-size: 40px;
-	display: block;
-	float: left;
-	margin-top: -4px;
+	margin-top: -6px;
+	display: inline-block;
 }
 .contenu span, .contenu i{
 	vertical-align: middle;
 	line-height: 30px;
-}
-.bloc .contenu i{
-	float: left;
 }
 .bloc .contenu{
 	margin-top: 20px;
@@ -76,7 +78,7 @@
 .contactLine:hover, .companyLine:hover{
 	background: #c0392b;
 }
-.contactLine img{
+.contactLine, .contactLine img{
 	width: 38px;
 	vertical-align: middle;
 }
@@ -84,7 +86,7 @@
 	color: #444;
 }
 
-.companyLine img{
+.companyLine, .companyLine img{
 	width: 200px;
 	vertical-align: middle;
 }
