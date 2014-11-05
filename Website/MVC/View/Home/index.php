@@ -217,10 +217,10 @@
 
 		<div class="contactForm">
 			<form action="" method="POST">
-				<input type="email" name="email" placeholder="Votre adresse e-mail" />
+				<input type="email" name="email" placeholder="Votre adresse e-mail" required/>
 				<br/>
-				<input type="text" name="subject" placeholder="Sujet de votre demande" />
-				<textarea name="body" cols="10" rows="10" placeholder="Votre message"></textarea>
+				<input type="text" name="subject" placeholder="Sujet de votre demande" required/>
+				<textarea name="body" cols="10" rows="10" placeholder="Votre message" required></textarea>
 
 				<br/>
 				<input type="submit" value="Envoyer" />
