@@ -66,7 +66,7 @@
 				</p>
 				<div class="spacer"></div>
 				<p class="contactLine">
-					<a href="#blocContactForm">
+					<a href="#" id="goTo-blocContactForm">
 						<img src="<?php echo __image_directory__;?>/email.png" alt="Joignez-moi par e-mail" title="e-mail">
 					</a>
 				</p>
