@@ -3,7 +3,7 @@
 <meta name="Description" content="<?php echo isset($this->Model->_headerInformations) ? $this->Model->_headerInformations->getMetaDescription() : ""; ?>" >
 <meta name="Author" content="Thibault Dulon">
 
-<meta name="Revisit-after" content="15 days">
+<meta name="Revisit-after" content="3 days">
 <meta name="Publisher" content="Thibault dulon">
 <meta name="Generator" content="PHP Engineer, HTML5/CSS3 Integrator">
 <meta name="Robots" content="index, follow, all">
