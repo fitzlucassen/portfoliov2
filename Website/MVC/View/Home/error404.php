@@ -9,7 +9,13 @@
 ?>
 
 <div class="ErrorPage">
-		<h1 class="titre">Cette page n'existe pas</h1>
+		<h1 class="title">Cette page n'existe pas</h1>
 
-		<p class="titre">404</p>
+		<p class="title">404</p>
+		
+		<div class="araigne-toile">
+			<div class="araigne">
+			</div>
+		</div>
+
 </div>

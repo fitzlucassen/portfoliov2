@@ -103,8 +103,12 @@
 		?>
 				<div class="skillbar clearfix " data-percent="<?php echo $skill->getMark() * 100 / 20; ?>%">
 					<div class="skillbar-title" style="background: #2c3e50;"><span><?php echo $skill->getTitle(); ?></span></div>
-					<div class="skillbar-bar" style="background: #4e5f72;"></div>
-					<div class="skill-bar-percent"><?php echo $skill->getMark() * 100 / 20; ?>%</div>
+					<div class="left" style="width: 82%;">
+						<div class="skill-bar-percent"><?php echo $skill->getMark() * 100 / 20; ?>%</div>
+						<div class="skillbar-bar" style="background: #4e5f72;"></div>
+
+					</div>
+					<div class="cl"></div>
 				</div> <!-- End Skill Bar -->
 		<?php
 				}
@@ -117,8 +121,12 @@
 		?>
 				<div class="skillbar clearfix " data-percent="<?php echo $skill->getMark() * 100 / 20; ?>%">
 					<div class="skillbar-title" style="background: #2c3e50;"><span><?php echo $skill->getTitle(); ?></span></div>
-					<div class="skillbar-bar" style="background: #4e5f72;"></div>
-					<div class="skill-bar-percent"><?php echo $skill->getMark() * 100 / 20; ?>%</div>
+					<div class="left" style="width: 82%;">
+						<div class="skill-bar-percent"><?php echo $skill->getMark() * 100 / 20; ?>%</div>
+						<div class="skillbar-bar" style="background: #4e5f72;"></div>
+
+					</div>
+					<div class="cl"></div>
 				</div> <!-- End Skill Bar -->
 		<?php
 				}
@@ -135,8 +143,12 @@
 		?>
 				<div class="skillbar clearfix " data-percent="<?php echo $skill->getMark() * 100 / 20; ?>%">
 					<div class="skillbar-title" style="background: #2c3e50;"><span><?php echo $skill->getTitle(); ?></span></div>
-					<div class="skillbar-bar" style="background: #4e5f72;"></div>
-					<div class="skill-bar-percent"><?php echo $skill->getMark() * 100 / 20; ?>%</div>
+					<div class="left" style="width: 82%;">
+						<div class="skill-bar-percent"><?php echo $skill->getMark() * 100 / 20; ?>%</div>
+						<div class="skillbar-bar" style="background: #4e5f72;"></div>
+
+					</div>
+					<div class="cl"></div>
 				</div> <!-- End Skill Bar -->
 		<?php
 				}
@@ -149,8 +161,12 @@
 		?>
 				<div class="skillbar clearfix " data-percent="<?php echo $skill->getMark() * 100 / 20; ?>%">
 					<div class="skillbar-title" style="background: #2c3e50;"><span><?php echo $skill->getTitle(); ?></span></div>
-					<div class="skillbar-bar" style="background: #4e5f72;"></div>
-					<div class="skill-bar-percent"><?php echo $skill->getMark() * 100 / 20; ?>%</div>
+					<div class="left" style="width: 82%;">
+						<div class="skill-bar-percent"><?php echo $skill->getMark() * 100 / 20; ?>%</div>
+						<div class="skillbar-bar" style="background: #4e5f72;"></div>
+						
+					</div>
+					<div class="cl"></div>
 				</div> <!-- End Skill Bar -->
 		<?php
 				}
