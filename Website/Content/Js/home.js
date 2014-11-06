@@ -13,4 +13,11 @@ $(document).ready(function(){
 		});
 	}, 1000);
 	
+	$('#goTo-blocContactForm').click(function(){
+		var height = $('#blocContactForm').offset().top;
+
+		$('html,body').stop().animate({scrollTop: height}, 1000);
+
+		return false;
+	});
 });
