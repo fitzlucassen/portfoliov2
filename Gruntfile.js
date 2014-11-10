@@ -41,12 +41,12 @@ module.exports = function(grunt) {
         },
 		watch: {
 		    scripts: {
-		        files: ['Gruntfile.js', jsSrc],
+		        files: ['Gruntfile.js', jsSrc, cssSrc],
 		        tasks: ['scripts']
 		    }
 		}
     });
 
     grunt.registerTask('default', ['scripts', 'watch']);
-	grunt.registerTask('scripts', ['jshint', 'uglify:compile', 'cssmin:compile', 'img:task']);
+	grunt.registerTask('scripts', ['jshint', 'uglify:compile', 'cssmin:compile'/*, 'img:task'*/]);
 };

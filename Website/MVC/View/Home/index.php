@@ -1,12 +1,6 @@
-<link type="text/css" rel="stylesheet" href="<?php echo __css_directory__;?>/home.css" />
-<link type="text/css" rel="stylesheet" href="<?php echo __css_directory__;?>/home-responsive.css" />
-<link rel="stylesheet" type="text/css" href="<?php echo __css_directory__;?>/Module/style_common.css" />
-<link rel="stylesheet" type="text/css" href="<?php echo __css_directory__;?>/Module/style10.css" />
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
 <title>Thibault - Développeur web</title>
 
-
-<script type="text/javascript" src="<?php echo __js_directory__ ?>/home.js"></script>
 <?php
     // inclure ci-dessus les balises à inclure dans la balise <head> du layout
     $head = $this->RegisterViewHead();
