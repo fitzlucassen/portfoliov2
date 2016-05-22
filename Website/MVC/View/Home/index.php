@@ -36,9 +36,6 @@
 		<div class="bloc" id="blocContact">
 			<h2 class="title">Retrouvez-moi</h2>
 			<br/>
-			<br/>
-			<br/>
-
 			<div class="socialContainer">
 				<p class="contactLine">
 					<a href="https://github.com/fitzlucassen" target="_blank">
