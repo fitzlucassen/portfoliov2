@@ -54,7 +54,7 @@
 						<div class="col m12 s12 l9 info wow fadeIn a2 animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
 							<div class="section-item-details">
 								<div class="personal">
-									<h4><a href="tel:+33689471118">(+33) 06-89-47-11-18</a></h4> <!-- Number -->
+									<h4><a href="tel:+33607080910">(+33) 06-07-08-09-10</a></h4> <!-- Number -->
 									<span>mobile</span>
 								</div>
 							</div>
@@ -70,7 +70,7 @@
 						<div class="col m12 s12 l9 info wow fadeIn a3 animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
 							<div class="section-item-details">
 								<div class="personal">
-									<h4><a href="mailto:thibault.dulon@gmail.com">thibault.dulon@gmail.com</a></h4> <!-- Email -->
+									<h4><a href="mailto:blablabla.dulon@gmail.com">blablabla@gmail.com</a></h4> <!-- Email -->
 									<span>personnel</span>
 								</div>
 							</div>
@@ -86,8 +86,8 @@
 						<div class="col m12 s12 l9 info wow fadeIn a4 animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
 							<div class="section-item-details">
 								<div class="address-details"> <!-- address	-->
-									<h4>90 rue de l'ourcq<br>
-									75019 Paris
+									<h4>90 rue de l'alibaba<br>
+									75005 Paris
 									</h4>
 								</div>
 							</div>
