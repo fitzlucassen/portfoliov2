@@ -5,7 +5,7 @@
 
 <meta name="Revisit-after" content="3 days">
 <meta name="Publisher" content="Thibault dulon">
-<meta name="Generator" content="PHP Engineer, HTML5/CSS3 Integrator">
+<meta name="Generator" content=".NET Engineer, HTML5/CSS3 Integrator">
 <meta name="Robots" content="index, follow, all">
 <meta name="Rating" content="general">
 <meta name="Language" content="fr">
@@ -26,11 +26,9 @@
 <link rel="apple-touch-icon" sizes="72x72" href="../favicon72.png" />
 <link rel="apple-touch-icon" sizes="114x114" href="../favicon114.png" />
 
+<link type="text/css" rel="stylesheet" href="<?php echo __css_directory__;?>/Module/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="<?php echo __css_directory__;?>/Module/materialize.min.css" />
 <link type="text/css" rel="stylesheet" href="<?php echo __css_directory__;?>/_built.css" />
-
-<!--[if lt IE 9]>
-	<script src="<?php echo __js_directory__  ; ?>/Base/html5shiv.js"></script>
-<![endif]-->
 
 <?php
 	include(__partial_directory__ . "/tracking.php");

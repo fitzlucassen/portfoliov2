@@ -19,17 +19,13 @@
     </head>
 
     <body>
-	<div id="global">
 	    <?php
-		include(__partial_directory__ . "/header.php");
+			include(__partial_directory__ . "/header.php");
+
+			// Inclusion de la vue cible
+			$this->Render($this->Body);
+
+			include(__partial_directory__ . "/footer.php");
 	    ?>
-	    <?php
-		// Inclusion de la vue cible
-		$this->Render($this->Body);
-	    ?>
-	    <?php
-		include(__partial_directory__ . "/footer.php");
-	    ?>
-	</div>
     </body>
 </html>

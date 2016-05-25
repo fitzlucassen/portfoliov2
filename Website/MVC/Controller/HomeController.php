@@ -28,13 +28,13 @@
 		    	$Email = new Helper\Email();
 		    	$Email->from($data['email']);
 		    	$Email->to('thibault.dulon@gmail.com');
-		    	$Email->subject($data['subject']);
+		    	$Email->subject($data['name'] . " vous a envoyé un message");
 		    	$Email->fromName('thibaultdulon.com');
 		    	$Email->buildHeaders();
 
 		    	$Email->vars(array('text' =>
 		    		'Une personne vient de vous contacter sur votre portfolio thibaultdulon.com.<br/>
-		    		Voici son message : <br/><br/>' . $data['body']
+		    		Voici son message : <br/><br/>' . $data['message']
 		    	));
 		    	$Email->send();
 

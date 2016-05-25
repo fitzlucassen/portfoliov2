@@ -15,11 +15,12 @@
 		private $_period;
 		private $_image;
 		private $_url;
+		private $_poste;
 		private $_queryBuilder;
 
-		public function __construct($id = "", $title = "", $description = "", $period = "", $image = "", $url = ""){
+		public function __construct($id = "", $title = "", $description = "", $period = "", $image = "", $url = "", $poste = ""){
 			$this->_queryBuilder = new cores\QueryBuilder(true);
-			$this->fillObject(array("id" => $id, "title" => $title, "description" => $description, "period" => $period, "image" => $image, "url" => $url));
+			$this->fillObject(array("id" => $id, "title" => $title, "description" => $description, "period" => $period, "image" => $image, "url" => $url, "poste" => $poste));
 		}
 
 		/***********
@@ -43,6 +44,9 @@
 		public function getUrl() {
 			return $this->_url;
 		}
+		public function getPoste() {
+			return $this->_poste;
+		}
 		/*******
 		 * END *
 		 *******/
@@ -60,5 +64,7 @@
 				$this->_image = $properties["image"];
 			if(!empty($properties["url"]))
 				$this->_url = $properties["url"];
+			if(!empty($properties["poste"]))
+				$this->_poste = $properties["poste"];
 		}
 	}

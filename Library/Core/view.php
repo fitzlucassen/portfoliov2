@@ -39,6 +39,7 @@
 	 * @param type $compact
 	 */
 	public function ViewCompact($model){
+		
 	    if(!isset($model))
 		throw new adapters\ViewException(adapters\ViewException::getNO_MODEL(), array("controller" => $controller, "action" => $action));
 	    

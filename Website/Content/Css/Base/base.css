@@ -1,40 +1,36 @@
-/* FONT FAMILY LINKAGE */
-@font-face
-{
-    font-family: "Segoe UI";
-    src: url("../Font/Segoe UI.ttf");
+@font-face {
+    font-family: 'robotolight';
+    src: url('Font/roboto/Roboto-Light.eot?v=4.3.0');
+    src: url('Font/roboto/Roboto-Light.eot?#iefix&v=4.3.0') ('embedded-opentype'),
+        url('Font/roboto/Roboto-Light.woff2?v=4.3.0') format('woff2'),
+        url('Font/roboto/Roboto-Light.woff?v=4.3.0') format('woff'),
+        url('Font/roboto/Roboto-Light.ttf?v=4.3.0') format('truetype'),
+        url('Font/roboto/Roboto-Light.svg?v=4.3.0#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('Font/roboto/Roboto-Regular.eot?v=4.3.0');
+    src: url('Font/roboto/Roboto-Regular.eot?#iefix&v=4.3.0') ('embedded-opentype'),
+        url('Font/roboto/Roboto-Regular.woff2?v=4.3.0') format('woff2'),
+        url('Font/roboto/Roboto-Regular.woff?v=4.3.0') format('woff'),
+        url('Font/roboto/Roboto-Regular.ttf?v=4.3.0') format('truetype'),
+        url('Font/roboto/Roboto-Regular.svg?v=4.3.0#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotomedium';
+    src: url('Font/roboto/Roboto-Medium.eot?v=4.3.0');
+    src: url('Font/roboto/Roboto-Medium.eot?#iefix&v=4.3.0') ('embedded-opentype'),
+        url('Font/roboto/Roboto-Medium.woff2?v=4.3.0') format('woff2'),
+        url('Font/roboto/Roboto-Medium.woff?v=4.3.0') format('woff'),
+        url('Font/roboto/Roboto-Medium.ttf?v=4.3.0') format('truetype'),
+        url('Font/roboto/Roboto-Medium.svg?v=4.3.0#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* UTILITIES CLASSES */
 .left{float: left;display:block;}.right{float:right;display:block;}.alignCenter{text-align:center;}.cl{clear:both;display: block;}.vAlign{vertical-align:middle;}
-
-/* LAYOUT */
-html, body{
-    width: 100%;
-}
-#global{
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background: #2c3e50;
-
-}
-
-.title{
-    color: #111;
-    font-size: 22px;
-    font-family: 'Segoe UI';
-    font-weight: normal;
-}
-.subtitle{
-    color: #111;
-    font-size: 18px;
-    font-family: 'Segoe UI';
-    font-weight: normal;
-}
-
-.contenu{
-    color: #444;
-    font-size: 14px;
-    font-family: 'georgia';
-}
