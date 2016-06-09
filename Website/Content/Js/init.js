@@ -16,7 +16,7 @@ $(document).ready(function() {
 	/*************************************************************************
 				TOOLTIP
 	**************************************************************************/
-	$('.tooltipped').tooltip({delay: 50});
+	/*$('.tooltipped').tooltip({delay: 50});*/
 
 	/**************************************************************************
 		WOW INIT
@@ -78,47 +78,50 @@ $(document).ready(function() {
 
 
 	/**************************************************************************
-	   Projects
-	**************************************************************************/
-	$('#portfolio-item').mixItUp();
+       Projects
+    **************************************************************************/
+    $('#portfolio-item').mixItUp();
+    
+    $('.sa-view-project-detail').on('click', function(event) {
+        event.preventDefault();
+        var toLoad = $(this).attr('data-action');
+        var href          = $(this).attr('href') + ' ' + $(this).attr('data-action'),
+            dataShow      = $('#project-gallery-view'),
+            dataShowMeta  = $('#project-gallery-view meta'),
+            dataHide      = $('#portfolio-item'),
+            preLoader     = $('#loader'),
+            backBtn       = $('#back-button');
 
-	$('.sa-view-project-detail').on('click', function(event) {
-		event.preventDefault();
-		var href          = $(this).attr('href') + ' ' + $(this).attr('data-action'),
-			dataShow      = $('#project-gallery-view'),
-			dataShowMeta  = $('#project-gallery-view meta'),
-			dataHide      = $('#portfolio-item'),
-			backBtn       = $('#back-button');
+        dataHide.animate( { 'marginLeft':'-120%' }, { duration: 400, queue: false } );
+        dataHide.fadeOut(400);
+        setTimeout( function() { preLoader.show(); }, 400);
+        setTimeout( function() {
+            $(toLoad).addClass('actiive').fadeIn(600);
+            preLoader.hide();
+            dataShow.fadeIn(600);
+            backBtn.fadeIn(600);
+        },800);
+    });
 
-		dataHide.animate( { 'marginLeft':'-120%' }, { duration: 400, queue: false } );
-		filterBtn.animate( { 'marginLeft':'-120%' }, { duration: 400, queue: false } );
-		dataHide.fadeOut(400);
-		setTimeout( function() {
-			dataShow.load( href, function() {
-				dataShowMeta.remove();
-				dataShow.fadeIn(600);
-				backBtn.fadeIn(600);
-			});
-		},800);
-	});
+    $('#back-button').on('click', function(event) {
+        event.preventDefault();
+        var dataShow    = $('#portfolio-item'),
+            dataHide    = $('#project-gallery-view');
 
-	$('#back-button').on('click', function(event) {
-		event.preventDefault();
-		var dataShow    = $('#portfolio-item'),
-			dataHide    = $('#project-gallery-view');
+        $("[data-animate]").each( function() {
+            $(this).addClass($(this).attr('data-animate'));
+        });
 
-		$("[data-animate]").each( function() {
-			$(this).addClass($(this).attr('data-animate'));
-		});
-
-		dataHide.fadeOut(400);
-		$(this).fadeOut(400);
-		setTimeout(function(){
-			dataShow.animate( { 'marginLeft': '0' }, { duration: 400, queue: false } );
-			dataShow.fadeIn(400);
-		},400);
-		setTimeout(function(){
-			dataShow.find('.fadeInRight, .fadeInLeft, .fadeInUp, .fadeInDown').removeClass('fadeInRight').removeClass('fadeInLeft').removeClass('fadeInUp').removeClass('fadeInDown');
-		},1500);
-	});
+        $('.actiive').fadeOut(600).removeClass('actiive');
+        dataHide.fadeOut(400);
+        $(this).fadeOut(400);
+        setTimeout(function(){
+            dataShow.animate( { 'marginLeft': '0' }, { duration: 400, queue: false } );
+            dataShow.fadeIn(400);
+        },400);
+        setTimeout(function(){
+            dataShow.find('.fadeInRight, .fadeInLeft, .fadeInUp, .fadeInDown').removeClass('fadeInRight').removeClass('fadeInLeft').removeClass('fadeInUp').removeClass('fadeInDown');
+        },1500);
+    });
 });
+

@@ -92,7 +92,7 @@
 		}
 
 		public function add($properties) {
-			$query = $this->_queryBuilder->insert("degree", array('title' => $properties["title"], 'description' => $properties["description"], 'school' => $properties["school"], 'period' => $properties["period"], ))->getQuery();
+			$query = $this->_queryBuilder->insert("degree", array('title' => $properties["title"], 'description' => $properties["description"], 'school' => $properties["school"], 'period' => $properties["period"], 'url' => $properties["url"], ))->getQuery();
 			try {
 				return $this->_pdo->Query($query);
 			}
@@ -103,7 +103,7 @@
 		}
 
 		public function update($id, $properties) {
-			$query = $this->_queryBuilder->update("degree", array('title' => $properties["title"], 'description' => $properties["description"], 'school' => $properties["school"], 'period' => $properties["period"], ))->where(array(array("link" => "", "left" => "id", "operator" => "=", "right" => $id )))->getQuery();
+			$query = $this->_queryBuilder->update("degree", array('title' => $properties["title"], 'description' => $properties["description"], 'school' => $properties["school"], 'period' => $properties["period"], 'url' => $properties["url"], ))->where(array(array("link" => "", "left" => "id", "operator" => "=", "right" => $id )))->getQuery();
 			try {
 				return $this->_pdo->Query($query);
 			}

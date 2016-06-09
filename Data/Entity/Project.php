@@ -15,11 +15,12 @@
 		private $_link;
 		private $_image;
 		private $_dCrea;
+		private $_keywords;
 		private $_queryBuilder;
 
-		public function __construct($id = "", $title = "", $description = "", $link = "", $image = "", $dCrea = ""){
+		public function __construct($id = "", $title = "", $description = "", $link = "", $image = "", $dCrea = "", $keywords = ""){
 			$this->_queryBuilder = new cores\QueryBuilder(true);
-			$this->fillObject(array("id" => $id, "title" => $title, "description" => $description, "link" => $link, "image" => $image, "dCrea" => $dCrea));
+			$this->fillObject(array("id" => $id, "title" => $title, "description" => $description, "link" => $link, "image" => $image, "dCrea" => $dCrea, "keywords" => $keywords));
 		}
 
 		/***********
@@ -43,6 +44,9 @@
 		public function getDCrea() {
 			return $this->_dCrea;
 		}
+		public function getKeywords() {
+			return $this->_keywords;
+		}
 		/*******
 		 * END *
 		 *******/
@@ -60,5 +64,7 @@
 				$this->_image = $properties["image"];
 			if(!empty($properties["dCrea"]))
 				$this->_dCrea = $properties["dCrea"];
+			if(!empty($properties["keywords"]))
+				$this->_keywords = $properties["keywords"];
 		}
 	}

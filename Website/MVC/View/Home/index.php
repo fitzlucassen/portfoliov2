@@ -200,7 +200,7 @@
 							foreach ($this->Model->_companies as $company) {
 						?>
 						<div class="custom-content-wrapper wow fadeIn a2 animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-							<h3><?php echo $company->getPoste(); ?> <span>@<?php echo $company->getTitle(); ?></span></h3>
+							<h3><?php echo $company->getPoste(); ?> <span><a href="<?php echo $company->getUrl(); ?>" target="_blank" style="color: #767270;">@<?php echo $company->getTitle(); ?></a></span></h3>
 							<span><?php echo $company->getPeriod(); ?></span>
 							<p><?php echo $company->getDescription(); ?></p>
 						</div>
@@ -225,7 +225,7 @@
 							foreach ($this->Model->_studies as $degree) {
 						?>
 						<div class="custom-content-wrapper wow fadeIn a2 animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-							<h3><?php echo $degree->getTitle(); ?> <span>@<?php echo $degree->getSchool(); ?></span></h3>
+							<h3><?php echo $degree->getTitle(); ?> <span><a href="<?php echo $degree->getUrl(); ?>" target="_blank" style="color: #767270;">@<?php echo $degree->getSchool(); ?></a></span></h3>
 							<span><?php echo $degree->getPeriod(); ?></span>
 							<p><?php echo $degree->getDescription(); ?></p>
 						</div>
@@ -246,8 +246,9 @@
 					<div class="interests col s12 m12 l10 wow fadeIn animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
 						<h2>Centres d'Intérêt </h2>
 						<ul> <!-- interetsr icon start -->
-							<li><i class="fa fa-plane tooltipped" data-position="top" data-delay="50" style="display: inline-block; width:40px;vertical-align: middle;"></i>&nbsp;&nbsp;Voyages (Islande, Australie, États-Unis...etc.)</li>
-							<li><i class="fa fa-headphones tooltipped" data-position="top" data-delay="50" style="display: inline-block; width:40px;vertical-align: middle;"></i>&nbsp;&nbsp;Compositeur et joueur de guitare passionné</li>
+							<li><i class="fa fa-plane" data-position="top" data-delay="50" style="display: inline-block; width:40px;vertical-align: middle;"></i>&nbsp;&nbsp;Voyages (Islande, Australie, États-Unis...etc.)</li>
+							<li><i class="fa fa-headphones" data-position="top" data-delay="50" style="display: inline-block; width:40px;vertical-align: middle;"></i>&nbsp;&nbsp;Compositeur et joueur de guitare passionné</li>
+							<li><i class="fa fa-film" data-position="top" data-delay="50" style="display: inline-block; width:40px;vertical-align: middle;"></i>&nbsp;&nbsp;Cinéphile invétéré</li>
 						</ul> <!-- interetsr icon end -->
 					</div>
 				</div>
@@ -259,6 +260,9 @@
 		<section class="section" style="padding-left: 0px !important;">
 			<div class="full-portfolio">
 				<div class="wow fadeIn a1 animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+					<div id="loader" style="display: none;">
+                        <div class="loader-icon"></div>
+                    </div>
 					<div class="screenshots" id="portfolio-item">
 						<div class="row">
 							<ul class="grid">
@@ -266,14 +270,14 @@
 									$cpt = 1;
 									foreach ($this->Model->_projects as $project) {
 								?>
-								<li class="col m3 s1 2 mix category-1" style="display: inline-block;">
-									<a href="<?php echo $project->getTitle(); ?>.html" class="sa-view-project-detail" data-action="#project-<?php echo $cpt; ?>">
+								<li class="col m3 2 mix category-1" style="display: inline-block;">
+									<a href="portfolio-full.html" class="sa-view-project-detail" data-action="#project-<?php echo $cpt; ?>">
 										<figure class="more">
 											<img src="<?php echo __image_directory__ . '/' . $project->getImage(); ?>" alt="Screenshot <?php echo $cpt; ?>" class="">
 											<figcaption>
 												<div class="caption-content">
 													<div class="single_image">
-														<?php echo $project->getTitle(); ?></h2>
+														<h2><?php echo $project->getTitle(); ?></h2>
 														<p><?php echo $project->getDescription(); ?></p>
 													</div>
 												</div>
@@ -290,9 +294,35 @@
 					</div>
 
 					<!-- PROJECT DETAILS WILL BE LOADED HERE -->
-					<div class="sa-project-gallery-view" id="project-gallery-view"></div>
-					<div class="back-btn col s12">
-						<a id="back-button" class="btn btn-info waves-effect" href="#"><i class="fa fa-long-arrow-left"></i> Go Back </a>
+					<div class="sa-project-gallery-view" id="project-gallery-view" style="display: none;">
+						<?php
+							$cpt = 1;
+							foreach ($this->Model->_projects as $project) {
+						?>
+						<div class="single-project col s12 m6 l12 z-depth-1" id="project-<?php echo $cpt; ?>" style="display: none;">
+							<div class="row">
+								<div class="col s12 full-project">
+									<h3 class="dark-text full-project-title"><?php echo $project->getTitle(); ?></h3>
+									<div class="project-description">
+										<p><?php echo $project->getDescription(); ?></p>
+									</div>
+									<div class="project-information">
+										<ul>
+											<li><b class="dark-text">Date: </b> <?php echo $project->getDcrea(); ?></li>
+											<li><b class="dark-text">Keywords: </b> <?php echo $project->getKeywords(); ?></li>
+											<li style="text-align:center;margin-top:20px;"><span class="dark-text"></span><a href="<?php echo $project->getLink(); ?>" target="_blank">Voir le site</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<?php
+								$cpt++;
+							}
+						?>
+					</div>
+					<div class="back-btn col s12">  
+						<a id="back-button" class="btn btn-info waves-effect" href="#" style="display: none;"><i class="fa fa-long-arrow-left"></i> Retour </a>
 					</div>
 				</div>
 			</div>

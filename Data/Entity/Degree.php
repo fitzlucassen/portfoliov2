@@ -14,11 +14,12 @@
 		private $_description;
 		private $_school;
 		private $_period;
+		private $_url;
 		private $_queryBuilder;
 
-		public function __construct($id = "", $title = "", $description = "", $school = "", $period = ""){
+		public function __construct($id = "", $title = "", $description = "", $school = "", $period = "", $url = ""){
 			$this->_queryBuilder = new cores\QueryBuilder(true);
-			$this->fillObject(array("id" => $id, "title" => $title, "description" => $description, "school" => $school, "period" => $period));
+			$this->fillObject(array("id" => $id, "title" => $title, "description" => $description, "school" => $school, "period" => $period, "url" => $url));
 		}
 
 		/***********
@@ -39,6 +40,9 @@
 		public function getPeriod() {
 			return $this->_period;
 		}
+		public function getUrl() {
+			return $this->_url;
+		}
 		/*******
 		 * END *
 		 *******/
@@ -54,5 +58,7 @@
 				$this->_school = $properties["school"];
 			if(!empty($properties["period"]))
 				$this->_period = $properties["period"];
+			if(!empty($properties["url"]))
+				$this->_url = $properties["url"];
 		}
 	}

@@ -92,7 +92,7 @@
 		}
 
 		public function add($properties) {
-			$query = $this->_queryBuilder->insert("project", array('title' => $properties["title"], 'description' => $properties["description"], 'link' => $properties["link"], 'image' => $properties["image"], 'dCrea' => $properties["dCrea"], ))->getQuery();
+			$query = $this->_queryBuilder->insert("project", array('title' => $properties["title"], 'description' => $properties["description"], 'link' => $properties["link"], 'image' => $properties["image"], 'dCrea' => $properties["dCrea"], 'keywords' => $properties["keywords"], ))->getQuery();
 			try {
 				return $this->_pdo->Query($query);
 			}
@@ -103,7 +103,7 @@
 		}
 
 		public function update($id, $properties) {
-			$query = $this->_queryBuilder->update("project", array('title' => $properties["title"], 'description' => $properties["description"], 'link' => $properties["link"], 'image' => $properties["image"], 'dCrea' => $properties["dCrea"], ))->where(array(array("link" => "", "left" => "id", "operator" => "=", "right" => $id )))->getQuery();
+			$query = $this->_queryBuilder->update("project", array('title' => $properties["title"], 'description' => $properties["description"], 'link' => $properties["link"], 'image' => $properties["image"], 'dCrea' => $properties["dCrea"], 'keywords' => $properties["keywords"], ))->where(array(array("link" => "", "left" => "id", "operator" => "=", "right" => $id )))->getQuery();
 			try {
 				return $this->_pdo->Query($query);
 			}
