@@ -40,7 +40,7 @@
 						</div>
 						<div class="col m12 s12 l9 info wow fadeIn a1 animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;"> <!-- text -->
 							<div class="section-item-details">
-								<p>Développeur web depuis 3ans, je me passionne pour les nouvelles technologies du web. Auditeur de plusieurs Meetup et acteur dans quelques Hackathon, je suis spécialisé dans la conception de site, la veille technologique et le référencement.</p>
+								<p>Développeur web depuis 5ans, je me passionne pour les nouvelles technologies du web. Auditeur de plusieurs Meetup et acteur dans quelques Hackathon, je suis spécialisé dans la conception de site, la veille technologique et le référencement.</p>
 							</div>
 						</div>
 					</div>
@@ -103,7 +103,7 @@
 						<!-- Links -->
 						<div class="col m12 l9 s12 info wow fadeIn a4 animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
 							<p class="website">
-								<a href="http://www.thibaultdulon.com" target="_blank">Portfolio</a>
+								<a href="https://www.linkedin.com/in/thibaultdulon" target="_blank">Linkedin</a>
 							</p>
 							<p class="website">
 								<a href="https://github.com/fitzlucassen" target="_blank">Github</a>
