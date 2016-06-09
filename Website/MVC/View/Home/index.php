@@ -328,6 +328,33 @@
 			</div>
 		</section>
 	</div>
+
+	<!-- row -->
+	<div class="row">
+		<section class="section" style="padding-left: 0 !important;">
+			<div class="section-wrapper z-depth-1" style="background-color: #5da4d9;">
+				<div class="section-icon col s12 m12 l2" style="color: #fff">
+					<i class="fa fa-star"></i>
+				</div>
+				<div class="custom-content col s12 m12 l10 wow fadeIn a1 animated skill-line" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+					<h2 style="color: #fff">Autres compétences</h2>
+
+					<?php
+						foreach ($this->Model->_skills as $skill) {
+							if($skill->getCategory() == 'Other'){
+					?>
+					<span style="color: #fff"><?php echo $skill->getTitle(); ?></span>
+					<div class="progress" style="width: 90%;">
+						<div class="determinate"><?php echo $skill->getMark(); ?>%<i class="fa fa-circle" style="color: #fff"></i></div>
+					</div>
+					<?php
+							}
+						}
+					?>
+				</div>
+			</div>
+		</section>
+	</div>
 	<!-- ========================================
 	Contact
 	==========================================-->

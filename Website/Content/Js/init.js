@@ -9,7 +9,7 @@ $(document).ready(function() {
 	  var width = $(this).text();
 	  $(this).css("width", width)
 		.empty()
-		.append('<i class="fa fa-circle"></i>');
+		.append('<i class="fa fa-circle" style="color: #fff"></i>');
 	});
 
 

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Jeu 26 Mai 2016 à 01:04
+-- Généré le :  Ven 10 Juin 2016 à 00:34
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -42,8 +42,8 @@ CREATE TABLE IF NOT EXISTS `company` (
 --
 
 INSERT INTO `company` (`id`, `title`, `description`, `period`, `image`, `url`, `poste`) VALUES
-(1, 'Betclic Everest Group', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\r\n									labore et dolore magna aliqua.', 'Nov 2015 - Maintenant', 'betclic.png', 'https://www.betclic.fr/', 'Ingénieur Concépteur Développeur'),
-(2, '1000mercis', '&bull;&nbsp;&nbsp;Réalisation d''un site B2C de liste de naissance en .NET MVC3/JQuery/Razor HTML/Entiity Framework/Solrnet<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;Implémentation de l''API de paiement MERCANET et réalisation d''un tunnel d''achat en Front-Office. Réalisation d''un Back-Office de gestion de la comptabilité et de gestion automatique des remises bancaire.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;Développement d''un catalogue de produits en Front-Office, Implémentation et utilisation de l''API Solrnet afin d''utiliser le moteur d''indexation Solr, développement d''un Back-Office de modération et de gestion des produits du catalogue.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;Réflexion, analyse et développement d''une structure de site modulable et réutilisable à l''avenir, notion d''AGILE, de couche d''abstraction (layer)...etc.<br/><br/>\r\n\r\n\r\n&bull;&nbsp;&nbsp;Maintenance de site B2C déjà existant en ASP.NET/Javascript', 'Sept 2012 - Jui 2015', 'numberly.png', 'http://www.1000mercis.com/home.html', 'Développeur Web'),
+(1, 'Betclic Everest Group', '&bull;&nbsp;&nbsp;Réflexion et développement d''une solution de gestion de l''offre sportive multi-provider (réception, traitement, enregistrement). Architecture oignon, unit of work pattern, SOLID pattern, DRY pattern...Etc.', 'Nov 2015 - Maintenant', 'betclic.png', 'https://www.betclic.fr/', 'Ingénieur Concépteur Développeur'),
+(2, '1000mercis', '&bull;&nbsp;&nbsp;Réalisation d''un site B2C de liste de naissance en .NET MVC3/JQuery/Razor HTML/Entiity Framework/Solrnet<br/>\n&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;Implémentation de l''API de paiement MERCANET et réalisation d''un tunnel d''achat en Front-Office. Réalisation d''un Back-Office de gestion de la comptabilité et de gestion automatique des remises bancaire.<br/>\n&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;Développement d''un catalogue de produits en Front-Office, Implémentation et utilisation de l''API Solrnet afin d''utiliser le moteur d''indexation Solr, développement d''un Back-Office de modération et de gestion des produits du catalogue.<br/>\n&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;Réflexion, analyse et développement d''une structure de site modulable et réutilisable à l''avenir, notion d''AGILE, de couche d''abstraction (layer)...etc.<br/><br/>\n\n\n&bull;&nbsp;&nbsp;Maintenance de site B2C déjà existant en ASP.NET/Javascript', 'Sept 2012 - Jui 2015', 'numberly.png', 'http://www.1000mercis.com/home.html', 'Développeur Web'),
 (3, 'Advisto', '&bull;&nbsp;&nbsp;Développement de différents modules PHP pour le CMS e-commerce PEEL Shopping<br/>\r\n&bull;&nbsp;&nbsp;Maintenance du CMS e-commerce PEEL Shopping et développement d''une nouvelle version<br/>\r\n&bull;&nbsp;&nbsp;Intégration de sites clients en HTML/CSS/jQuery<br/>\r\n&bull;&nbsp;&nbsp;Utilisation d''outils de bug tracking (Mantis) et de versioning (SVN)', 'Avr 2012 - Ju 2012', 'advisto.png', 'https://www.advisto.fr/', 'Développeur Web');
 
 -- --------------------------------------------------------
@@ -58,6 +58,7 @@ CREATE TABLE IF NOT EXISTS `degree` (
   `description` text NOT NULL,
   `school` varchar(255) NOT NULL,
   `period` varchar(255) NOT NULL,
+  `url` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
@@ -65,10 +66,10 @@ CREATE TABLE IF NOT EXISTS `degree` (
 -- Contenu de la table `degree`
 --
 
-INSERT INTO `degree` (`id`, `title`, `description`, `school`, `period`) VALUES
-(1, 'Master Développement Web & E-business', 'SEO, SEA, REST, NodeJS, .NET MVC, NoSQL, BigData...etc.<br/>Major de promotion.', 'ESGI', 'Sept 2013 - Jui 2015'),
-(2, 'Licence Développement Web et E-business', 'SEO, Web Marketing, UML, Algorithmique, PHP5, Conception de CMS...etc.', 'ESGI', 'Sept 2012 - Jui 2013'),
-(3, 'DUT Informatique', 'C, C++, Java, Développement 3D, Algorithmique...etc.<br/>8ème de promotion.', 'IUT d''Orsay', 'Sept 2010 - Jui 2012');
+INSERT INTO `degree` (`id`, `title`, `description`, `school`, `period`, `url`) VALUES
+(1, 'Master Développement Web & E-business', 'SEO, SEA, REST, NodeJS, .NET MVC, NoSQL, BigData...etc.<br/>Major de promotion.', 'ESGI', 'Sept 2013 - Jui 2015', 'http://www.esgi.fr/ecole-informatique/programmes/ecole-web.html'),
+(2, 'Licence Développement Web et E-business', 'SEO, Web Marketing, UML, Algorithmique, PHP5, Conception de CMS...etc.', 'ESGI', 'Sept 2012 - Jui 2013', 'http://www.esgi.fr/ecole-informatique/programmes/ecole-web.html'),
+(3, 'DUT Informatique', 'C, C++, Java, Développement 3D, Algorithmique...etc.<br/>8ème de promotion.', 'IUT d''Orsay', 'Sept 2010 - Jui 2012', 'http://www.iut-orsay.u-psud.fr/fr/specialites/informatique.html');
 
 -- --------------------------------------------------------
 
@@ -125,28 +126,29 @@ CREATE TABLE IF NOT EXISTS `project` (
   `description` text NOT NULL,
   `link` varchar(255) NOT NULL,
   `image` varchar(255) NOT NULL,
-  `dCrea` date NOT NULL,
+  `dCrea` varchar(255) NOT NULL,
+  `keywords` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
 
 --
 -- Contenu de la table `project`
 --
 
-INSERT INTO `project` (`id`, `title`, `description`, `link`, `image`, `dCrea`) VALUES
-(1, 'Eruko', 'Outil permettant à chacun de contrôler son e-réputation', 'http://www.eruko.com', 'eruko.jpg', '2015-06-10'),
-(2, 'Mets Tendances', 'Site vitrine d''un traiteur de la région Île-de-France', 'http://www.mets-tendances.com', 'metstendances.jpg', '2015-04-02'),
-(3, 'Road Trip Australien', 'Carte interactive retraçant mon road-trip en Australie', 'http://australie.thibaultdulon.com', 'australie.jpg', '2015-09-27'),
-(4, 'Room25', 'Jeu de plateau coopératif Room25 adapté en format web', 'http://room25.thibaultdulon.com', 'room25.jpg', '2014-10-01'),
-(5, 'FLFramework', 'Développement de mon propre framework PHP5. Utilisé pour tous mes projets. Fiable, simple et réunissant tous les helpers communs', 'https://github.com/fitzlucassen/FLFramework', 'flframework.jpg', '2014-09-01'),
-(6, 'MilleMercisMariage', 'Site de liste de mariage\n', 'http://www.millemercismariage.com', 'millemercismariage.jpg', '2014-06-01'),
-(7, 'Dis Merci à la dame', 'Site de liste de naissance ou d''anniversaire de bébé', 'http://www.dismerci.com', 'dismerci.jpg', '2013-05-01'),
-(8, 'Ocito', 'Développement du site vitrine d''Ocito, entreprise dans le secteur du mobile', 'http://www.ocito.com/', 'ocito.jpg', '2014-02-01'),
-(9, 'Matiro', 'Développement du site vitrine de Matir, dans le secteur du display RTB', 'http://www.matiro.com/', 'matiro.jpg', '2014-02-01'),
-(10, 'Webtuts', 'Développement d''un site/blog de tutoriaux sur les technologies du web', 'webtuts.thibaultdulon.com', 'webtuts.jpg', '2014-11-06'),
-(11, 'Joulupukin', 'Développement d''une webapp visant à interagir entre des enfants et l''API de cdiscount (hackathon)\n', 'http://hack-cdiscount.thibaultdulon.com/', 'joulupukin.jpg', '2014-11-23'),
-(12, 'BornWorm', 'Jeu sous forme de webapp permettant de jouer avec la ville de naissance de ses amis Facebook\n\n', 'http://bornworm.thibaultdulon.com', 'bornworm.jpg', '2014-01-01'),
-(13, 'PassAnger', 'Développement du site vitrine de mon ancien groupe de musique', 'http://passanger.thibaultdulon.com', 'passanger.jpg', '2013-01-01');
+INSERT INTO `project` (`id`, `title`, `description`, `link`, `image`, `dCrea`, `keywords`) VALUES
+(1, 'Eruko', 'Outil permettant à chacun de contrôler son e-réputation', 'https://www.eruko.com', 'eruko.jpg', 'Juillet 2016', '.NET MVC6, Architecture oignon, Entity Framework, LINQ, Sass, Javascript, HTML5'),
+(2, 'Mets Tendances', 'Site vitrine d''un traiteur de la région Île-de-France', 'http://www.mets-tendances.com', 'metstendances.jpg', 'Avril 2015', 'PHP5, FLFramework, Sass, Javascript, HTML5'),
+(3, 'Road Trip Australien', 'Carte interactive retraçant mon road-trip en Australie', 'http://australie.thibaultdulon.com', 'australie.jpg', 'Septembre 2015', 'PHP5, FLFramework, Sass, Javascript, HTML5, GMaps API'),
+(4, 'Room25', 'Jeu de plateau coopératif Room25 adapté en format web', 'http://room25.thibaultdulon.com', 'room25.jpg', 'Novembre 2014', 'NodeJS, Socket.IO, AngularJS, HTML5, CSS3'),
+(5, 'FLFramework', 'Développement de mon propre framework PHP5. Utilisé pour tous mes projets.\n', 'https://github.com/fitzlucassen/FLFramework', 'flframework.jpg', 'Septempre 2014', 'PHP5, Sass, HTML5, CSS3, Javascript'),
+(6, 'MilleMercisMariage', 'Site de liste de mariage\n', 'http://www.millemercismariage.com', 'millemercismariage.jpg', 'Juin 2014', 'ASP.NET, HTML, CSS, Javascript'),
+(7, 'Dis Merci à la dame', 'Site de liste de naissance ou d''anniversaire de bébé', 'http://www.dismerci.com', 'dismerci.jpg', 'Juin 2013', '.NET MVC4, Entity Framework, LINQ, CSS3, Javascript, HTML5'),
+(8, 'Ocito', 'Développement du site vitrine d''Ocito, entreprise dans le secteur du mobile', 'http://www.ocito.com/', 'ocito.jpg', 'Février 2014', 'Wordpress, PHP, CSS, HTML'),
+(9, 'Matiro', 'Développement du site vitrine de Matir, dans le secteur du display RTB', 'http://www.matiro.com/', 'matiro.jpg', 'Février 2014', 'Wordpress, PHP, CSS, HTML'),
+(10, 'Webtuts', 'Développement d''un site/blog de tutoriaux sur les technologies du web', 'http://webtuts.thibaultdulon.com', 'webtuts.jpg', 'Mai 2014', 'PHP5, HTML5, CSS3, Javascript'),
+(11, 'Joulupukin', 'Développement d''une webapp visant à interagir entre des enfants et l''API de cdiscount (hackathon)\n', 'http://hack-cdiscount.thibaultdulon.com/', 'joulupukin.jpg', 'Décembre 2014', 'PHP5, FLFramework, Sass, Javascript, HTML5, CDiscount API'),
+(12, 'BornWorm', 'Jeu sous forme de webapp permettant de jouer avec la ville de naissance de ses amis Facebook\n\n', 'http://bornworm.thibaultdulon.com', 'bornworm.jpg', 'Janvier 2014', 'HTML5, CSS3, Javascript, Facebook API, GMaps API'),
+(13, 'PassAnger', 'Développement du site vitrine de mon ancien groupe de musique', 'http://passanger.thibaultdulon.com', 'passanger.jpg', 'Janvier 2013', 'PHP5, FLFramework, Sass, Javascript, HTML5');
 
 -- --------------------------------------------------------
 
@@ -208,7 +210,7 @@ CREATE TABLE IF NOT EXISTS `skills` (
   `category` varchar(255) NOT NULL DEFAULT 'Front-End',
   `dCrea` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=21 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=27 ;
 
 --
 -- Contenu de la table `skills`
@@ -228,7 +230,11 @@ INSERT INTO `skills` (`id`, `title`, `mark`, `category`, `dCrea`) VALUES
 (17, 'Socket.IO', 95, 'Framework/API', '2014-05-30'),
 (18, 'Yeoman', 50, 'Framework/API', '2014-06-18'),
 (19, 'Grunt/Bower', 60, 'Framework/API', '2014-06-18'),
-(20, 'AngularJS', 60, 'Framework/API', '2014-06-18');
+(20, 'AngularJS', 60, 'Framework/API', '2014-06-18'),
+(21, 'Anglais Professionnel', 95, 'Other', '2016-06-10'),
+(22, 'Méthodologie AGILE (Scrum / Kanban)', 90, 'Other', '2016-06-10'),
+(24, 'Windows Server 2012', 70, 'Other', '2016-06-10'),
+(26, 'Git / TFS', 80, 'Other', '0000-00-00');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

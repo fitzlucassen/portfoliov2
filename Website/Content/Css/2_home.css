@@ -302,30 +302,30 @@ body {
 .sidebar .address-details h4 span {
   font-size: 10pt;
 }
-.sidebar .skill-line {
+.skill-line {
   padding-right: 30px;
   padding-left: 0px;
 }
-.sidebar .skill-line .progress {
+.skill-line .progress {
   background-color: #4783c2;
   height: 2px;
   overflow: visible;
 }
-.sidebar .skill-line .determinate {
+.skill-line .determinate {
   background-color: #ffffff;
 }
-.sidebar .skill-line .determinate .fa {
+.skill-line .determinate .fa {
   font-size: 12px;
   position: absolute;
   top: -5px;
   right: 0px;
   margin-left: 50%;
 }
-.sidebar .skill-line h3 {
+.skill-line h3 {
   margin-top: 0px;
   margin-bottom: 20px;
 }
-.sidebar .skill-line span {
+.skill-line span {
   opacity: initial;
 }
 /* style for
