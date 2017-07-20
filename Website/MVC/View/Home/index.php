@@ -45,55 +45,6 @@
 						</div>
 					</div>
 				</div>
-				<!-- MOBILE NUMBER -->
-				<div class="col l12 m12 s12	mobile sidebar-item">
-					<div class="row" style="margin-bottom: 0;">
-						<div class="col m12 s12 l3 icon">
-							<i class="fa fa-phone"></i> <!-- icon -->
-						</div>
-						<div class="col m12 s12 l9 info wow fadeIn a2 animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-							<div class="section-item-details">
-								<div class="personal">
-									<h4><a href="tel:+33607080910">(+33) 06-07-08-09-10</a></h4> <!-- Number -->
-									<span>mobile</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--	EMAIL -->
-				<div class="col l12 m12 s12	email sidebar-item ">
-					<div class="row" style="margin-bottom: 0;">
-						<div class="col m12 s12 l3 icon">
-							<i class="fa fa-envelope"></i> <!-- icon -->
-						</div>
-						<div class="col m12 s12 l9 info wow fadeIn a3 animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
-							<div class="section-item-details">
-								<div class="personal">
-									<h4><a href="mailto:blablabla.dulon@gmail.com">blablabla@gmail.com</a></h4> <!-- Email -->
-									<span>personnel</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- ADDRESS	-->
-				<div class="col l12 m12 s12	address sidebar-item ">
-					<div class="row" style="margin-bottom: 0;">
-						<div class="col l3 m12	s12 icon">
-							<i class="fa fa-home"></i> <!-- icon -->
-						</div>
-						<div class="col m12 s12 l9 info wow fadeIn a4 animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">
-							<div class="section-item-details">
-								<div class="address-details"> <!-- address	-->
-									<h4>90 rue de l'alibaba<br>
-									75005 Paris
-									</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 
 				<div class="col l12 m12 s12	skills sidebar-item">
 					<div class="row" style="margin-bottom: 0;">
@@ -246,7 +197,7 @@
 					<div class="interests col s12 m12 l10 wow fadeIn animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
 						<h2>Centres d'Intérêt </h2>
 						<ul> <!-- interetsr icon start -->
-							<li><i class="fa fa-plane" data-position="top" data-delay="50" style="display: inline-block; width:40px;vertical-align: middle;"></i>&nbsp;&nbsp;Voyages (Islande, Australie, États-Unis...etc.)</li>
+							<li><i class="fa fa-plane" data-position="top" data-delay="50" style="display: inline-block; width:40px;vertical-align: middle;"></i>&nbsp;&nbsp;Voyages <i>(Islande, Australie, Croatie, Pérou, États-Unis...etc.)</i></li>
 							<li><i class="fa fa-headphones" data-position="top" data-delay="50" style="display: inline-block; width:40px;vertical-align: middle;"></i>&nbsp;&nbsp;Compositeur et joueur de guitare passionné</li>
 							<li><i class="fa fa-film" data-position="top" data-delay="50" style="display: inline-block; width:40px;vertical-align: middle;"></i>&nbsp;&nbsp;Cinéphile invétéré</li>
 						</ul> <!-- interetsr icon end -->
@@ -270,7 +221,7 @@
 									$cpt = 1;
 									foreach ($this->Model->_projects as $project) {
 								?>
-								<li class="col m3 2 mix category-1" style="display: inline-block;">
+								<li class="col <?php echo $cpt <= 2 ? 'm6' : 'm3'; ?> 2 mix category-1" style="display: inline-block;">
 									<a href="portfolio-full.html" class="sa-view-project-detail" data-action="#project-<?php echo $cpt; ?>">
 										<figure class="more">
 											<img src="<?php echo __image_directory__ . '/' . $project->getImage(); ?>" alt="Screenshot <?php echo $cpt; ?>" class="">
@@ -287,6 +238,8 @@
 								</li>
 								<?php
 										$cpt++;
+										if($cpt == 3)
+											echo '</ul><br style="clear:both;"/><br/><ul class="grid">';
 									}
 								?>
 							</ul>
