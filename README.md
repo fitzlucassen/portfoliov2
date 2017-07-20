@@ -6,4 +6,4 @@ La nouvelle version de mon portfolio actuellement en ligne (http://www.thibaultd
 Stack
 -----
 
-FLFramework (mon framework PHP), PHP5, HTML5, Sass, Javascript
+FLFramework (mon framework PHP), PHP5, HTML5, Sass, Javascript, Materialize, MySQL
