@@ -29,7 +29,7 @@
 					==========================================-->
 					<div class="title col s12 m12 l9 right	wow fadeIn animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
 						<h2>Thibault Dulon</h2> <!-- title name -->
-						<span>Ing&eacute;nieur &amp; Concepteur Web</span>	<!-- tagline -->
+						<span style="font-size:14pt;">Architecte web</span>	<!-- tagline -->
 					</div>
 				</div>
 				<!-- sidebar info -->
@@ -40,7 +40,7 @@
 						</div>
 						<div class="col m12 s12 l9 info wow fadeIn a1 animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;"> <!-- text -->
 							<div class="section-item-details">
-								<p>Développeur web depuis 5ans, je me passionne pour les nouvelles technologies du web. Auditeur de plusieurs Meetup et acteur dans quelques Hackathon, je suis spécialisé dans la conception de site, la veille technologique et le référencement.</p>
+								<p>Développeur depuis 6 ans, je me passionne pour les nouvelles technologies du web. Auditeur de plusieurs Meetup et acteur dans quelques Hackathon, je suis spécialisé dans la conception de site, la veille technologique et le référencement.</p>
 							</div>
 						</div>
 					</div>
@@ -187,7 +187,7 @@
 				</div>
 
 				<!-- ========================================
-				Intertests
+				Interests
 				==========================================-->
 
 				<div class="section-wrapper z-depth-1">
@@ -197,8 +197,8 @@
 					<div class="interests col s12 m12 l10 wow fadeIn animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
 						<h2>Centres d'Intérêt </h2>
 						<ul> <!-- interetsr icon start -->
-							<li><i class="fa fa-plane" data-position="top" data-delay="50" style="display: inline-block; width:40px;vertical-align: middle;"></i>&nbsp;&nbsp;Voyages <i>(Islande, Australie, Croatie, Pérou, États-Unis...etc.)</i></li>
-							<li><i class="fa fa-headphones" data-position="top" data-delay="50" style="display: inline-block; width:40px;vertical-align: middle;"></i>&nbsp;&nbsp;Compositeur et joueur de guitare passionné</li>
+							<li><i class="fa fa-plane" data-position="top" data-delay="50" style="display: inline-block; width:40px;vertical-align: middle;"></i>&nbsp;&nbsp;Voyageur irrassasiable <i>(Islande, Australie, Croatie, Pérou, Bolivie, États-Unis...etc.)</i></li>
+							<li><i class="fa fa-headphones" data-position="top" data-delay="50" style="display: inline-block; width:40px;vertical-align: middle;"></i>&nbsp;&nbsp;Compositeur et musicien passionné</li>
 							<li><i class="fa fa-film" data-position="top" data-delay="50" style="display: inline-block; width:40px;vertical-align: middle;"></i>&nbsp;&nbsp;Cinéphile invétéré</li>
 						</ul> <!-- interetsr icon end -->
 					</div>
