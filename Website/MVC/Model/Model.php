@@ -1,6 +1,8 @@
 <?php
 
-    namespace fitzlucassen\FLFramework\Website\MVC\Model;
+		namespace fitzlucassen\FLFramework\Website\MVC\Model;
+		
+    use fitzlucassen\FLFramework\Data\Repository;
     
     /*
 	Class : Model
@@ -13,10 +15,12 @@
 		public $_params = array();
 		
 		public function __construct($manager, $params = array()) {
-		    if(class_exists("HeaderRepository")){
-				$Header = $manager->getStatic('Header');
-				$this->_headerInformations = $Header->getAll();
-		    }
+				$headers = Repository\HeaderRepository::getAll($manager->getConnection());
+
+				foreach ($headers as $key => $value) {
+					if($value->getLang() == "en")
+						$this->_headerInformations = $value;
+				}
 		    // Les configuration de base générale pour le site en BDD
 		    $this->_params = $params;
 		}

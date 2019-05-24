@@ -21,7 +21,7 @@
     // Put your router config here
     Core\Router::SetDefaultAction("index");
     Core\Router::SetDefaultController("home");
-    Core\Router::SetDefaultLanguage("fr");
+    Core\Router::SetDefaultLanguage("en");
     // End router config
 
     // Put your logger config here
@@ -35,7 +35,7 @@
     // End logger config
     
     // Define your webapp needs here
-    App::setIsDebugMode(false);
+    App::setIsDebugMode(true);
     App::setDatabaseNeeded(true);
     App::setUrlRewritingNeeded(true);
     // End

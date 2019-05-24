@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="fr">
     <head>
 	<?php
 	    // La page à modifier pour inclure le CSS le JS et les balises meta du layout (toutes les pages)
@@ -21,11 +21,29 @@
     <body>
 	    <?php
 			include(__partial_directory__ . "/header.php");
-
+		?>
+		
+		<div id="colorlib-page">
+			<header>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="colorlib-navbar-brand">
+								<a class="colorlib-logo <?php echo $this->Model->_action != "index" ? "black" : "";?>" href="/">T.</a>
+							</div>
+							<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+						</div>
+					</div>
+				</div>
+			</header>
+		
+		<?php
 			// Inclusion de la vue cible
 			$this->Render($this->Body);
 
 			include(__partial_directory__ . "/footer.php");
-	    ?>
+		?>
+		
+		</div>
     </body>
 </html>

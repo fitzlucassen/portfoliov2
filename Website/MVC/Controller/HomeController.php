@@ -41,14 +41,53 @@
 		    	$Model->_message = 'Votre message a bien été envoyé !';
 		    }
 
-		    $skills = Repository\SkillsRepository::getAll($this->_repositoryManager->getConnection());
-		    $Model->_companies = Repository\CompanyRepository::getAll($this->_repositoryManager->getConnection());
-		    $Model->_studies = Repository\DegreeRepository::getAll($this->_repositoryManager->getConnection());
 		    $Model->_projects = Repository\ProjectRepository::getAll($this->_repositoryManager->getConnection());
 
-		    $Model->_skillsCategories = $this->GetCategories($skills);
-	    	$Model->_skills = $skills;
-		    		    
+		    // Une action finira toujours par un $this->_view->ViewCompact contenant : 
+		    // cette fonction prend en paramètre le modèle
+		    $this->_view->ViewCompact($Model);
+		}
+
+		public function Services(){
+			// Une action commencera toujours par l'initilisation de son modèle
+		    // Cette initialisation doit obligatoirement contenir le repository manager
+		    $Model = new Model\HomeModel($this->_repositoryManager);
+
+			$Model->_action = "services";
+			
+		    // Une action finira toujours par un $this->_view->ViewCompact contenant : 
+		    // cette fonction prend en paramètre le modèle
+		    $this->_view->ViewCompact($Model);
+		}
+		
+		public function About(){
+			// Une action commencera toujours par l'initilisation de son modèle
+		    // Cette initialisation doit obligatoirement contenir le repository manager
+		    $Model = new Model\HomeModel($this->_repositoryManager);
+
+			$Model->_action = "about";
+
+			$skills = Repository\SkillsRepository::getAll($this->_repositoryManager->getConnection());
+			$Model->_skillsCategories = $this->GetCategories($skills);
+			$Model->_skills = $skills;
+			
+			$Model->_companies = Repository\CompanyRepository::getAll($this->_repositoryManager->getConnection());
+		    $Model->_studies = Repository\DegreeRepository::getAll($this->_repositoryManager->getConnection());
+
+		    // Une action finira toujours par un $this->_view->ViewCompact contenant : 
+		    // cette fonction prend en paramètre le modèle
+		    $this->_view->ViewCompact($Model);
+		}
+		
+		public function Work(){
+			// Une action commencera toujours par l'initilisation de son modèle
+		    // Cette initialisation doit obligatoirement contenir le repository manager
+		    $Model = new Model\HomeModel($this->_repositoryManager);
+
+		    $Model->_projects = Repository\ProjectRepository::getAll($this->_repositoryManager->getConnection());
+
+			$Model->_action = "work";
+
 		    // Une action finira toujours par un $this->_view->ViewCompact contenant : 
 		    // cette fonction prend en paramètre le modèle
 		    $this->_view->ViewCompact($Model);

@@ -88,7 +88,7 @@
 		    if(self::$_databaseNeeded && self::$_urlRewritingNeeded && !$this->_isInErrorPage){
 				$langInUrl = $this->_urlRewritingObject->loadRoutes($this->_page);
 		    }
-		    
+				
 		    // Si on est pas sur une page de langue spécifique, on set la langue par défaut en session
 		    if(!$langInUrl)
 				$this->_session->Write("lang", Core\Router::GetDefaultLanguage());
@@ -99,8 +99,8 @@
 		    }
 		    else {
 				$this->_url = Core\Router::GetRoute($this->_page);
-		    }
-		    
+				}
+				
 		    if(self::$_databaseNeeded && self::$_urlRewritingNeeded && !$this->_isInErrorPage){
 				$this->_urlRewritingObject->createRouteUrl();
 		    }

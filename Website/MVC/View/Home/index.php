@@ -1,318 +1,238 @@
-<title>Thibault - Développeur web</title>
+<title>Thibault - Web Developer</title>
 <?php
 	// inclure ci-dessus les balises à inclure dans la balise <head> du layout
 	$head = $this->RegisterViewHead();
 	// START CONTENT
 	// Intégrer ci-dessous la vue
-?>		
-<!-- Start Container-->
-<div class="container">
-	<!-- row -->
-	<div class="row">
-		<!-- =========================================
-		SIDEBAR
-		==========================================-->
-		<!-- Start Sidebar -->
-		<aside class="col l4 m12 s12 sidebar z-depth-1" id="sidebar">
-			<!--	Sidebar row -->
-			<div class="row">
-				<!--	top section	 -->
-				<div class="heading">
-					<!-- ====================
-					IMAGE
-					==========================-->
-					<div class="feature-img">
-						<img src="<?php echo __image_directory__; ?>/profile-img.jpg" class="responsive-img" alt="">
-					</div>
-					<!-- ========================================
-					NAME AND TAGLINE
-					==========================================-->
-					<div class="title col s12 m12 l9 right	wow fadeIn animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-						<h2>Thibault Dulon</h2> <!-- title name -->
-						<span style="font-size:14pt;">Architecte web</span>	<!-- tagline -->
-					</div>
+?>	
+
+<div id="colorlib-hero" class="js-fullheight">
+	<p class="social-media">
+		<a href="https://www.facebook.com/thibault.dulon.5" target="_blank">Facebook</a>
+		<a href="https://www.instagram.com/the_journey_quest" target="_blank">Instagram</a>
+	</p>
+	<div class="owl-carousel">
+		<div class="item">
+			<div class="hero-flex js-fullheight">
+				<div class="col-three-forth">
+					<div class="hero-img js-fullheight" style="background-image: url(/<?php echo __image_directory__; ?>/img_bg_1.jpg);background-position: left center;"></div>
 				</div>
-				<!-- sidebar info -->
-				<div class="col l12 m12 s12 sort-info sidebar-item">
-					<div class="row" style="margin-bottom: 0;">
-						<div class="col m12 s12 l3 icon"> <!-- icon -->
-							<i class="fa fa-user"></i>
-						</div>
-						<div class="col m12 s12 l9 info wow fadeIn a1 animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;"> <!-- text -->
-							<div class="section-item-details">
-								<p>Développeur depuis 6 ans, je me passionne pour les nouvelles technologies du web. Auditeur de plusieurs Meetup et acteur dans quelques Hackathon, je suis spécialisé dans la conception de site, la veille technologique et le référencement.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col l12 m12 s12	skills sidebar-item">
-					<div class="row" style="margin-bottom: 0;">
-						<div class="col m12 l3 s12 icon">
-							<i class="fa fa-sitemap"></i> <!-- icon -->
-						</div>
-						<!-- Links -->
-						<div class="col m12 l9 s12 info wow fadeIn a4 animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
-							<p class="website">
-								<a href="https://www.linkedin.com/in/thibaultdulon" target="_blank">Linkedin</a>
-							</p>
-							<p class="website">
-								<a href="https://github.com/fitzlucassen" target="_blank">Github</a>
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<!-- SKILLS -->
-				<div class="col l12 m12 s12	skills sidebar-item">
-					<div class="row">
-						<div class="col m12 l3 s12 icon">
-							<i class="fa fa-calendar-o"></i> <!-- icon -->
-						</div>
-						<!-- Skills -->
-						<div class="col m12 l9 s12 skill-line a5 wow fadeIn animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
-							<h3>Compétences Back </h3>
-
-							<?php
-								foreach ($this->Model->_skills as $skill) {
-									if($skill->getCategory() == 'Back-End'){
-							?>
-							<span><?php echo $skill->getTitle(); ?></span>
-							<div class="progress">
-								<div class="determinate"><?php echo $skill->getMark(); ?>%<i class="fa fa-circle"></i></div>
-							</div>
-							<?php
-									}
-								}
-							?>
-							<?php
-								foreach ($this->Model->_skills as $skill) {
-									if($skill->getCategory() == 'Base de données'){
-							?>
-							<span><?php echo $skill->getTitle(); ?></span>
-							<div class="progress">
-								<div class="determinate"><?php echo $skill->getMark(); ?>%<i class="fa fa-circle"></i></div>
-							</div>
-							<?php
-									}
-								}
-							?>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col m12 l3 s12 icon">
-						</div>
-						<div class="col m12 l9 s12 skill-line a5 wow fadeIn animated" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
-							<h3>Compétences Front </h3>
-
-							<?php
-								foreach ($this->Model->_skills as $skill) {
-									if($skill->getCategory() == 'Front-End'){
-							?>
-							<span><?php echo $skill->getTitle(); ?></span>
-							<div class="progress">
-								<div class="determinate"><?php echo $skill->getMark(); ?>%<i class="fa fa-circle"></i></div>
-							</div>
-							<?php
-									}
-								}
-							?>
-							<?php
-								foreach ($this->Model->_skills as $skill) {
-									if($skill->getCategory() == 'Framework/API'){
-							?>
-							<span><?php echo $skill->getTitle(); ?></span>
-							<div class="progress">
-								<div class="determinate"><?php echo $skill->getMark(); ?>%<i class="fa fa-circle"></i></div>
-							</div>
-							<?php
-									}
-								}
-							?>
-						</div>
-					</div>
-				</div>
-			</div>	 <!-- end row -->
-		</aside><!-- end sidebar -->
-
-		<section class="col s12 m12 l8 section">
-			<div class="row">
-				<!-- =========================================
-				Work experiences
-				==========================================-->
-				<div class="section-wrapper z-depth-1">
-					<div class="section-icon col s12 m12 l2">
-						<i class="fa fa-suitcase"></i>
-					</div>
-					<div class="custom-content col s12 m12 l10 wow fadeIn a1 animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-						<h2>Experiences Professionnelles</h2>
-
-						<?php
-							foreach ($this->Model->_companies as $company) {
-						?>
-						<div class="custom-content-wrapper wow fadeIn a2 animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-							<h3><?php echo $company->getPoste(); ?> <span><a href="<?php echo $company->getUrl(); ?>" target="_blank" style="color: #767270;">@<?php echo $company->getTitle(); ?></a></span></h3>
-							<span><?php echo $company->getPeriod(); ?></span>
-							<p><?php echo $company->getDescription(); ?></p>
-						</div>
-						<?php
-							}
-						?>
-					</div>
-				</div>
-
-				<!-- ========================================
-				Education
-				==========================================-->
-
-				<div class="section-wrapper z-depth-1">
-					<div class="section-icon col s12 m12 l2">
-						<i class="fa fa-graduation-cap"></i>
-					</div>
-					<div class="custom-content col s12 m12 l10 wow fadeIn a1 animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-						<h2>Formation </h2>
-
-						<?php
-							foreach ($this->Model->_studies as $degree) {
-						?>
-						<div class="custom-content-wrapper wow fadeIn a2 animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-							<h3><?php echo $degree->getTitle(); ?> <span><a href="<?php echo $degree->getUrl(); ?>" target="_blank" style="color: #767270;">@<?php echo $degree->getSchool(); ?></a></span></h3>
-							<span><?php echo $degree->getPeriod(); ?></span>
-							<p><?php echo $degree->getDescription(); ?></p>
-						</div>
-						<?php
-							}
-						?>
-					</div>
-				</div>
-
-				<!-- ========================================
-				Interests
-				==========================================-->
-
-				<div class="section-wrapper z-depth-1">
-					<div class="section-icon col s12 m12 l2">
-						<i class="fa fa-camera-retro"></i>
-					</div>
-					<div class="interests col s12 m12 l10 wow fadeIn animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-						<h2>Centres d'Intérêt </h2>
-						<ul> <!-- interetsr icon start -->
-							<li><i class="fa fa-plane" data-position="top" data-delay="50" style="display: inline-block; width:40px;vertical-align: middle;"></i>&nbsp;&nbsp;Voyageur irrassasiable <i>(Islande, Australie, Croatie, Pérou, Bolivie, États-Unis...etc.)</i></li>
-							<li><i class="fa fa-headphones" data-position="top" data-delay="50" style="display: inline-block; width:40px;vertical-align: middle;"></i>&nbsp;&nbsp;Compositeur et musicien passionné</li>
-							<li><i class="fa fa-film" data-position="top" data-delay="50" style="display: inline-block; width:40px;vertical-align: middle;"></i>&nbsp;&nbsp;Cinéphile invétéré</li>
-						</ul> <!-- interetsr icon end -->
-					</div>
-				</div>
-			</div><!-- end row -->
-		</section><!-- end section -->
-	</div> <!-- end row -->
-
-	<div class="row">
-		<section class="section" style="padding-left: 0px !important;">
-			<div class="full-portfolio">
-				<div class="wow fadeIn a1 animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-					<div id="loader" style="display: none;">
-                        <div class="loader-icon"></div>
-                    </div>
-					<div class="screenshots" id="portfolio-item">
-						<div class="row">
-							<ul class="grid">
-								<?php
-									$cpt = 1;
-									foreach ($this->Model->_projects as $project) {
-								?>
-								<li class="col <?php echo $cpt <= 2 ? 'm6' : 'm3'; ?> 2 mix category-1" style="display: inline-block;">
-									<a href="portfolio-full.html" class="sa-view-project-detail" data-action="#project-<?php echo $cpt; ?>">
-										<figure class="more">
-											<img src="<?php echo __image_directory__ . '/' . $project->getImage(); ?>" alt="Screenshot <?php echo $cpt; ?>" class="">
-											<figcaption>
-												<div class="caption-content">
-													<div class="single_image">
-														<h2><?php echo $project->getTitle(); ?></h2>
-														<p><?php echo $project->getDescription(); ?></p>
-													</div>
-												</div>
-											</figcaption>
-										</figure>
-									</a>
-								</li>
-								<?php
-										$cpt++;
-										if($cpt == 3)
-											echo '</ul><br style="clear:both;"/><br/><ul class="grid">';
-									}
-								?>
-							</ul>
-						</div>
-					</div>
-
-					<!-- PROJECT DETAILS WILL BE LOADED HERE -->
-					<div class="sa-project-gallery-view" id="project-gallery-view" style="display: none;">
-						<?php
-							$cpt = 1;
-							foreach ($this->Model->_projects as $project) {
-						?>
-						<div class="single-project col s12 m6 l12 z-depth-1" id="project-<?php echo $cpt; ?>" style="display: none;">
-							<div class="row">
-								<div class="col s12 full-project">
-									<h3 class="dark-text full-project-title"><?php echo $project->getTitle(); ?></h3>
-									<div class="project-description">
-										<p><?php echo $project->getDescription(); ?></p>
-									</div>
-									<div class="project-information">
-										<ul>
-											<li><b class="dark-text">Date: </b> <?php echo $project->getDcrea(); ?></li>
-											<li><b class="dark-text">Keywords: </b> <?php echo $project->getKeywords(); ?></li>
-											<li style="text-align:center;margin-top:20px;"><span class="dark-text"></span><a href="<?php echo $project->getLink(); ?>" target="_blank">Voir le site</a></li>
-										</ul>
-									</div>
+				<div class="col-one-forth js-fullheight">
+					<div class="display-t js-fullheight">
+						<div class="display-tc js-fullheight">
+							<div class="text-inner">
+								<div class="desc">
+									<h1>I’m Thibault, a developer from around Paris.</h1>
+									<p><a href="#contact" class="btn-view">Hire me now <i class="icon-arrow-right3"></i></a></p>
 								</div>
 							</div>
 						</div>
-						<?php
-								$cpt++;
-							}
-						?>
-					</div>
-					<div class="back-btn col s12">  
-						<a id="back-button" class="btn btn-info waves-effect" href="#" style="display: none;"><i class="fa fa-long-arrow-left"></i> Retour </a>
 					</div>
 				</div>
 			</div>
-		</section>
-	</div>
-
-	<!-- row -->
-	<div class="row">
-		<section class="section" style="padding-left: 0 !important;">
-			<div class="section-wrapper z-depth-1" style="background-color: #5da4d9;">
-				<div class="section-icon col s12 m12 l2" style="color: #fff">
-					<i class="fa fa-star"></i>
+		</div>
+		<div class="item">
+			<div class="hero-flex js-fullheight">
+				<div class="col-three-forth">
+					<div class="hero-img js-fullheight" style="background-image: url(/<?php echo __image_directory__; ?>/img_bg_2.jpg);background-position: left center;"></div>
 				</div>
-				<div class="custom-content col s12 m12 l10 wow fadeIn a1 animated skill-line" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-					<h2 style="color: #fff">Autres compétences</h2>
-
-					<?php
-						foreach ($this->Model->_skills as $skill) {
-							if($skill->getCategory() == 'Other'){
-					?>
-					<span style="color: #fff"><?php echo $skill->getTitle(); ?></span>
-					<div class="progress" style="width: 90%;">
-						<div class="determinate"><?php echo $skill->getMark(); ?>%<i class="fa fa-circle" style="color: #fff"></i></div>
+				<div class="col-one-forth js-fullheight">
+					<div class="display-t js-fullheight">
+						<div class="display-tc js-fullheight">
+							<div class="text-inner">
+								<div class="desc">
+									<h1>I'm a Web Engineer &amp; Architect based in Paris.</h1>
+									<p><a href="#contact" class="btn-view">Hire me now <i class="icon-arrow-right3"></i></a></p>
+								</div>
+							</div>
+						</div>
 					</div>
-					<?php
-							}
-						}
-					?>
 				</div>
 			</div>
-		</section>
+		</div>
 	</div>
+</div>
+<div class="colorlib-services">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+				<span>What I Do</span>
+				<h2>Development, SEO, hosting and a bit of magic</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 text-center animate-box">
+				<div class="services">
+					<span class="icon">
+						<i class="icon-briefcase"></i>
+					</span>
+					<div class="desc">
+						<h3><a href="#">Showcase website</a></h3>
+						<h4>One page website</h4>
+						<h4>Contact form</h4>
+						<h4>Showcase of your business</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 text-center animate-box">
+				<div class="services">
+					<span class="icon">
+						<i class="icon-lightbulb"></i>
+					</span>
+					<div class="desc">
+						<h3><a href="#">Complexe features</a></h3>
+						<h4>Membership management</h4>
+						<h4>Payment</h4>
+						<h4>Algorithm</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 text-center animate-box">
+				<div class="services">
+					<span class="icon">
+						<i class="icon-list"></i>
+					</span>
+					<div class="desc">
+						<h3><a href="#">SEO</a></h3>
+						<h4>Coding practice</h4>
+						<h4>Measurement tooling</h4>
+						<h4>Advices for SEO/SEM</h4>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-3 text-center animate-box">
+				<div class="services">
+					<span class="icon">
+						<i class="icon-hard-drive"></i>
+					</span>
+					<div class="desc">
+						<h3><a href="#">Hosting</a></h3>
+						<h4>Domain name reservation</h4>
+						<h4>Hosting solutions</h4>
+						<h4>Advices for more</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<p style="margin-bottom: 0;text-align: center;"><a href="/en/services.html" class="btn btn-primary">More about my services</a></p>
+		</div>
+	</div>
+</div>
+
+<div class="colorlib-case colorlib-bg-white">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+				<span>Work</span>
+				<h2>Happy spending my time to this projects</h2>
+			</div>
+		</div>
+		<div class="work-wrap">
+			<div class="row animate-box">
+				<div class="owl-carousel1">
+				<?php
+					$cpt = 1;
+					foreach ($this->Model->_projects as $project) {
+				?>
+					<div class="item">
+						<div class="col-md-6">
+							<div class="case-img" style="background-image: url(/<?php echo __image_directory__ . '/' . $project->getImage(); ?>);"></div>
+						</div>
+						<div class="col-md-6">
+							<div class="case-desc">
+								<p class="tag"><span><?php echo $project->getKeywords(); ?></span></p>
+								<h3><a href="#"><?php echo $project->getTitle(); ?></a></h3>
+								<p><?php echo $project->getDescription(); ?></p>
+								<p><a href="/en/work.html" class="btn btn-primary">See details</a></p>
+							</div>
+						</div>
+					</div>
+				<?php
+						$cpt++;
+					}
+				?>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="colorlib-subscribe">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row row-padded-bottom">
+			<div class="col-md-8 col-md-offset-2 text-center animate-box">
+				<p>Web developer since 7 years now, I'm passionated about web technologies in general.</p>
+				<p>
+					By having seen every side of my job, design, complex algorithm, hosting, architecture, SEO...etc
+					I got what we name a full stack profile. Thanks to that, I can propose you the best of each part
+					to fit your needs at best.
+				</p>
+				<p style="margin-bottom: 0;"><a href="/en/about.html" class="resume"><i class="icon-documents"></i> Read my resume here</a></p>
+			</div>
+		</div>
+		<div class="row" id="contact">
+			<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+				<h2>Contact me</h2>
+				<p>Any question or needs? Send me a message!</p>
+			</div>
+		</div>
+		<div class="row animate-box">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="row">
+					<div class="col-md-12">
+						<form class="form-inline qbstp-header-subscribe" action="" method="POST">
+							<div class="col-md-6 text-center animate-box">
+								<div class="form-group" style="display: block;">
+									<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+								</div>
+							</div>
+							<div class="col-md-6 text-center animate-box">
+								<div class="form-group" style="display: block;">
+									<input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+								</div>
+							</div>
+							<br/>
+							<br/>
+							<div class="col-md-12 text-center animate-box">
+								<div class="form-group" style="display: block;">
+									<textarea style="width: 100%;display:block;outline:none;" class="form-control" id="message" name="message" rows="5" placeholder="Tell me more..."></textarea>
+								</div>
+							</div>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<br/>
+							<div class="col-md-3 text-center animate-box">
+							</div>
+							<div class="col-md-6 text-center animate-box">
+								<div class="form-group" style="display: block;margin:auto;">
+									<button type="submit" name="submit" class="btn btn-primary">Send</button>
+								</div>
+							</div>
+							<div class="col-md-3 text-center animate-box">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<?php /*
+<!-- Start Container-->
+<div class="container">
 	<!-- ========================================
 	Contact
 	==========================================-->
 	<!-- row -->
-	<div class="row">
+	<div class="row" id="contact">
 		<section class="section" style="padding-left: 0 !important;">
 			<div class="section-wrapper z-depth-1">
 				<div class="section-icon col s12 m12 l2">
@@ -346,3 +266,5 @@
 		</section>
 	</div>
 </div>	<!-- end container -->
+*/
+?>

@@ -123,8 +123,8 @@
 
 		    ob_start();
 		    include(__layout_directory__ . "/" . $this->_layout .".php");
-		    $email = ob_get_clean();
-
+			$email = ob_get_clean();
+			
 		    mail($this->_to, $this->_subject, $email, $this->_header);
 		}
 
