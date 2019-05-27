@@ -1,6 +1,12 @@
 <?php    
-    $urlsByLang = fitzlucassen\FLFramework\Library\Core\Router::GetUrlByLang($this->Model->_controller, $this->Model->_action, $this->Model->_params);
-    $action = $this->Model->_action;
+    $urlsByLang = fitzlucassen\FLFramework\Library\Core\Router::GetUrlByLang($this->_controller, $this->_action, $this->Model->_params);
+
+    $homeRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "index", null, $this->_lang);
+    $aboutRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "about", null, $this->_lang);
+    $servicesRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "services", null, $this->_lang);
+    $workRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "work", null, $this->_lang);
+
+    $action = $this->_action;
 ?>
 
 <nav id="colorlib-main-nav" role="navigation">
@@ -11,10 +17,10 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <ul>
-                            <li class="<?php echo $action == "index" ? "active" : "" ?>"><a href="/en/"><span>Home</span></a></li>
-                            <li class="<?php echo $action == "about" ? "active" : "" ?>"><a href="/en/about.html"><span>About</span></a></li>
-                            <li class="<?php echo $action == "services" ? "active" : "" ?>"><a href="/en/services.html"><span>Services</span></a></li>
-                            <li class="<?php echo $action == "work" ? "active" : "" ?>"><a href="/en/work.html"><span>Work</span></a></li>
+                            <li class="<?php echo $action == "index" ? "active" : "" ?>"><a href="<?php echo $homeRoute; ?>"><span>Home</span></a></li>
+                            <li class="<?php echo $action == "about" ? "active" : "" ?>"><a href="<?php echo $aboutRoute; ?>"><span>About</span></a></li>
+                            <li class="<?php echo $action == "services" ? "active" : "" ?>"><a href="<?php echo $servicesRoute; ?>"><span>Services</span></a></li>
+                            <li class="<?php echo $action == "work" ? "active" : "" ?>"><a href="<?php echo $workRoute; ?>"><span>Work</span></a></li>
                         </ul>
                     </div>
                 </div>

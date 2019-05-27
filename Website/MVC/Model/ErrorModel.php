@@ -13,6 +13,6 @@
 		public $_viewTarget = "";
 		
 		public function __construct($manager, $params = array()) {
-		    parent::__construct($manager, $params);
+		    parent::__construct("fr", $manager, $params);
 		}
     }

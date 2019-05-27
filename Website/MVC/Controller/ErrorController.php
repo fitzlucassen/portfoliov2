@@ -9,7 +9,10 @@
      */
     class ErrorController extends Controller {
 		public function __construct($action, $manager) {
-		    parent::__construct("error", $action, $manager);
+			// Initialisation de la session
+			$this->_session = new Helper\Session();
+			$this->_lang = $this->_session->Read("lang");
+		    parent::__construct("error", $action, $this->_lang, $manager);
 		}
 		
 		/*************

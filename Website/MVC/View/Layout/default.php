@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="fr">
+<html>
     <head>
 	<?php
 	    // La page à modifier pour inclure le CSS le JS et les balises meta du layout (toutes les pages)
@@ -23,7 +23,7 @@
 			include(__partial_directory__ . "/header.php");
 		?>
 		
-		<div id="colorlib-page">
+		<div id="colorlib-page" style="position: relative;">
 			<header>
 				<div class="container">
 					<div class="row">

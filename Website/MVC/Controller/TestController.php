@@ -12,11 +12,11 @@
      */
     class TestController extends Controller {
 		public function __construct($action, $manager) {
-		    parent::__construct("test", $action, $manager);
+		    parent::__construct("test", $action, "fr", $manager);
 		}
 		
 		public function TestAuth(){
-		    $Model = new Model\HomeModel($this->_repositoryManager);
+		    $Model = new Model\HomeModel("fr", $this->_repositoryManager);
 		    	
 		    $Auth = new Helper\Auth($this->_repositoryManager, array(
 				'table' => 'user',
@@ -45,7 +45,7 @@
 		}
 		
 		public function TestEmail(){
-		    $Model = new Model\HomeModel($this->_repositoryManager);
+		    $Model = new Model\HomeModel("fr", $this->_repositoryManager);
 		    
 		    $Email = new Heper\Email();
 
@@ -67,7 +67,7 @@
 		}
 
 		public function TestForm(){
-		    $Model = new Model\HomeModel($this->_repositoryManager);
+		    $Model = new Model\HomeModel("fr", $this->_repositoryManager);
 		    
 		    $Form = new Helper\Form();
 
@@ -95,7 +95,7 @@
 		}
 
 		public function TestPaginator(){
-		    $Model = new Model\HomeModel($this->_repositoryManager);
+		    $Model = new Model\HomeModel("fr", $this->_repositoryManager);
 		    
 		    // Initialize the paginator
 		    $Paginator = new Helper\Paginator(60, array(
@@ -111,7 +111,7 @@
 		}
 
 		public function TestPaypal(){
-		    $Model = new Model\HomeModel($this->_repositoryManager);
+		    $Model = new Model\HomeModel("fr", $this->_repositoryManager);
 		    
 		    // Initialize a cart of 2 products just to test
 		    $products = array(
@@ -147,7 +147,7 @@
 			// set the cart
 			$Paypal->setCart($products);
 			// first request
-			$Paypal->request("SetExpressCheckout");
+			$Paypal->request("SetExpressCheckout", null);
 			// Get the link to pay
  			$linkToPay = $Paypal->getPaymentLink();
 
@@ -162,7 +162,7 @@
 		}
 
 		public function TestRss(){
-		    $Model = new Model\HomeModel($this->_repositoryManager);
+		    $Model = new Model\HomeModel("fr", $this->_repositoryManager);
 		    
 		    // Initialize your rss flux
 		    $Rss = new Helper\Rss();
@@ -193,7 +193,7 @@
 		}
 
 		public function TestSession(){
-		    $Model = new Model\HomeModel($this->_repositoryManager);
+		    $Model = new Model\HomeModel("fr", $this->_repositoryManager);
 		    
 		    $Session = new Helper\Session();
 
@@ -211,7 +211,7 @@
 		}
 
 		public function TestUpload(){
-		    $Model = new Model\HomeModel($this->_repositoryManager);
+		    $Model = new Model\HomeModel("fr", $this->_repositoryManager);
 		    
 		    if(Core\Request::isFile()){
 		    	// Initialize the upload helper with the upload directory path

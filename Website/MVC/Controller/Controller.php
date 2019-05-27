@@ -9,15 +9,17 @@
 	Déscription : Permet de gérer la classe mère de tous les controllers
      */
     class Controller {
+		protected $_lang;
 		protected $_repositoryManager = null;
 		protected $_view = null;
 		
-		public function __construct($controller, $action, $manager) {	
+		public function __construct($controller, $action, $lang, $manager) {	
 		    $this->_repositoryManager = $manager;
 		    $this->_view = new cores\View();
 		    
 		    $this->setController($controller);
-		    $this->setAction($action);
+			$this->setAction($action);
+			$this->setLang($lang);
 		}
 		
 		/***********
@@ -28,6 +30,9 @@
 		}
 		public function setAction($action){
 		    $this->_view->SetAction($action);
+		}
+		public function setLang($lang){
+		    $this->_view->SetLang($lang);
 		}
 		public function setLayout($layout){
 		    $this->_view->SetLayout($layout);

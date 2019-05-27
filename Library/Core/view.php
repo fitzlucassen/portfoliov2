@@ -14,6 +14,7 @@
 	
 	private $_controller;
 	private $_action;
+	private $_lang;
 	private $_layout = "default";
 		
 	/*
@@ -104,6 +105,9 @@
 	}
 	public function SetAction($action){
 	    $this->_action = $action;
+	}
+	public function SetLang($lang){
+	    $this->_lang = $lang;
 	}
 	
 	/***********

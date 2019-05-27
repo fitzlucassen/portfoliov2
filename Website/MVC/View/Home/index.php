@@ -7,6 +7,15 @@
 ?>	
 
 <div id="colorlib-hero" class="js-fullheight">
+<?php
+	if(isset($this->Model->_message) && !empty($this->Model->_message)) {
+?>
+<p class="tooltip-message">
+	<?php echo $this->Model->_message; ?>
+</p>
+<?php
+	}
+?>
 	<p class="social-media">
 		<a href="https://www.facebook.com/thibault.dulon.5" target="_blank">Facebook</a>
 		<a href="https://www.instagram.com/the_journey_quest" target="_blank">Instagram</a>
@@ -187,19 +196,19 @@
 						<form class="form-inline qbstp-header-subscribe" action="" method="POST">
 							<div class="col-md-6 text-center animate-box">
 								<div class="form-group" style="display: block;">
-									<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+									<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name*" required>
 								</div>
 							</div>
 							<div class="col-md-6 text-center animate-box">
 								<div class="form-group" style="display: block;">
-									<input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+									<input type="email" class="form-control" id="email" name="email" placeholder="Enter your email*" required>
 								</div>
 							</div>
 							<br/>
 							<br/>
 							<div class="col-md-12 text-center animate-box">
 								<div class="form-group" style="display: block;">
-									<textarea style="width: 100%;display:block;outline:none;" class="form-control" id="message" name="message" rows="5" placeholder="Tell me more..."></textarea>
+									<textarea style="width: 100%;display:block;outline:none;" class="form-control" id="message" name="message" rows="5" placeholder="Tell me more...*" required></textarea>
 								</div>
 							</div>
 							<br/>
@@ -223,48 +232,3 @@
 		</div>
 	</div>
 </div>
-
-
-<?php /*
-<!-- Start Container-->
-<div class="container">
-	<!-- ========================================
-	Contact
-	==========================================-->
-	<!-- row -->
-	<div class="row" id="contact">
-		<section class="section" style="padding-left: 0 !important;">
-			<div class="section-wrapper z-depth-1">
-				<div class="section-icon col s12 m12 l2">
-					<i class="fa fa-paper-plane-o"></i>
-				</div>
-				<div class="col s12 m12 l10 wow fadeIn a1 animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-					<h2>Contactez-moi</h2>
-					<div class="contact-form" id="contact">
-						<div class="row">
-							<form role="form" id="contactForm" data-toggle="validator" novalidate="true">
-								<div id="msgSubmit" class="h3 text-center hidden"></div>
-								<div class="input-field col s12">
-									<label for="name" class="h4">Nom *</label>
-									<input type="text" class="form-control validate" id="name" required="" data-error="Nouveau message d'erreur">
-								</div>
-								<div class="input-field col s12">
-									<label for="email" class="h4">E-mail *</label>
-									<input type="email" class="form-control validate" id="email" required="">
-								</div>
-								<div class="input-field col s12">
-									<label for="message" class="h4">Message *</label>
-									<textarea id="message" class="form-control materialize-textarea validate" required=""></textarea>
-								</div>
-								<button type="submit" id="form-submit" class="btn btn-success disabled">Envoyer</button>
-								<div class="clearfix"></div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-</div>	<!-- end container -->
-*/
-?>

@@ -9,14 +9,14 @@
 <meta name="generator" content=".NET Engineer, HTML5/CSS3 Integrator">
 <meta name="robots" content="index, follow, all">
 <meta name="rating" content="general">
-<meta name="language" content="en">
+<meta name="language" content="<?php echo $this->_lang; ?>">
 <meta name="msapplication-tap-highlight" content="no">
 
 <meta name="description" content="<?php echo isset($this->Model->_headerInformations) ? $this->Model->_headerInformations->getMetaDescription() : ""; ?>" >
 
 <meta property="og:title" content="Thibault - Web developer" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="<?php echo $_SERVER['SERVER_NAME'] . '/'; ?>" />
+<meta property="og:url" content="<?php echo $_SERVER['SERVER_NAME']; ?>" />
 <meta property="og:image" content="/favicon.ico" />
 <meta property="og:description" content="<?php echo isset($this->Model->_headerInformations) ? $this->Model->_headerInformations->getMetaDescription() : ""; ?>" />
 

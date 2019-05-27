@@ -14,7 +14,7 @@
         public $_projects = array();
         public $_message = '';
 
-        public function __construct($manager) {
-            parent::__construct($manager);
+        public function __construct($lang, $manager) {
+            parent::__construct($lang, $manager);
         }
     }
