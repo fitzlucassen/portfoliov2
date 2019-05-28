@@ -29,9 +29,10 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="colorlib-navbar-brand">
-								<a class="colorlib-logo <?php echo $this->Model->_action != "index" ? "black" : "";?>" href="/">T.</a>
+								<a class="colorlib-logo <?php echo $this->_action != "index" ? "black" : "";?>" href="/">T.</a>
 							</div>
 							<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+    						<a href="<?php echo $this->_lang == 'fr' ? $urlsByLang["en"]["pattern"] : $urlsByLang["fr"]["pattern"] ; ?>" style="float:right;display:block;margin:5px 2%;text-decoration:none;color: black;"><?php echo $this->_lang == 'fr' ? 'en' : 'fr'; ?></a>
 						</div>
 					</div>
 				</div>
@@ -43,7 +44,6 @@
 
 			include(__partial_directory__ . "/footer.php");
 		?>
-		
 		</div>
     </body>
 </html>
