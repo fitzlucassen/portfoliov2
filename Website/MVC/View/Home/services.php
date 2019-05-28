@@ -1,4 +1,4 @@
-<title>What I Do - Thibault</title>
+<title><?php echo _("What I Do - Thibault"); ?></title>
 <?php
 	// inclure ci-dessus les balises à inclure dans la balise <head> du layout
 	$head = $this->RegisterViewHead();
@@ -10,8 +10,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-				<span>What I Do</span>
-				<h1>Development, SEO, hosting and a bit of magic</h1>
+				<span><?php echo _("What I Do"); ?></span>
+				<h1><?php echo _("Development, SEO, hosting and a bit of magic"); ?></h1>
 			</div>
 		</div>
 		
@@ -26,16 +26,16 @@
 			<div class="col-md-9 text-center animate-box">
 				<div class="services">
 					<div class="desc">
-						<h3><a href="#">Showcase Website</a></h3>
+						<h3><a href="#"><?php echo _("Showcase Website"); ?></a></h3>
 						<p style="font-size:14px;text-align:justify">
-							You quickly need a website for your business?<br/>
+						<?php echo _("You quickly need a website for your business?<br/>
 							A visibility on search engines such as Google?<br/>
 							You don't want to spend much money or you just need a showcase in one page?
 							<br/>
 							<br/>
 							This option is for you. In less than a week I can create a one page website with a contact form
 							that allows you to show what you do and explain your concept letting the option to visitors to contact you.
-							Responsive and multipage options availables on demand.
+							Responsive and multipage options availables on demand."); ?>
 						</p>
 					</div>
 				</div>
@@ -45,15 +45,15 @@
 			<div class="col-md-9 text-center animate-box">
 				<div class="services">
 					<div class="desc">
-						<h3><a href="#">Complexe features</a></h3>
+						<h3><a href="#"><?php echo _("Complexe features"); ?></a></h3>
 						<p style="font-size:14px;text-align:justify">
-							You're imagining an online shop? <br/>
+						<?php echo _("You're imagining an online shop? <br/>
 							A personnal dashboard for your users?<br/>
 							You need some more complex features in your website?
 							<br/>
 							<br/>
 							Then you need to think about this option. Payment, membership, dashboard, newsletter, I can do
-							whatever you need on your website that we can imagine together.
+							whatever you need on your website that we can imagine together."); ?>
 						</p>
 					</div>
 				</div>
@@ -79,14 +79,14 @@
 					<div class="desc">
 						<h3><a href="#">SEO</a></h3>
 						<p style="font-size:14px;text-align:justify">
-							You dream about being in the first results of Google?<br/>
+						<?php echo _("You dream about being in the first results of Google?<br/>
 							You need to know how to measure your SEO improvment day by day?<br/>
 							You don't know much about SEO but you need visibility?
 							<br/>
 							<br/>
 							In this case, you'll like this option. I assure you to use all the best coding practice
 							to improve your website SEO. Moreover, I can provide some tools to measure it and 
-							give you advices about them.
+							give you advices about them."); ?>
 						</p>
 					</div>
 				</div>
@@ -96,15 +96,15 @@
 			<div class="col-md-9 text-center animate-box iconService">
 				<div class="services">
 					<div class="desc">
-						<h3><a href="#">Hosting</a></h3>
+						<h3><a href="#"><?php echo _("Hosting"); ?></a></h3>
 						<p style="font-size:14px;text-align:justify">
-							You want to host your website online but you're lost?<br/>
+						<?php echo _("You want to host your website online but you're lost?<br/>
 							You need to reserve your domain name but you don't know how?<br/>
 							You don't have time to bother about what's the best option among the hosting providers?
 							<br/>
 							<br/>
 							So you'll probably need this option too! I can give you advices about domain names and hosting solutions.
-							More! I also absolutely can do it for you so that you don't have to do anything.
+							More! I also absolutely can do it for you so that you don't have to do anything."); ?>
 						</p>
 					</div>
 				</div>
@@ -119,7 +119,7 @@
 		</div>
 
 		<div class="row">
-			<p class="btn-footer" style="text-align: center;"><a href="/en/#contact">Tell me more about your project</a></p>
+			<p class="btn-footer" style="text-align: center;"><a href="/en/#contact"><?php echo _("Tell me more about your project"); ?></a></p>
 		</div>
 	</div>
 </div>

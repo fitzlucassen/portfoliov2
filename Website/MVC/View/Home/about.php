@@ -1,4 +1,4 @@
-<title>Who I am - Thibault</title>
+<title><?php echo _("Who I am - Thibault"); ?></title>
 <?php
 	// inclure ci-dessus les balises à inclure dans la balise <head> du layout
 	$head = $this->RegisterViewHead();
@@ -10,8 +10,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-				<span>Who I am</span>
-				<h1>Passionated freelance developer</h1>
+				<span><?php echo _("Who I am"); ?></span>
+				<h1><?php echo _("Passionated freelance developer"); ?></h1>
 			</div>
 		</div>
 		<div class="row row-padded-bottom">
@@ -20,7 +20,7 @@
 			</div>
 			<div class="col-md-6 animate-box">
 				<div class="about-desc">
-					<h1>I’m Thibault,<br/>Web developer &amp;<br/>Web architect<br/>based in Paris.</h1>
+					<h1><?php echo _("I’m Thibault,<br/>Web developer &amp;<br/>Web architect<br/>based in Paris."); ?></h1>
 				</div>
 			</div>
 		</div>
@@ -28,23 +28,23 @@
 			<div class="col-md-10 col-md-offset-1">
 				<div class="about-info animate-box" style="text-align: justify;">
 					<p>
-						After getting my web and e-business master degree, first of my promotion, 
-						I've cumulated experiences in very differents companies. Always passionated by my work, I've always given it all.
+					<?php echo _("After getting my web and e-business master degree, first of my promotion, 
+						I've cumulated experiences in very differents companies. Always passionated by my work, I've always given it all."); ?>
 					</p>
 					<p>
-						From development to SEO, from server managing to project management, from algorithm to design, 
+					<?php echo _("From development to SEO, from server managing to project management, from algorithm to design, 
 						I've seen almost all side of my profession. Thanks to this experience, I've decided to help people
-						that doesn't have enough web knowledge to create their showcase website.
+						that doesn't have enough web knowledge to create their showcase website."); ?>
 					</p>
 					<p>
-						Because every one needs and deserves a good website for its business.
+					<?php echo _("Because every one needs and deserves a good website for its business.
 						Because internet users are more and more demanding and difficult to satisfy.
-						I'm offering you to make you own website that match your business and your needs.
+						I'm offering you to make you own website that match your business and your needs."); ?>
 					</p>
 				</div>
 				<div class="about-info animate-box">
 					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading intro-heading-2">
-						<span style="font-size:18px;">Experience</span>
+						<span style="font-size:18px;"><?php echo _("Experience"); ?></span>
 					</div>
 					<div class="row">
 					<?php
@@ -76,7 +76,7 @@
 
 				<div class="about-info animate-box">
 					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading intro-heading-2">
-						<span style="font-size:18px;">Education</span>
+						<span style="font-size:18px;"><?php echo _("Education"); ?></span>
 					</div>
 					<div class="row">
 					<?php
@@ -108,7 +108,7 @@
 
 				<div class="about-info animate-box" style="margin-bottom: 0;">
 					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading intro-heading-2">
-						<span style="font-size:18px;">Interests</span>
+						<span style="font-size:18px;"><?php echo _("Interests"); ?></span>
 					</div>
 					<div class="row">
 						<div class="wrap" style="border:none;">
@@ -119,7 +119,7 @@
 							</div>
 							<div class="col-md-9 col-xs-9">
 								<p class="job">
-									Travelling is definitly my greatest passion.<br/>I've already been in Australia, Peru, Bolivia, Mexico, Guatemala, Colombia, Ecuador, Iceland...etc.
+								<?php echo _("Travelling is definitly my greatest passion.<br/>I've already been in Australia, Peru, Bolivia, Mexico, Guatemala, Colombia, Ecuador, Iceland...etc."); ?>
 								</p>
 							</div>
 						</div>
@@ -132,7 +132,7 @@
 							</div>
 							<div class="col-md-9 col-xs-9">
 								<p class="job">
-									Also passionated about music, I played guitar in a rock band during 5 years and I'm still much into playing and listening music.
+								<?php echo _("Also passionated about music, I played guitar in a rock band during 5 years and I'm still much into playing and listening music."); ?>
 								</p>
 							</div>
 						</div>
@@ -145,7 +145,7 @@
 							</div>
 							<div class="col-md-9 col-xs-9">
 								<p class="job">
-									Another great passion of mine is cinema. I'm a movie addict and I never refuse to go watching a movie, from drama to comedia and biopic to thriller.
+								<?php echo _("Another great passion of mine is cinema. I'm a movie addict and I never refuse to go watching a movie, from drama to comedia and biopic to thriller."); ?>
 								</p>
 							</div>
 						</div>
@@ -160,8 +160,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-				<span>Skills</span>
-				<h2>My Skills &amp; Abilities</h2>
+				<span><?php echo _("Skills"); ?></span>
+				<h2><?php echo _("My Skills &amp; Abilities"); ?></h2>
 			</div>
 		</div>
 		<div class="row">
@@ -169,9 +169,9 @@
 				<div class="row">
 					<div class="col-md-6 animate-box">
 						<p>
-							Backend side of coding is what user cannot see. 
+						<?php echo _("Backend side of coding is what user cannot see. 
 							Backend side of coding is everything that concerned algorithm, logic and data persistence.
-							I always was more interesting by backend development and its variety of possibilities. 
+							I always was more interesting by backend development and its variety of possibilities. "); ?>
 						</p>
 					</div>
 					<div class="col-md-6">
@@ -224,8 +224,8 @@
 					</div>
 					<div class="col-md-6 animate-box">
 						<p>
-							As a backend side developer, you always have to interact with databases.
-							Database is a great world where optimisation is the main purpose of everything.
+						<?php echo _("As a backend side developer, you always have to interact with databases.
+							Database is a great world where optimisation is the main purpose of everything."); ?>
 						</p>
 					</div>
 				</div>
@@ -236,9 +236,9 @@
 				<div class="row">
 					<div class="col-md-6 animate-box">
 						<p>
-							Frontend side of coding is what user can immediatly see.
+						<?php echo _("Frontend side of coding is what user can immediatly see.
 							Frontend side of coding is all about design, ergonomy and behavior.
-							I always liked to complete my work with some frontend development.
+							I always liked to complete my work with some frontend development."); ?>
 						</p>
 					</div>
 					<div class="col-md-6">
@@ -291,8 +291,8 @@
 					</div>
 					<div class="col-md-6 animate-box">
 						<p>
-							In the frontend world, there are a lot of tools, API and Framework
-							that can help you to do whatever you want in an easier and cleaner way.
+						<?php echo _("In the frontend world, there are a lot of tools, API and Framework
+							that can help you to do whatever you want in an easier and cleaner way."); ?>
 						</p>
 					</div>
 				</div>
@@ -303,8 +303,8 @@
 				<div class="row">
 					<div class="col-md-6 animate-box">
 						<p>
-							I obviously have many more other skills but maybe I sould let a bit of mystery.
-							Finally, here are some other usefull things I know and you can rely on.
+						<?php echo _("I obviously have many more other skills but maybe I sould let a bit of mystery.
+							Finally, here are some other usefull things I know and you can rely on."); ?>
 						</p>
 					</div>
 					<div class="col-md-6">
@@ -337,7 +337,7 @@
 		<br/><br/>
 		
 		<div class="row">
-			<p class="btn-footer" style="text-align: center;"><a href="/en/#contact">Convinced? Send me a message!</a></p>
+			<p class="btn-footer" style="text-align: center;"><a href="/en/#contact"><?php echo _("Convinced? Send me a message!"); ?></a></p>
 		</div>
 	</div>
 </div>

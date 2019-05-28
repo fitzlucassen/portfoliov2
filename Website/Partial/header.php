@@ -17,10 +17,10 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <ul>
-                            <li class="<?php echo $action == "index" ? "active" : "" ?>"><a href="<?php echo $homeRoute; ?>"><span>Home</span></a></li>
-                            <li class="<?php echo $action == "about" ? "active" : "" ?>"><a href="<?php echo $aboutRoute; ?>"><span>About</span></a></li>
-                            <li class="<?php echo $action == "services" ? "active" : "" ?>"><a href="<?php echo $servicesRoute; ?>"><span>Services</span></a></li>
-                            <li class="<?php echo $action == "work" ? "active" : "" ?>"><a href="<?php echo $workRoute; ?>"><span>Work</span></a></li>
+                            <li class="<?php echo $action == "index" ? "active" : "" ?>"><a href="<?php echo $homeRoute; ?>"><span><?php echo _("Home"); ?></span></a></li>
+                            <li class="<?php echo $action == "about" ? "active" : "" ?>"><a href="<?php echo $aboutRoute; ?>"><span><?php echo _("About"); ?></span></a></li>
+                            <li class="<?php echo $action == "services" ? "active" : "" ?>"><a href="<?php echo $servicesRoute; ?>"><span><?php echo _("Services"); ?></span></a></li>
+                            <li class="<?php echo $action == "work" ? "active" : "" ?>"><a href="<?php echo $workRoute; ?>"><span><?php echo _("Work"); ?></span></a></li>
                         </ul>
                     </div>
                 </div>

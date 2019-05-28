@@ -1,3 +1,7 @@
+<?php
+    $urlsByLang = fitzlucassen\FLFramework\Library\Core\Router::GetUrlByLang($this->_controller, $this->_action, $this->Model->_params);
+
+?>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,9 +20,14 @@
 
 <meta property="og:title" content="Thibault - Web developer" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="<?php echo $_SERVER['SERVER_NAME']; ?>" />
+<meta property="og:url" content="http://<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
 <meta property="og:image" content="/favicon.ico" />
 <meta property="og:description" content="<?php echo isset($this->Model->_headerInformations) ? $this->Model->_headerInformations->getMetaDescription() : ""; ?>" />
+
+<link rel="canonical" href="http://<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
+<link rel="alternate" hreflang="en" href="http://<?php echo $_SERVER["HTTP_HOST"] . $urlsByLang["en"]["pattern"]; ?>" />
+<link rel="alternate" hreflang="fr" href="http://<?php echo $_SERVER["HTTP_HOST"] . $urlsByLang["fr"]["pattern"]; ?>" />
+<link rel="alternate" hreflang="x-default" href="http://<?php echo $_SERVER["HTTP_HOST"] . $urlsByLang["en"]["pattern"]; ?>" />
 
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 <link rel="shortcut icon" href="/favicon.ico">

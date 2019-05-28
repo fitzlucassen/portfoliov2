@@ -1,4 +1,4 @@
-<title>My last projects - Thibault</title>
+<title><?php echo _("My last projects - Thibault"); ?></title>
 <?php
 	// inclure ci-dessus les balises à inclure dans la balise <head> du layout
 	$head = $this->RegisterViewHead();
@@ -10,8 +10,8 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-				<span>My last projects</span>
-				<h1>Happy spending my time to this projects</h1>
+				<span><?php echo _("My last projects"); ?></span>
+				<h1><?php echo _("Happy spending my time to this projects"); ?></h1>
 			</div>
 		</div>
 		<div class="row">
@@ -41,7 +41,7 @@
 											<br/>
 											<br/>
 											<p><?php echo $project->getDescription(); ?></p>
-											<p><a href="<?php echo $project->getLink(); ?>" target="_blank" class="btn-view">See the website</a></p>
+											<p><a href="<?php echo $project->getLink(); ?>" target="_blank" class="btn-view"><?php echo _("See the website"); ?></a></p>
 										</div>
 									</div>
 								</div>
@@ -57,7 +57,7 @@
 		</div>
 		
 		<div class="row">
-			<p class="btn-footer" style="text-align: center;"><a href="/en/#contact">Convinced? Write me for yours!</a></p>
+			<p class="btn-footer" style="text-align: center;"><a href="/en/#contact"><?php echo _("Convinced? Write me for yours!"); ?></a></p>
 		</div>
 	</div>
 </div>

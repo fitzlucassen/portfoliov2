@@ -6,6 +6,8 @@
     define("__website_directory__", __host_absolute__ . "Website");
     define("__log_directory__", __host_absolute__ . "Logs");
     define("__cache_directory__", __host_absolute__ . "Cache");
+    define("__module_directory__", __host_absolute__ . "Module");
+    define("__locale_directory__", __host_absolute__ . "Locale");
     
     define("__helper_directory__", __library_directory__ . "/" . "Helper");
     define("__component_directory__", __library_directory__ . "/" . "Adapter");

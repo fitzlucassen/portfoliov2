@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="<?php echo $this->_lang; ?>">
     <head>
 	<?php
 	    // La page à modifier pour inclure le CSS le JS et les balises meta du layout (toutes les pages)

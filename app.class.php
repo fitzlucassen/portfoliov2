@@ -18,9 +18,12 @@ class App
 	private static $_isDebugMode = false;
 	private static $_databaseNeeded = true;
 	private static $_urlRewritingNeeded = true;
+	private static $_supportedLanguages = [];
 
 	// String vars
 	private $_userAgent = "";
+
+	private $_moduleToInclude = [];
 
 	// Helpers object
 	private $_pdo = null;
@@ -30,6 +33,7 @@ class App
 	private $_urlRewritingObject = null;
 	private $_dispatcher = null;
 	private $_moduleManager = null;
+	private $_i18n = null;
 
 	// Construction des objets et récupération des variables
 	public function __construct()
@@ -42,13 +46,15 @@ class App
 				$this->_pdo = new Core\Sql();
 				$this->_repositoryManager = new Core\RepositoryManager($this->_pdo, $this->_session->read('lang'));
 				$this->_urlRewritingObject = new Core\UrlRewriting($this->_pdo);
+
+				// Initialise le module manager
+				$this->_moduleManager = new Core\ModuleManager($this->_repositoryManager);
+				$this->_moduleToInclude = $this->_moduleManager->getModuleToInclude(dirname(__FILE__) . DIRECTORY_SEPARATOR);
 			} catch (Adapter\ConnexionException $e) {
 				$this->_errorManager->noConnexionAvailable();
 				die();
 			}
 		}
-
-		$this->run();
 	}
 
 	public function initialize()
@@ -68,8 +74,8 @@ class App
 		$this->_isInErrorPage = strpos($this->_page, '/Error/') !== false;
 		// Initialisation du dispatcher
 		$this->_dispatcher = new Core\Dispatcher();
-		// Initialise le module manager
-		$this->_moduleManager = new Core\ModuleManager();
+		// Initialisation de l'internationalisation
+		$this->_i18n = new Core\I18n('en_US', self::$_supportedLanguages);
 
 		// Si on a pas de langue on session on set celle par défaut
 		if (!$this->_session->ContainsKey("lang"))
@@ -89,7 +95,9 @@ class App
 
 		// On récupère les routes en base de données seulement si a une base de données
 		if (self::$_databaseNeeded && self::$_urlRewritingNeeded && !$this->_isInErrorPage) {
-			$langInUrl = $this->_urlRewritingObject->loadRoutes($this->_page);
+			$this->_urlRewritingObject->loadRoutes($this->_page, $this->_i18n);
+			$langInUrl = $this->_urlRewritingObject->isLangInUrl();
+			$this->_i18n->initialize();
 		}
 
 		// Si on est pas sur une page de langue spécifique, on set la langue par défaut en session
@@ -223,7 +231,7 @@ class App
 	{
 		// On ne lance les exceptions qu'en mode debug
 		if ((self::$_isDebugMode && self::$_urlRewritingNeeded && self::$_databaseNeeded && !$this->_isInErrorPage)) {
-			$this->_moduleManager->manageNativeModuleException($this->_pdo);
+			$this->_moduleManager->manageNativeModuleException();
 		}
 	}
 
@@ -246,6 +254,9 @@ class App
 	{
 		return $this->_isInErrorPage;
 	}
+	public function getModuleToInclude(){
+		return $this->_moduleToInclude;
+	}
 
 	/***********
 	 * SETTERS *
@@ -261,5 +272,8 @@ class App
 	public static function setUrlRewritingNeeded($arg)
 	{
 		self::$_urlRewritingNeeded = $arg;
+	}
+	public static function setSupportedLanguages($args){
+		self::$_supportedLanguages = $args;
 	}
 }

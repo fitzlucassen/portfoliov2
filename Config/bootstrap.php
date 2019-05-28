@@ -38,7 +38,16 @@
     App::setIsDebugMode(true);
     App::setDatabaseNeeded(true);
     App::setUrlRewritingNeeded(true);
+    App::setSupportedLanguages(['fr_FR', 'en_US']);
     // End
-    
-    $App = new App();
+
+    // Initialize App
+	$App = new App();
+	// Get extern module to include
+	$modules = $App->getModuleToInclude();
+	foreach ($modules as $value) {
+		require_once $value;
+	}
+	// Run the request
+	$App->run();
     

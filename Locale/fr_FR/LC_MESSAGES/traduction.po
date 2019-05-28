@@ -1,0 +1,493 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Portfolio\n"
+"POT-Creation-Date: 2019-05-28 14:42+0200\n"
+"PO-Revision-Date: 2019-05-28 14:47+0200\n"
+"Last-Translator: \n"
+"Language-Team: Thibault\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ../../../Website\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: __;_\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: MVC/View/Home/about.php:1
+msgid "Who I am - Thibault"
+msgstr "Qui suis-je - Thibault"
+
+#: MVC/View/Home/about.php:13
+msgid "Who I am"
+msgstr "Qui suis-je"
+
+#: MVC/View/Home/about.php:14
+msgid "Passionated freelance developer"
+msgstr "Développeur freelance passionné"
+
+#: MVC/View/Home/about.php:23
+msgid ""
+"I’m Thibault,<br/>Web developer &amp;<br/>Web architect<br/>based in Paris."
+msgstr ""
+"Je suis Thibault,<br/>Développeur web &amp;<br/>Architecte web<br/>basé à "
+"Paris."
+
+#: MVC/View/Home/about.php:31
+msgid ""
+"After getting my web and e-business master degree, first of my promotion, \n"
+"\t\t\t\t\t\tI've cumulated experiences in very differents companies. Always "
+"passionated by my work, I've always given it all."
+msgstr ""
+"Après avoir fini premier de ma promotion de mon master en web et e-"
+"business, \n"
+"\t\t\t\t\t\tJ'ai cumulé de l'expérience dans des entreprises très "
+"différentes. Passionné par mon travail, j'ai toujours tout donné."
+
+#: MVC/View/Home/about.php:35
+msgid ""
+"From development to SEO, from server managing to project management, from "
+"algorithm to design, \n"
+"\t\t\t\t\t\tI've seen almost all side of my profession. Thanks to this "
+"experience, I've decided to help people\n"
+"\t\t\t\t\t\tthat doesn't have enough web knowledge to create their showcase "
+"website."
+msgstr ""
+"Du développement au SEO, de la gestion de serveur à la gestion de projet, "
+"des algorithme au design, \n"
+"\t\t\t\t\t\tJ'ai pratiquement vu tous les aspects de ma profession. Grâce à "
+"cette expérience, j'ai décidé d'aider les gens\n"
+"\t\t\t\t\t\tqui n'ont pas les connaissances suffisantes pour créer leur "
+"propre site vitrine."
+
+#: MVC/View/Home/about.php:40
+msgid ""
+"Because every one needs and deserves a good website for its business.\n"
+"\t\t\t\t\t\tBecause internet users are more and more demanding and difficult "
+"to satisfy.\n"
+"\t\t\t\t\t\tI'm offering you to make you own website that match your "
+"business and your needs."
+msgstr ""
+"Parce que tout le monde a besoin et mérite d'avoir un beau site pour son "
+"entreprise.\n"
+"\t\t\t\t\t\tParce que les internautes sont de plus en plus exigeant et "
+"difficiles à satisfaire.\n"
+"\t\t\t\t\t\tJe vous offre la possibilité de vous créer le site parfait qui "
+"correspond à votre idée, votre travail et vos besoins."
+
+#: MVC/View/Home/about.php:47
+msgid "Experience"
+msgstr "Expérience"
+
+#: MVC/View/Home/about.php:79
+msgid "Education"
+msgstr "Formation"
+
+#: MVC/View/Home/about.php:111
+msgid "Interests"
+msgstr "Centres d'intérêt"
+
+#: MVC/View/Home/about.php:122
+msgid ""
+"Travelling is definitly my greatest passion.<br/>I've already been in "
+"Australia, Peru, Bolivia, Mexico, Guatemala, Colombia, Ecuador, Iceland..."
+"etc."
+msgstr ""
+"Voyagez est ma plus grande passion.<br/>J'ai déjà visité l'Australie, le "
+"Pérou, la Bolivie, le Mexique, le Guatemala, la Colombie, l'Equateur, "
+"l'Islande et bien d'autres encore."
+
+#: MVC/View/Home/about.php:135
+msgid ""
+"Also passionated about music, I played guitar in a rock band during 5 years "
+"and I'm still much into playing and listening music."
+msgstr ""
+"Aussi passionné de musique, j'ai joué de la guitare dans un groupe de rock "
+"pendant 5 ans et j'aime toujours autant en jouer et en écouter."
+
+#: MVC/View/Home/about.php:148
+msgid ""
+"Another great passion of mine is cinema. I'm a movie addict and I never "
+"refuse to go watching a movie, from drama to comedia and biopic to thriller."
+msgstr ""
+"Une autre de mes grandes passions est le cinéma. Je suis un movie addict et "
+"je ne refuse jamais une opportunité d'aller au cinéma. Drame, comédie, "
+"biopic ou thriller, tout me va."
+
+#: MVC/View/Home/about.php:163
+msgid "Skills"
+msgstr "Compétences"
+
+#: MVC/View/Home/about.php:164
+msgid "My Skills &amp; Abilities"
+msgstr "Mes compétences"
+
+#: MVC/View/Home/about.php:172
+msgid ""
+"Backend side of coding is what user cannot see. \n"
+"\t\t\t\t\t\t\tBackend side of coding is everything that concerned algorithm, "
+"logic and data persistence.\n"
+"\t\t\t\t\t\t\tI always was more interesting by backend development and its "
+"variety of possibilities. "
+msgstr ""
+"La partie backend du développement est ce que l'utilisateur ne peut pas "
+"voir. \n"
+"\t\t\t\t\t\t\tLe développement backend concerne tout ce qui touche aux "
+"algorithmes, à la logique et aux données.\n"
+"\t\t\t\t\t\t\tJ'ai toujours été très intéressé par le développement backend "
+"et ses diverses possibilités."
+
+#: MVC/View/Home/about.php:227
+msgid ""
+"As a backend side developer, you always have to interact with databases.\n"
+"\t\t\t\t\t\t\tDatabase is a great world where optimisation is the main "
+"purpose of everything."
+msgstr ""
+"En temps que développeur backend, il faut souvent avoir à interagir avec les "
+"bases de données.\n"
+"\t\t\t\t\t\t\tLe monde des bases de données est un monde ou l'optimisation "
+"est le maitre mot."
+
+#: MVC/View/Home/about.php:239
+msgid ""
+"Frontend side of coding is what user can immediatly see.\n"
+"\t\t\t\t\t\t\tFrontend side of coding is all about design, ergonomy and "
+"behavior.\n"
+"\t\t\t\t\t\t\tI always liked to complete my work with some frontend "
+"development."
+msgstr ""
+"La partie frontend du développement est ce que voit immédiatement "
+"l'utilisateur.\n"
+"\t\t\t\t\t\t\tLe développement frontend concerne le design et l'ergonomie "
+"d'un site.\n"
+"\t\t\t\t\t\t\tJ'ai toujours aimé faire du développemement frontend pour "
+"compléter mon travail."
+
+#: MVC/View/Home/about.php:294
+msgid ""
+"In the frontend world, there are a lot of tools, API and Framework\n"
+"\t\t\t\t\t\t\tthat can help you to do whatever you want in an easier and "
+"cleaner way."
+msgstr ""
+"Le monde du développement frontend requiert aujourd'hui de savoir se servir "
+"de beaucoup d'outils, d'API ou de Framework\n"
+"\t\t\t\t\t\t\tqui aident à créer ce que l'on veut d'une façon plus simple et "
+"plus propre."
+
+#: MVC/View/Home/about.php:306
+msgid ""
+"I obviously have many more other skills but maybe I sould let a bit of "
+"mystery.\n"
+"\t\t\t\t\t\t\tFinally, here are some other usefull things I know and you can "
+"rely on."
+msgstr ""
+"J'ai évidemment beaucoup d'autres compétences mais… Peut-être devrais-je "
+"laisser un peu de mystère.\n"
+"\t\t\t\t\t\t\tFinalement, voici quelques unes de mais autres compétences sur "
+"lesquelles vous pouvez compter."
+
+#: MVC/View/Home/about.php:340
+msgid "Convinced? Send me a message!"
+msgstr "Convaincu ? Contactez-moi !"
+
+#: MVC/View/Home/index.php:34
+msgid "I’m Thibault, a developer from around Paris."
+msgstr "Je suis Thibault, un développeur de la région de Paris."
+
+#: MVC/View/Home/index.php:35 MVC/View/Home/index.php:54
+msgid "Hire me now"
+msgstr "Embauchez-moi"
+
+#: MVC/View/Home/index.php:53
+msgid "I'm a Web Engineer &amp; Architect based in Paris."
+msgstr "Je suis ingénieur &amp; architecte web basé à Paris."
+
+#: MVC/View/Home/index.php:68 MVC/View/Home/services.php:13
+msgid "What I Do"
+msgstr "Ce que je fais"
+
+#: MVC/View/Home/index.php:69 MVC/View/Home/services.php:14
+msgid "Development, SEO, hosting and a bit of magic"
+msgstr "Développement, SEO, hébergement et un soupçon de magie"
+
+#: MVC/View/Home/index.php:79
+msgid "Showcase website"
+msgstr "Site vitrine"
+
+#: MVC/View/Home/index.php:80
+msgid "One page website"
+msgstr "Site one page"
+
+#: MVC/View/Home/index.php:81
+msgid "Contact form"
+msgstr "Formulaire de contact"
+
+#: MVC/View/Home/index.php:82
+msgid "Showcase of your business"
+msgstr "Vitrine d'entreprise"
+
+#: MVC/View/Home/index.php:92 MVC/View/Home/services.php:48
+msgid "Complexe features"
+msgstr "Fonctionnalités complexes"
+
+#: MVC/View/Home/index.php:93
+msgid "Membership management"
+msgstr "Gestion d'utilisateurs"
+
+#: MVC/View/Home/index.php:94
+msgid "Payment"
+msgstr "Paiement"
+
+#: MVC/View/Home/index.php:95
+msgid "Algorithm"
+msgstr "Algorithme"
+
+#: MVC/View/Home/index.php:106
+msgid "Coding practice"
+msgstr "Coding practice"
+
+#: MVC/View/Home/index.php:107
+msgid "Measurement tooling"
+msgstr "Outils de mesure"
+
+#: MVC/View/Home/index.php:108
+msgid "Advices for SEO/SEM"
+msgstr "Conseils SEO/SEM"
+
+#: MVC/View/Home/index.php:119 MVC/View/Home/services.php:99
+msgid "Hosting"
+msgstr "Hébergement"
+
+#: MVC/View/Home/index.php:120
+msgid "Domain name reservation"
+msgstr "Nom de domaine"
+
+#: MVC/View/Home/index.php:121
+msgid "Hosting solutions"
+msgstr "Hébergement"
+
+#: MVC/View/Home/index.php:122
+msgid "Advices for more"
+msgstr "Conseils"
+
+#: MVC/View/Home/index.php:129
+msgid "More about my services"
+msgstr "Plus sur mes services"
+
+#: MVC/View/Home/index.php:138 Partial/header.php:23
+msgid "Work"
+msgstr "Projets"
+
+#: MVC/View/Home/index.php:139 MVC/View/Home/work.php:14
+msgid "Happy spending my time to this projects"
+msgstr "Heureux d'avoir passé mon temps sur ces projets"
+
+#: MVC/View/Home/index.php:158
+msgid "See details"
+msgstr "Voir plus"
+
+#: MVC/View/Home/index.php:177
+msgid ""
+"Web developer since 7 years now, I'm passionated about web technologies in "
+"general."
+msgstr ""
+"Développeur web depuis 7 ans maintenant, je suis un passionné des "
+"technologies du web en général."
+
+#: MVC/View/Home/index.php:178
+msgid ""
+"By having seen every side of my job, design, complex algorithm, hosting, "
+"architecture, SEO...etc I got what we name a full stack profile. Thanks to "
+"that, I can propose you the best of each part to fit your needs at best."
+msgstr ""
+"Ayant vu à peu près tous les aspects de mon métier, design, algorithmes "
+"complexes, hébergement, architecture, SEO...etc J'ai développé ce qu'on "
+"appel un profile full stack. Grâce à cela, je peux vous proposer le meilleur "
+"de chaque partie pour combler vos besoins aux mieux."
+
+#: MVC/View/Home/index.php:179
+msgid "Read my resume here"
+msgstr "Lire mon C.V"
+
+#: MVC/View/Home/index.php:184
+msgid "Contact me"
+msgstr "Contactez-moi"
+
+#: MVC/View/Home/index.php:185
+msgid "Any question or needs? Send me a message!"
+msgstr "Une question ? Contactez-moi !"
+
+#: MVC/View/Home/index.php:195
+msgid "Enter your name"
+msgstr "Entrez votre nom"
+
+#: MVC/View/Home/index.php:200
+msgid "Enter your email"
+msgstr "Entrez votre e-mail"
+
+#: MVC/View/Home/index.php:207
+msgid "Tell me more"
+msgstr "Dites m'en plus"
+
+#: MVC/View/Home/index.php:219
+msgid "Send"
+msgstr "Envoyer"
+
+#: MVC/View/Home/services.php:1
+msgid "What I Do - Thibault"
+msgstr "Ce que je fais - Thibault"
+
+#: MVC/View/Home/services.php:29
+msgid "Showcase Website"
+msgstr "Site vitrine"
+
+#: MVC/View/Home/services.php:31
+msgid ""
+"You quickly need a website for your business?<br/>\n"
+"\t\t\t\t\t\t\tA visibility on search engines such as Google?<br/>\n"
+"\t\t\t\t\t\t\tYou don't want to spend much money or you just need a showcase "
+"in one page?\n"
+"\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\tThis option is for you. In less than a week I can create a one "
+"page website with a contact form\n"
+"\t\t\t\t\t\t\tthat allows you to show what you do and explain your concept "
+"letting the option to visitors to contact you.\n"
+"\t\t\t\t\t\t\tResponsive and multipage options availables on demand."
+msgstr ""
+"Vous avez rapidement besoin d'un site pour votre entreprise ?<br/>\n"
+"\t\t\t\t\t\t\tUne bonne visibilité sur les moteurs de recherche tels que "
+"Google ?<br/>\n"
+"\t\t\t\t\t\t\tVous ne pouvez/voulez pas dépensez une fortune ou vous avez "
+"simplement besoin d'une page vitrine ?\n"
+"\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\tCette option est donc pour vous. En moins d'une semaine je "
+"peux créer un site adapté d'une page avec un formulaire de contact\n"
+"\t\t\t\t\t\t\tqui vous permet de montrer ce que vous faites et d'expliquer "
+"votre concept tout en laissant aux visiteurs la possibilité de vous "
+"contacter.\n"
+"\t\t\t\t\t\t\tResponsive et multipage sont aussi des options disponibles sur "
+"demande."
+
+#: MVC/View/Home/services.php:50
+msgid ""
+"You're imagining an online shop? <br/>\n"
+"\t\t\t\t\t\t\tA personnal dashboard for your users?<br/>\n"
+"\t\t\t\t\t\t\tYou need some more complex features in your website?\n"
+"\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\tThen you need to think about this option. Payment, membership, "
+"dashboard, newsletter, I can do\n"
+"\t\t\t\t\t\t\twhatever you need on your website that we can imagine together."
+msgstr ""
+"Vous imaginez une boutique en ligne ? <br/>\n"
+"\t\t\t\t\t\t\tUn tableau de bord personnalisé pour vos utilisateurs?<br/>\n"
+"\t\t\t\t\t\t\tVous avez besoin de plus de fonctionnalités sur pour votre "
+"site ?\n"
+"\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\tDans ce cas vous devriez préférer cette option. Paiement, "
+"gestion d'utilisateurs, tableau de bord, newsletter, je peux faire\n"
+"\t\t\t\t\t\t\tce que vous voulez pour votre site web."
+
+#: MVC/View/Home/services.php:82
+msgid ""
+"You dream about being in the first results of Google?<br/>\n"
+"\t\t\t\t\t\t\tYou need to know how to measure your SEO improvment day by day?"
+"<br/>\n"
+"\t\t\t\t\t\t\tYou don't know much about SEO but you need visibility?\n"
+"\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\tIn this case, you'll like this option. I assure you to use all "
+"the best coding practice\n"
+"\t\t\t\t\t\t\tto improve your website SEO. Moreover, I can provide some "
+"tools to measure it and \n"
+"\t\t\t\t\t\t\tgive you advices about them."
+msgstr ""
+"Vous rêvez d'être premier dans les résultats de Google?<br/>\n"
+"\t\t\t\t\t\t\tVous avez besoin de savoir comment mesurez votre SEO jour "
+"après jour ?<br/>\n"
+"\t\t\t\t\t\t\tVous n'en savez pas beaucoup sur le SEO mais vous avez besoin "
+"de visibilité ?\n"
+"\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\tDans ce cas, vous allez adorer cette option. Je vous assure "
+"d'utiliser les meilleures coding practice\n"
+"\t\t\t\t\t\t\tpour améliorer naturellement votre SEO. De plus, je peux vous "
+"fournir quelques outils pour le mesurer et \n"
+"\t\t\t\t\t\t\tvous donner des conseils à leur propos."
+
+#: MVC/View/Home/services.php:101
+msgid ""
+"You want to host your website online but you're lost?<br/>\n"
+"\t\t\t\t\t\t\tYou need to reserve your domain name but you don't know how?"
+"<br/>\n"
+"\t\t\t\t\t\t\tYou don't have time to bother about what's the best option "
+"among the hosting providers?\n"
+"\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\tSo you'll probably need this option too! I can give you "
+"advices about domain names and hosting solutions.\n"
+"\t\t\t\t\t\t\tMore! I also absolutely can do it for you so that you don't "
+"have to do anything."
+msgstr ""
+"Vous voulez héberger votre site en ligne mais vous êtes perdu ?<br/>\n"
+"\t\t\t\t\t\t\tVous avez besoin d'acheter un nom de domaine mais vous ne "
+"savez pas comment ?<br/>\n"
+"\t\t\t\t\t\t\tVous n'avez pas le temps de comparer les meilleurs options "
+"d'hébergement parmi tous les fournisseurs ?\n"
+"\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\t<br/>\n"
+"\t\t\t\t\t\t\tAlors vous aurez certainement besoin de cette option aussi ! "
+"Je peux vous conseiller sur l'achat de votre nom de domaine et de votre "
+"hébergement.\n"
+"\t\t\t\t\t\t\tMieux ! Je peux aussi le faire pour vous afin que vous ne vous "
+"préoccupiez de rien."
+
+#: MVC/View/Home/services.php:122
+msgid "Tell me more about your project"
+msgstr "Dites m'en plus sur votre projet"
+
+#: MVC/View/Home/work.php:1
+msgid "My last projects - Thibault"
+msgstr "Mes derniers projets - Thibault"
+
+#: MVC/View/Home/work.php:13
+msgid "My last projects"
+msgstr "Mes derniers projets"
+
+#: MVC/View/Home/work.php:44
+msgid "See the website"
+msgstr "Voir le site"
+
+#: MVC/View/Home/work.php:60
+msgid "Convinced? Write me for yours!"
+msgstr "Convaincu ? Contactez-moi !"
+
+#: Partial/footer.php:7
+msgid ""
+"Every project, every business needs a great showcase. Yours too. I will "
+"always do my best to fit your needs. Contact me and we will see what we can "
+"arrange!"
+msgstr ""
+"Tous les projets, toutes les entreprises ont besoin d'un bon site vitrine. "
+"Le votre aussi. Je ferais toujours de mon mieux pour combler vos besoins. "
+"Contactez-moi et nous verrons ce que nous pouvons faire ensemble !"
+
+#: Partial/footer.php:9
+msgid "Tell me about your project"
+msgstr "Dites m'en plus sur votre projet"
+
+#: Partial/header.php:20
+msgid "Home"
+msgstr "Accueil"
+
+#: Partial/header.php:21
+msgid "About"
+msgstr "A propos"
+
+#: Partial/header.php:22
+msgid "Services"
+msgstr "Services"

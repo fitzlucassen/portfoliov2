@@ -32,7 +32,7 @@ class HomeController extends Controller
 		if (Core\Request::isPost()) {
 			$data = Core\Request::cleanRequest();
 
-			if (!isset($data["email"]) || empty($data["email"]) || !isset($data["name"]) || empty ($data ["name"]))
+			if (!isset($data["email"]) || empty($data["email"]) || !isset($data["name"]) || empty($data["name"]))
 				$Model->_message = "Please fill your e-mail and your name";
 			else {
 				$Email = new Helper\Email();

@@ -4,10 +4,9 @@
             <div class="col-md-6">
                 <h3>Lets Talk</h3>
                 <p>
-                    Every project, every business needs a great showcase. Yours too. 
-                    I will always do my best to fit your needs. Contact me and we will see what we can arrange!
+                    <?php echo _("Every project, every business needs a great showcase. Yours too. I will always do my best to fit your needs. Contact me and we will see what we can arrange!"); ?>
                 </p>
-                <p class="btn-footer"><a href="/en/#contact">Tell me about your project</a></p>
+                <p class="btn-footer"><a href="/en/#contact"><?php echo _("Tell me about your project"); ?></a></p>
             </div>
             <div class="col-md-6 info">
                 <h3>Info</h3>
