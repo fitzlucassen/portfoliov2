@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Portfolio\n"
-"POT-Creation-Date: 2019-05-28 14:42+0200\n"
-"PO-Revision-Date: 2019-05-28 14:47+0200\n"
+"POT-Creation-Date: 2019-09-10 16:13+0200\n"
+"PO-Revision-Date: 2019-09-10 17:05+0200\n"
 "Last-Translator: \n"
 "Language-Team: Thibault\n"
 "Language: fr_FR\n"
@@ -16,8 +16,8 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: MVC/View/Home/about.php:1
-msgid "Who I am - Thibault"
-msgstr "Qui suis-je - Thibault"
+msgid "What kind of developer am I - Thibault"
+msgstr "Quel développeur suis-je - Thibault"
 
 #: MVC/View/Home/about.php:13
 msgid "Who I am"
@@ -136,7 +136,7 @@ msgstr ""
 "\t\t\t\t\t\t\tLe développement backend concerne tout ce qui touche aux "
 "algorithmes, à la logique et aux données.\n"
 "\t\t\t\t\t\t\tJ'ai toujours été très intéressé par le développement backend "
-"et ses diverses possibilités."
+"et ses diverses possibilités. "
 
 #: MVC/View/Home/about.php:227
 msgid ""
@@ -191,8 +191,12 @@ msgstr ""
 msgid "Convinced? Send me a message!"
 msgstr "Convaincu ? Contactez-moi !"
 
+#: MVC/View/Home/index.php:1
+msgid "Thibault - Freelance Web Developer"
+msgstr "Thibault - Développeur web freelance"
+
 #: MVC/View/Home/index.php:34
-msgid "I’m Thibault, a developer from around Paris."
+msgid "I'm Thibault, a developer from around Paris."
 msgstr "Je suis Thibault, un développeur de la région de Paris."
 
 #: MVC/View/Home/index.php:35 MVC/View/Home/index.php:54
@@ -279,9 +283,9 @@ msgstr "Plus sur mes services"
 msgid "Work"
 msgstr "Projets"
 
-#: MVC/View/Home/index.php:139 MVC/View/Home/work.php:14
-msgid "Happy spending my time to this projects"
-msgstr "Heureux d'avoir passé mon temps sur ces projets"
+#: MVC/View/Home/index.php:139
+msgid "Happy spending my time into these web projects"
+msgstr "Heureux d'avoir passé mon temps sur ces projets web"
 
 #: MVC/View/Home/index.php:158
 msgid "See details"
@@ -311,8 +315,8 @@ msgid "Read my resume here"
 msgstr "Lire mon C.V"
 
 #: MVC/View/Home/index.php:184
-msgid "Contact me"
-msgstr "Contactez-moi"
+msgid "Ask for my development skills"
+msgstr "Demandez à bénéficier de mon expérience"
 
 #: MVC/View/Home/index.php:185
 msgid "Any question or needs? Send me a message!"
@@ -335,8 +339,8 @@ msgid "Send"
 msgstr "Envoyer"
 
 #: MVC/View/Home/services.php:1
-msgid "What I Do - Thibault"
-msgstr "Ce que je fais - Thibault"
+msgid "The services I offer as a developer - Thibault"
+msgstr "Les services que j'offre en temps que développeur - Thibault"
 
 #: MVC/View/Home/services.php:29
 msgid "Showcase Website"
@@ -451,12 +455,16 @@ msgid "Tell me more about your project"
 msgstr "Dites m'en plus sur votre projet"
 
 #: MVC/View/Home/work.php:1
-msgid "My last projects - Thibault"
-msgstr "Mes derniers projets - Thibault"
+msgid "What does my work look like - Thibault"
+msgstr "A quoi ressemble mon travail - Thibault"
 
 #: MVC/View/Home/work.php:13
 msgid "My last projects"
 msgstr "Mes derniers projets"
+
+#: MVC/View/Home/work.php:14
+msgid "Happy spending my time to this projects"
+msgstr "Heureux d'avoir passé mon temps sur ces projets"
 
 #: MVC/View/Home/work.php:44
 msgid "See the website"
@@ -491,3 +499,9 @@ msgstr "A propos"
 #: Partial/header.php:22
 msgid "Services"
 msgstr "Services"
+
+#~ msgid "Contact me"
+#~ msgstr "Contactez-moi"
+
+#~ msgid "My last projects - Thibault"
+#~ msgstr "Mes derniers projets - Thibault"

@@ -18,10 +18,10 @@
 
 <meta name="description" content="<?php echo isset($this->Model->_headerInformations) ? $this->Model->_headerInformations->getMetaDescription() : ""; ?>" >
 
-<meta property="og:title" content="Thibault - Web developer" />
+<meta property="og:title" content="Thibault - Freelance web developer" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
-<meta property="og:image" content="/favicon.ico" />
+<meta property="og:image" content="http://www.thibaultdulon.com/favicon.ico" />
 <meta property="og:description" content="<?php echo isset($this->Model->_headerInformations) ? $this->Model->_headerInformations->getMetaDescription() : ""; ?>" />
 
 <link rel="canonical" href="http://<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />

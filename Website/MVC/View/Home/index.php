@@ -1,10 +1,10 @@
-<title>Thibault - Web Developer</title>
+<title><?php echo _("Thibault - Freelance Web Developer"); ?></title>
 <?php
 	// inclure ci-dessus les balises à inclure dans la balise <head> du layout
 	$head = $this->RegisterViewHead();
 	// START CONTENT
 	// Intégrer ci-dessous la vue
-?>	
+?>
 
 <div id="colorlib-hero" class="js-fullheight">
 <?php
@@ -31,7 +31,7 @@
 						<div class="display-tc js-fullheight">
 							<div class="text-inner">
 								<div class="desc">
-									<h1><?php echo _("I’m Thibault, a developer from around Paris."); ?></h1>
+									<h1><?php echo _("I'm Thibault, a developer from around Paris."); ?></h1>
 									<p><a href="#contact" class="btn-view"><?php echo _("Hire me now"); ?> <i class="icon-arrow-right3"></i></a></p>
 								</div>
 							</div>
@@ -136,7 +136,7 @@
 		<div class="row">
 			<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
 				<span><?php echo _("Work"); ?></span>
-				<h2><?php echo _("Happy spending my time to this projects"); ?></h2>
+				<h2><?php echo _("Happy spending my time into these web projects"); ?></h2>
 			</div>
 		</div>
 		<div class="work-wrap">
@@ -181,7 +181,7 @@
 		</div>
 		<div class="row" id="contact">
 			<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-				<h2><?php echo _("Contact me"); ?></h2>
+				<h2><?php echo _("Ask for my development skills"); ?></h2>
 				<p><?php echo _("Any question or needs? Send me a message!"); ?></p>
 			</div>
 		</div>

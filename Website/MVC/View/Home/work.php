@@ -1,4 +1,4 @@
-<title><?php echo _("My last projects - Thibault"); ?></title>
+<title><?php echo _("What does my work look like - Thibault"); ?></title>
 <?php
 	// inclure ci-dessus les balises à inclure dans la balise <head> du layout
 	$head = $this->RegisterViewHead();
