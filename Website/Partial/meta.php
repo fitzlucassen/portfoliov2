@@ -21,7 +21,7 @@
 <meta property="og:title" content="Thibault - Freelance web developer" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
-<meta property="og:image" content="http://www.thibaultdulon.com/favicon.ico" />
+<meta property="og:image" content="https://www.thibaultdulon.com/Website/Content/Media/Image/img_bg_1.jpg" />
 <meta property="og:description" content="<?php echo isset($this->Model->_headerInformations) ? $this->Model->_headerInformations->getMetaDescription() : ""; ?>" />
 
 <link rel="canonical" href="http://<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />

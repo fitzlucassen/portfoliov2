@@ -106,6 +106,7 @@ class HomeController extends Controller
 	{
 		$Model = new Model\HomeModel($this->_lang, $this->_repositoryManager);
 
+		http_response_code(404);
 		$this->_view->ViewCompact($Model);
 	}
 

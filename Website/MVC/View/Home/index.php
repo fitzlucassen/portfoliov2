@@ -6,7 +6,7 @@
 	// Intégrer ci-dessous la vue
 ?>
 
-<div id="colorlib-hero" class="js-fullheight">
+<div id="colorlib-hero" class="js-fullheight" itemscope itemtype="http://schema.org/Person">
 <?php
 	if(isset($this->Model->_message) && !empty($this->Model->_message)) {
 ?>
@@ -25,13 +25,14 @@
 			<div class="hero-flex js-fullheight">
 				<div class="col-three-forth">
 					<div class="hero-img js-fullheight" style="background-image: url(/<?php echo __image_directory__; ?>/img_bg_1.jpg);background-position: left center;"></div>
+					<link itemprop="image" href="https://www.thibaultdulon.com/<?php echo __image_directory__; ?>/img_bg_1.jpg"/>
 				</div>
 				<div class="col-one-forth js-fullheight">
 					<div class="display-t js-fullheight">
 						<div class="display-tc js-fullheight">
 							<div class="text-inner">
 								<div class="desc">
-									<h1><?php echo _("I'm Thibault, a developer from around Paris."); ?></h1>
+									<h1><?php echo _("I'm <span itemprop=\"name\">Thibault</span>, a developer from around Paris."); ?></h1>
 									<p><a href="#contact" class="btn-view"><?php echo _("Hire me now"); ?> <i class="icon-arrow-right3"></i></a></p>
 								</div>
 							</div>
@@ -66,7 +67,7 @@
 		<div class="row">
 			<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
 				<span><?php echo _("What I Do"); ?></span>
-				<h2><?php echo _("Development, SEO, hosting and a bit of magic"); ?></h2>
+				<h2 itemprop="jobTitle"><?php echo _("Development, SEO, hosting and a bit of magic"); ?></h2>
 			</div>
 		</div>
 		<div class="row">
@@ -141,7 +142,7 @@
 		</div>
 		<div class="work-wrap">
 			<div class="row animate-box">
-				<div class="owl-carousel1">
+				<div class="owl-carousel1" itemtype="http://schema.org/CreativeWork">
 				<?php
 					$cpt = 1;
 					foreach ($this->Model->_projects as $project) {
@@ -152,9 +153,9 @@
 						</div>
 						<div class="col-md-6">
 							<div class="case-desc">
-								<p class="tag"><span><?php echo $project->getKeywords(); ?></span></p>
-								<h3><a href="#"><?php echo $project->getTitle(); ?></a></h3>
-								<p><?php echo $project->getDescription(); ?></p>
+								<p class="tag" itemprop="keywords"><span><?php echo $project->getKeywords(); ?></span></p>
+								<h3 itemprop="name"><a href="#"><?php echo $project->getTitle(); ?></a></h3>
+								<p itemprop="description"><?php echo $project->getDescription(); ?></p>
 								<p><a href="/en/work.html" class="btn btn-primary"><?php echo _("See details"); ?></a></p>
 							</div>
 						</div>
@@ -173,7 +174,7 @@
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="row row-padded-bottom">
-			<div class="col-md-8 col-md-offset-2 text-center animate-box">
+			<div class="col-md-8 col-md-offset-2 text-center animate-box" itemprop="description">
 				<p><?php echo _("Web developer since 7 years now, I'm passionated about web technologies in general."); ?></p>
 				<p><?php echo _("By having seen every side of my job, design, complex algorithm, hosting, architecture, SEO...etc I got what we name a full stack profile. Thanks to that, I can propose you the best of each part to fit your needs at best."); ?></p>
 				<p style="margin-bottom: 0;"><a href="/en/about.html" class="resume"><i class="icon-documents"></i> <?php echo _("Read my resume here"); ?></a></p>
