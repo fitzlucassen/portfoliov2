@@ -5,10 +5,13 @@
 	 ************* https://github.com/fitzlucassen ************
 	 **********************************************************/
 	namespace fitzlucassen\FLFramework\Data\Entity;
+
 	use fitzlucassen\FLFramework\Library\Core;
 	use fitzlucassen\FLFramework\Data\Base\Entity as EntityBase;
+
 	class Header extends EntityBase\HeaderBase {
 		public function __construct($id = '', $title = '', $metaDescription = '', $metaKeywords = '', $lang = ''){
 			parent::__construct($id, $title, $metaDescription, $metaKeywords, $lang);
 		}
+
 	}

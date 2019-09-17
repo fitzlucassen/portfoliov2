@@ -1,115 +1,116 @@
 <?php
 
-    namespace fitzlucassen\FLFramework\Website\MVC\Controller;
-    
-    use fitzlucassen\FLFramework\Website\MVC\Model as models;
-     /*
-	Class : ErrorController
-	Déscription : Permet de gérer les actions en relation avec le groupe de page Error
-     */
-    class ErrorController extends Controller {
+	namespace fitzlucassen\FLFramework\Website\MVC\Controller;
+	
+	use fitzlucassen\FLFramework\Website\MVC\Model;
+	/*
+		Class : ErrorController
+		Déscription : Permet de gérer les actions en relation avec le groupe de page Error
+	*/
+	class ErrorController extends Controller {
 		public function __construct($action, $manager) {
-			// Initialisation de la session
-			$this->_session = new Helper\Session();
-			$this->_lang = $this->_session->Read("lang");
-		    parent::__construct("error", $action, $this->_lang, $manager);
+			parent::__construct("error", $action, $manager);
 		}
 		
 		/*************
 		 * CONNEXION *
 		 *************/
 		public function noConnexionAvailable(){
-		    // Une action commencera toujours par l'initilisation de son modèle
-		    // Cette initialisation doit obligatoirement contenir le repository manager
-		    $Model = new models\ErrorModel($this->_repositoryManager);
-		    
-		    // Une action finira toujours par un $this->_view->ViewCompact
-		    // cette fonction prend en paramètre le modèle
-		    $this->_view->ViewCompact($Model);
+			$Model = new Model\ErrorModel($this->_repositoryManager);
+			
+			$this->_view->view($Model);
 		}
 		
 		public function noHeaderTableFound(){
-		    $Model = new models\ErrorModel($this->_repositoryManager);
-		    
-		    $this->_view->ViewCompact($Model);
+			$Model = new Model\ErrorModel($this->_repositoryManager);
+			
+			$this->_view->view($Model);
 		}
 		
 		public function noRewritingFound(){
-		    $Model = new models\ErrorModel($this->_repositoryManager);
-		    
-		    $this->_view->ViewCompact($Model);
+			$Model = new Model\ErrorModel($this->_repositoryManager);
+			
+			$this->_view->view($Model);
 		}
 		
 		public function noMultilingueFound(){
-		    $Model = new models\ErrorModel($this->_repositoryManager);
-		    
-		    $this->_view->ViewCompact($Model);
+			$Model = new Model\ErrorModel($this->_repositoryManager);
+			
+			$this->_view->view($Model);
+		}
+
+		public function queryFailed($params){
+			$Model = new Model\ErrorModel($this->_repositoryManager, $params);
+			
+			$Model->_message = $params[0];
+
+			$this->_view->view($Model);
 		}
 		
 		/********
 		 * VIEW *
 		 ********/
 		public function noModelProvided($params){
-		    $Model = new models\ErrorModel($this->_repositoryManager, $params);
-		    
-		    $Model->_controllerTarget = $params[0];
-		    $Model->_modelTarget = $params[1];
+			$Model = new Model\ErrorModel($this->_repositoryManager, $params);
+			
+			$Model->_controllerTarget = $params[0];
+			$Model->_modelTarget = $params[1];
 
-		    $this->_view->ViewCompact($Model);
+			$this->_view->view($Model);
 		}
 		
 		public function layoutDoesntExist($params){
-		    $Model = new models\ErrorModel($this->_repositoryManager, $params);
-		    
-		    $Model->_layoutTarget = $params[0];
+			$Model = new Model\ErrorModel($this->_repositoryManager, $params);
+			
+			$Model->_layoutTarget = $params[0];
 
-		    $this->_view->ViewCompact($Model);
+			$this->_view->view($Model);
 		}
 		
 		/**************
 		 * CONTROLLER *
 		 **************/
 		public function controllerClassDoesntExist($params){
-		    $Model = new models\ErrorModel($this->_repositoryManager, $params);
-		    
-		    $Model->_controllerTarget = $params[0];
-		    
-		    $this->_view->ViewCompact($Model);
+			$Model = new Model\ErrorModel($this->_repositoryManager, $params);
+			
+			$Model->_controllerTarget = $params[0];
+			
+			$this->_view->view($Model);
 		}
 		
 		public function controllerInstanceFailed($params){
-		    $Model = new models\ErrorModel($this->_repositoryManager, $params);
-		    
-		    $Model->_controllerTarget = $params[0];
-		    
-		    $this->_view->ViewCompact($Model);
+			$Model = new Model\ErrorModel($this->_repositoryManager, $params);
+			
+			$Model->_controllerTarget = $params[0];
+			
+			$this->_view->view($Model);
 		}
 		
 		public function actionDoesntExist($params){
-		    $Model = new models\ErrorModel($this->_repositoryManager, $params);
-		    
-		    $Model->_controllerTarget = $params[0];
-		    $Model->_modelTarget = $params[1];
+			$Model = new Model\ErrorModel($this->_repositoryManager, $params);
+			
+			$Model->_controllerTarget = $params[0];
+			$Model->_modelTarget = $params[1];
 
-		    $this->_view->ViewCompact($Model);
+			$this->_view->view($Model);
 		}
 
 		/*********
 		 * EMAIL *
 		 *********/
 		public function emailLayoutDoesntExist($params){
-		    $Model = new models\ErrorModel($this->_repositoryManager, $params);
-		    
-		    $Model->_layoutTarget = $params[0];
+			$Model = new Model\ErrorModel($this->_repositoryManager, $params);
+			
+			$Model->_layoutTarget = $params[0];
 
-		    $this->_view->ViewCompact($Model);
+			$this->_view->view($Model);
 		}
 
 		public function emailViewDoesntExist($params){
-		    $Model = new models\ErrorModel($this->_repositoryManager, $params);
-		    
-		    $Model->_viewTarget = $params[0];
+			$Model = new Model\ErrorModel($this->_repositoryManager, $params);
+			
+			$Model->_viewTarget = $params[0];
 
-		    $this->_view->ViewCompact($Model);
+			$this->_view->view($Model);
 		}
-    }
+	}

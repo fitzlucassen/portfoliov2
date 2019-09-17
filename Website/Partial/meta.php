@@ -1,6 +1,7 @@
 <?php
-    $urlsByLang = fitzlucassen\FLFramework\Library\Core\Router::GetUrlByLang($this->_controller, $this->_action, $this->Model->_params);
+    $urlsByLang = fitzlucassen\FLFramework\Library\Core\Router::getUrlsByLang($this->_controller, $this->_action, $this->Model->_params);
 
+    $isLangNeeded = $urlsByLang != null && count($urlsByLang) > 0;
 ?>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,11 +25,12 @@
 <meta property="og:image" content="https://www.thibaultdulon.com/Website/Content/Media/Image/img_bg_1.jpg" />
 <meta property="og:description" content="<?php echo isset($this->Model->_headerInformations) ? $this->Model->_headerInformations->getMetaDescription() : ""; ?>" />
 
-<link rel="canonical" href="http://<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
-<link rel="alternate" hreflang="en" href="http://<?php echo $_SERVER["HTTP_HOST"] . $urlsByLang["en"]["pattern"]; ?>" />
-<link rel="alternate" hreflang="fr" href="http://<?php echo $_SERVER["HTTP_HOST"] . $urlsByLang["fr"]["pattern"]; ?>" />
-<link rel="alternate" hreflang="x-default" href="http://<?php echo $_SERVER["HTTP_HOST"] . $urlsByLang["en"]["pattern"]; ?>" />
-
+<?php if($isLangNeeded) { ?>
+    <link rel="canonical" href="http://<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
+    <link rel="alternate" hreflang="en" href="http://<?php echo $_SERVER["HTTP_HOST"] . $urlsByLang["en"]; ?>" />
+    <link rel="alternate" hreflang="fr" href="http://<?php echo $_SERVER["HTTP_HOST"] . $urlsByLang["fr"]; ?>" />
+    <link rel="alternate" hreflang="x-default" href="http://<?php echo $_SERVER["HTTP_HOST"] . $urlsByLang["en"]; ?>" />
+<?php } ?>
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="icon" type="images/png" href="/favicon.ico" />

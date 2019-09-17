@@ -1,13 +1,13 @@
 <?php
-     
-    namespace fitzlucassen\FLFramework\Library\Helper;
+	 
+	namespace fitzlucassen\FLFramework\Library\Helper;
 
-    /*
-      Class : Auth
-      Déscription : Permet de gérer la couche autentification. (Connexion / Deconnexion d'un utilisateur)
-     */
-    class Auth extends Helper{
-    	private $_siteKey = "fitzlucassen\FLFramework";
+	/*
+		Class : Auth
+		Déscription : Permet de gérer la couche autentification. (Connexion / Deconnexion d'un utilisateur)
+	 */
+	class Auth extends Helper{
+		private $_siteKey = "fitzlucassen\FLFramework";
 		private $_user = null;
 		private $_repositoryManager = null;
 		private $_session = null;
@@ -38,39 +38,40 @@
 		 * @param object $manager
 		 * @return boolean/User
 		 */
-		public static function connect($login, $pwd) {
-		    $UserRepository = $this->_repositoryManager->get(ucwords($this->_params['table']));
+		public function connect($login, $pwd) {
+			$UserRepository = $this->_repositoryManager->get(ucwords($this->_params['table']));
 
-		    $user = $UserRepository->getBy($this->_params['loginField'], $login);
-		    $attrPwd = 'get' . ucwords($this->_params['passwordField']) . '()';
-		    
-		    $attr = 'get' . ucwords($this->_params['primaryKeyField']) . '()';
+			$user = $UserRepository->getBy($this->_params['loginField'], $login);
+			$attrPwd = 'get' . ucwords($this->_params['passwordField']);
+			
+			$attr = 'get' . ucwords($this->_params['primaryKeyField']);
 
-		    if(isset($user)){
-		    	if(is_array($user))
-		    		$user = $user[0];
-		    	
-			    $id = $user->$attr;
-			    if(isset($id) && !empty($id) && $id > 0 && $user->$attrPwd == $this->hashData($pwd)){
-					$this->_session->Write("Auth", $id);
+			if(isset($user) && count($user) > 0){
+				if(is_array($user))
+					$user = $user[0];
+				
+				$id = $user->$attr();
+
+				if(isset($id) && !empty($id) && $id > 0 && $user->$attrPwd() == $this->hashData($pwd)){
+					$this->_session->write("Auth", $id);
 					$this->_user = $user;
 					return $this->_user;
-			    }
-			    else{
+				}
+				else{
 					return false;
-			    }
-		    }
-		    else {
-		    	return false;
-		    }
+				}
+			}
+			else {
+				return false;
+			}
 		}
 
 		/**
 		 * disconnect --> déconnecte un utilisateur de la session courante
 		 */
 		public function disconnect() {
-		    $this->_session->Clear("Auth");
-		    $this->_user = null;
+			$this->_session->clear("Auth");
+			$this->_user = null;
 		}
 
 		/**
@@ -94,6 +95,6 @@
 		 * GETTERS *
 		 ***********/
 		public function getUser() {
-		    return $this->_user;
+			return $this->_user;
 		}
-    }
+	}

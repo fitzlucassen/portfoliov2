@@ -9,17 +9,17 @@
 	use fitzlucassen\FLFramework\Library\Core;
 	use fitzlucassen\FLFramework\Data\Entity;
 
-	class HeaderBase  {
+	class RewrittingurlBase  {
 		private $_id;
-		private $_title;
-		private $_metaDescription;
-		private $_metaKeywords;
+		private $_routeurl;
+		private $_idRouteUrl;
+		private $_urlMatched;
 		private $_lang;
 		private $_queryBuilder;
 
-		public function __construct($id = '', $title = '', $metaDescription = '', $metaKeywords = '', $lang = ''){
+		public function __construct($id = '', $idRouteUrl = '', $urlMatched = '', $lang = ''){
 			$this->_queryBuilder = new Core\QueryBuilder(true);
-			$this->fillObject(array("id" => $id, "title" => $title, "metaDescription" => $metaDescription, "metaKeywords" => $metaKeywords, "lang" => $lang));
+			$this->fillObject(array("id" => $id, "idRouteUrl" => $idRouteUrl, "urlMatched" => $urlMatched, "lang" => $lang));
 		}
 
 		/***********
@@ -28,14 +28,16 @@
 		public function getId() {
 			return $this->_id;
 		}
-		public function getTitle() {
-			return $this->_title;
+		public function getRouteUrl($repository) {
+			$result = $repository->getById($this->_idRouteUrl);
+			return $result;
 		}
-		public function getMetaDescription() {
-			return $this->_metaDescription;
+
+		public function getIdRouteUrl() {
+			return $this->_idRouteUrl;
 		}
-		public function getMetaKeywords() {
-			return $this->_metaKeywords;
+		public function getUrlMatched() {
+			return $this->_urlMatched;
 		}
 		public function getLang() {
 			return $this->_lang;
@@ -47,12 +49,10 @@
 		public function fillObject($properties) {
 			if(!empty($properties["id"]))
 				$this->_id = $properties["id"];
-			if(!empty($properties["title"]))
-				$this->_title = $properties["title"];
-			if(!empty($properties["metaDescription"]))
-				$this->_metaDescription = $properties["metaDescription"];
-			if(!empty($properties["metaKeywords"]))
-				$this->_metaKeywords = $properties["metaKeywords"];
+			if(!empty($properties["idRouteUrl"]))
+				$this->_idRouteUrl = $properties["idRouteUrl"];
+			if(!empty($properties["urlMatched"]))
+				$this->_urlMatched = $properties["urlMatched"];
 			if(!empty($properties["lang"]))
 				$this->_lang = $properties["lang"];
 		}

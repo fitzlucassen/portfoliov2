@@ -20,12 +20,17 @@ class Model
 	public function __construct($lang, $manager, $params = array())
 	{
 		$this->_lang = $lang;
-		$headers = Repository\HeaderRepository::getAll($manager->getConnection());
 
-		foreach ($headers as $key => $value) {
-			if ($value->getLang() == $this->_lang)
-				$this->_headerInformations = $value;
+		if ($manager) {
+
+			$headers = Repository\HeaderRepository::getAll($manager->getConnection());
+
+			foreach ($headers as $key => $value) {
+				if ($value->getLang() == $this->_lang)
+					$this->_headerInformations = $value;
+			}
 		}
+
 		// Les configuration de base générale pour le site en BDD
 		$this->_params = $params;
 	}

@@ -57,7 +57,7 @@ class HomeController extends Controller
 
 		// Une action finira toujours par un $this->_view->ViewCompact contenant : 
 		// cette fonction prend en paramètre le modèle
-		$this->_view->ViewCompact($Model);
+		$this->_view->view($Model);
 	}
 
 	public function Services()
@@ -68,7 +68,7 @@ class HomeController extends Controller
 
 		// Une action finira toujours par un $this->_view->ViewCompact contenant : 
 		// cette fonction prend en paramètre le modèle
-		$this->_view->ViewCompact($Model);
+		$this->_view->view($Model);
 	}
 
 	public function About()
@@ -86,7 +86,7 @@ class HomeController extends Controller
 
 		// Une action finira toujours par un $this->_view->ViewCompact contenant : 
 		// cette fonction prend en paramètre le modèle
-		$this->_view->ViewCompact($Model);
+		$this->_view->view($Model);
 	}
 
 	public function Work()
@@ -99,7 +99,7 @@ class HomeController extends Controller
 
 		// Une action finira toujours par un $this->_view->ViewCompact contenant : 
 		// cette fonction prend en paramètre le modèle
-		$this->_view->ViewCompact($Model);
+		$this->_view->view($Model);
 	}
 
 	public function Error404()
@@ -107,7 +107,7 @@ class HomeController extends Controller
 		$Model = new Model\HomeModel($this->_lang, $this->_repositoryManager);
 
 		http_response_code(404);
-		$this->_view->ViewCompact($Model);
+		$this->_view->view($Model);
 	}
 
 	private function GetCategories($skills)

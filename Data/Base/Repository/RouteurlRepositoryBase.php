@@ -10,7 +10,7 @@
 	use fitzlucassen\FLFramework\Data\Entity;
 	use fitzlucassen\FLFramework\Data\Base\Entity as EntityBase;
 
-	class HeaderRepositoryBase  {
+	class RouteurlRepositoryBase  {
 		protected $_pdo;
 		protected $_lang;
 		protected $_pdoHelper;
@@ -28,12 +28,12 @@
 		 **************************/
 		public static function getAll($Connection) {
 			$qb = new Core\QueryBuilder(true);
-			$query = $qb->select()->from(array("header"))->getQuery();
+			$query = $qb->select()->from(array("routeurl"))->getQuery();
 			try {
 				$result = $Connection->selectTable($query);
 				$array = array();
 				foreach ($result as $object){
-					$o = new Entity\Header();
+					$o = new Entity\Routeurl();
 					$o->fillObject($object);
 					$array[] = $o;
 				}
@@ -46,11 +46,11 @@
 		}
 
 		public function getById($id) {
-			$query = $this->_queryBuilder->select()->from(array("header"))
+			$query = $this->_queryBuilder->select()->from(array("routeurl"))
 											->where(array(array("link" => "", "left" => "id", "operator" => "=", "right" => $id)))->getQuery();
 			try {
 				$properties = $this->_pdoHelper->select($query);
-				$object = new Entity\Header();
+				$object = new Entity\Routeurl();
 				$object->fillObject($properties);
 				return $object;
 			}
@@ -61,13 +61,13 @@
 		}
 
 		public function getBy($key, $value) {
-			$query = $this->_queryBuilder->select()->from(array("header"))
+			$query = $this->_queryBuilder->select()->from(array("routeurl"))
 											->where(array(array("link" => "", "left" => $key, "operator" => "=", "right" => $value)))->getQuery();
 			try {
 				$properties = $this->_pdoHelper->selectTable($query);
 				$array = array();
 				foreach ($properties as $object){
-					$o = new Entity\Header();
+					$o = new Entity\Routeurl();
 					$o->fillObject($object);
 					$array[] = $o;
 				}
@@ -80,7 +80,7 @@
 		}
 
 		public function delete($id) {
-			$query = $this->_queryBuilder->delete("header")
+			$query = $this->_queryBuilder->delete("routeurl")
 											->where(array(array("link" => "", "left" => "id", "operator" => "=", "right" => $id )))
 											->getQuery();
 			try {
@@ -93,7 +93,7 @@
 		}
 
 		public function add($properties) {
-			$query = $this->_queryBuilder->insert("header", array('title' => $properties["title"], 'metaDescription' => $properties["metaDescription"], 'metaKeywords' => $properties["metaKeywords"], 'lang' => $properties["lang"], ))->getQuery();
+			$query = $this->_queryBuilder->insert("routeurl", array('name' => $properties["name"], 'controller' => $properties["controller"], 'action' => $properties["action"], 'order' => $properties["order"], ))->getQuery();
 			try {
 				return $this->_pdo->Query($query);
 			}
@@ -104,7 +104,7 @@
 		}
 
 		public function update($id, $properties) {
-			$query = $this->_queryBuilder->update("header", array('title' => $properties["title"], 'metaDescription' => $properties["metaDescription"], 'metaKeywords' => $properties["metaKeywords"], 'lang' => $properties["lang"], ))->where(array(array("link" => "", "left" => "id", "operator" => "=", "right" => $id )))->getQuery();
+			$query = $this->_queryBuilder->update("routeurl", array('name' => $properties["name"], 'controller' => $properties["controller"], 'action' => $properties["action"], 'order' => $properties["order"], ))->where(array(array("link" => "", "left" => "id", "operator" => "=", "right" => $id )))->getQuery();
 			try {
 				return $this->_pdo->Query($query);
 			}

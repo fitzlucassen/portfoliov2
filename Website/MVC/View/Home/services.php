@@ -1,10 +1,19 @@
 <title><?php echo _("The services I offer as a developer - Thibault"); ?></title>
 <?php
 	// inclure ci-dessus les balises à inclure dans la balise <head> du layout
-	$head = $this->RegisterViewHead();
+	$this->endSection('head');
+?>
+<?php
+	// inclure ci-dessous les balises à inclure à la fin de votre DOM
+	$this->beginSection();
+?>
+<?php
+	$this->endSection('scripts');
+	$this->beginSection();
+	
 	// START CONTENT
 	// Intégrer ci-dessous la vue
-?>	
+?>
 
 <div class="colorlib-services">
 	<div class="container">

@@ -1,5 +1,5 @@
 <?php    
-    $urlsByLang = fitzlucassen\FLFramework\Library\Core\Router::GetUrlByLang($this->_controller, $this->_action, $this->Model->_params);
+    $urlsByLang = fitzlucassen\FLFramework\Library\Core\Router::getUrlsByLang($this->_controller, $this->_action, $this->Model->_params);
 
     $homeRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "index", null, $this->_lang);
     $aboutRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "about", null, $this->_lang);

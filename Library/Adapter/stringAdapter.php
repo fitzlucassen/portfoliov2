@@ -1,46 +1,55 @@
 <?php
-    /*
-      Class : String
-      Déscription : Permet de gérer les strings
-     */
-     
-    namespace fitzlucassen\FLFramework\Library\Adapter;
+	/*
+		Class : String
+		Déscription : Permet de gérer les strings
+	*/
+	 
+	namespace fitzlucassen\FLFramework\Library\Adapter;
 
-    class StringAdapter {
-	
-	/**
-	 * Sanitize -> Clean une string pour faire une URL
-	 * @param type $string
-	 * @return type
-	 */
-	public static function Sanitize($string) {
-	    $string = strtolower($string);
-	    $string = str_replace(" ", "-", $string);
-	    $string = str_replace("'", "-", $string);
-	    $string = str_replace(",", "-", $string);
-	    $string = str_replace("?", "-", $string);
-	    $string = str_replace("!", "-", $string);
-	    $string = str_replace(":", "-", $string);
-	    $string = str_replace(";", "-", $string);
-	    $string = str_replace("é", "e", $string);
-	    $string = str_replace("è", "e", $string);
-	    $string = str_replace("ê", "e", $string);
-	    $string = str_replace("à", "a", $string);
-	    $string = str_replace("â", "a", $string);
-	    $string = str_replace("ù", "u", $string);
-	    $string = str_replace("û", "u", $string);
-	    $string = str_replace("ï", "i", $string);
-	    $string = str_replace("î", "i", $string);
-	    $string = str_replace("ì", "i", $string);
-	    $string = str_replace("ô", "o", $string);
-	    $string = str_replace("ö", "o", $string);
-	    $string = str_replace("--", "-", $string);
-	    $string = str_replace("+", "", $string);
-	    $string = str_replace("%", "", $string);
-	    $string = str_replace("*", "x", $string);
+	class StringAdapter {
+		/**
+		 * Sanitize -> Clean une string pour faire une URL
+		 * @param string $string
+		 * @return string
+		 */
+		public static function sanitize($string) {
+		    $string = strtolower($string);
 
-	    $string = rtrim($string, "-");
-	    $string = ltrim($string, "-");
-	    return $string;
+		    $search = [
+		    	' ','\'',',','?','!',':',';','é','è','ê','à','â','ù','ï','î','ô','ö','--','+','%','*','/'
+		    ];
+		    $replace = [
+		    	'-','-','-','-','-','-','-','e','e','e','a','a','u','i','i','o','o','-','','','x',''
+		    ];
+		    $string = str_replace($search, $replace, $string);
+
+		    $string = rtrim($string, "-");
+		    $string = ltrim($string, "-");
+		    return $string;
+		}
+
+		/**
+		 * IsNullOrEmpty --> tell is a string is null or empty
+		 * @param string $string
+		 * @return string
+		 */
+		public static function isNullOrEmpty($string){
+			return !isset($string) || empty($string);
+		}
+
+		public static function startsWith($haystack, $needle){
+			return strpos($haystack, $needle) === 0;
+		}
+
+		public static function endsWith($haystack, $needle){
+			if(strlen($needle) > strlen($haystack))
+				return false;
+			else {
+				$i = strrpos($haystack, $needle);
+				if($i >= 0 && substr($haystack, $i, strlen($needle)) == $needle)
+					return strrpos($haystack, $needle) + strlen($needle) === strlen($haystack);
+				else
+					return false;
+			}
+		}
 	}
-    }

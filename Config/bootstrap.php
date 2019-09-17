@@ -25,8 +25,8 @@
     // End router config
 
     // Put your logger config here
-    Core\Logger::setLogFile(__log_directory__ . '/log.txt');
-    Core\Logger::setExpireTime(3600);
+	Core\Logger::setLogFile(__log_directory__ . '/', 'log.txt');
+	Core\Logger::setExpireTime(3600);
     // End logger config
     
     // Put your Cache config here
@@ -35,7 +35,7 @@
     // End logger config
     
     // Define your webapp needs here
-    App::setIsDebugMode(false);
+    App::setIsDebugMode(true);
     App::setDatabaseNeeded(true);
     App::setUrlRewritingNeeded(true);
     App::setSupportedLanguages(['fr_FR', 'en_US']);

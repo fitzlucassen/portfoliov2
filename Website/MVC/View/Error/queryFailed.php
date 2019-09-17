@@ -17,8 +17,8 @@
 ?>
 
 <div id="ErrorPage">
-	<p>Visiblement, le contrôleur que vous essayer d'inclure n'existe pas</p>
+	<p>Visiblement, la requête que vous tentez d'exécuter en base de données a provoquée une erreur. Voici le message</p>
 	<ul>
-	<li>Vérifier que le fichier <b><?php echo $this->Model->_controllerTarget; ?></b> existe bien dans le dossier <i>Website/MVC/Controller</i></li>
+		<li><?php echo $this->Model->_message; ?></li>
 	</ul>
 </div>

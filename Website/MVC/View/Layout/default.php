@@ -7,10 +7,10 @@
 	    
 	    // L'inclusion des CSS, JS et HTML personnalisés pour chaque page
 	    // C'est à remplir dans les vues.
-	    $this->Render($this->Head);
+		$this->render($this->Sections['head']);
 	    
 	    // S'il n'y a pas de title de précisé, on inclue le title par défaut présent en base de données
-	    if(!$this->ContainsTitle($this->Head)) {
+	    if(!$this->ContainsTitle($this->Sections['head'])) {
 	?>
 		<title><?php $this->Render($this->Model->_headerInformations->getTitle()); ?></title>
 	<?php
@@ -32,7 +32,9 @@
 								<a class="colorlib-logo <?php echo $this->_action != "index" ? "black" : "";?>" href="/">T.</a>
 							</div>
 							<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
-    						<a href="<?php echo $this->_lang == 'fr' ? $urlsByLang["en"]["pattern"] : $urlsByLang["fr"]["pattern"] ; ?>" style="float:right;display:block;margin:5px 2%;text-decoration:none;color: black;"><?php echo $this->_lang == 'fr' ? 'en' : 'fr'; ?></a>
+							<?php if($isLangNeeded) { ?>
+								<a href="<?php echo $this->_lang == 'fr' ? $urlsByLang["en"] : $urlsByLang["fr"] ; ?>" style="float:right;display:block;margin:5px 2%;text-decoration:none;color: black;"><?php echo $this->_lang == 'fr' ? 'en' : 'fr'; ?></a>
+							<?php } ?>
 						</div>
 					</div>
 				</div>
@@ -40,7 +42,7 @@
 		
 		<?php
 			// Inclusion de la vue cible
-			$this->Render($this->Body);
+			$this->Render($this->Sections['body']);
 
 			include(__partial_directory__ . "/footer.php");
 		?>
