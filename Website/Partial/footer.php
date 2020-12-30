@@ -6,13 +6,12 @@
                 <p>
                     <?php echo _("Every project, every business needs a great showcase. Yours too. I will always do my best to fit your needs. Contact me and we will see what we can arrange!"); ?>
                 </p>
-                <p class="btn-footer"><a href="/en/#contact"><?php echo _("Tell me about your project"); ?></a></p>
+                <p class="btn-footer"><a href="<?php echo $homeRoute; ?>#contact"><?php echo _("Tell me about your project"); ?></a></p>
             </div>
             <div class="col-md-6 info">
                 <h3>Info</h3>
                 <p>Email: <strong><a href="mailto:contact@thibaultdulon.com?subject=thibaultdulon.com%20demande%20informations">contact@thibaultdulon.com</a></strong></p>
                 <p class="colorlib-social-icons">
-                    <span><a href="https://www.facebook.com/thibault.dulon.5" target="_blank" rel="nofollow"><i class="icon-social-facebook"></i>Facebook</a></span>
                     <span><a href="https://www.instagram.com/the_journey_quest" target="_blank" rel="nofollow"><i class="icon-social-twitter"></i>Instagram</a></span>
                     <span><a href="https://www.linkedin.com/in/thibaultdulon" target="_blank"><i class="icon-social-linkedin"></i>Linkedin</a></span>
                     <span><a href="https://github.com/fitzlucassen" target="_blank"><i class="icon-social-github"></i>Github</a></span>

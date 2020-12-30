@@ -1,27 +1,28 @@
 <title><?php echo _("Thibault - Freelance Web Developer"); ?></title>
 <?php
-	// inclure ci-dessus les balises à inclure dans la balise <head> du layout
-	$this->endSection('head');
+// inclure ci-dessus les balises à inclure dans la balise <head> du layout
+$this->endSection('head');
 ?>
 <?php
-	// inclure ci-dessous les balises à inclure à la fin de votre DOM
-	$this->beginSection();
+// inclure ci-dessous les balises à inclure à la fin de votre DOM
+$this->beginSection();
 ?>
 <?php
-	$this->endSection('scripts');
-	$this->beginSection();
-	
-	// START CONTENT
-	// Intégrer ci-dessous la vue
-	$aboutRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "about", null, $this->_lang);
-    	$servicesRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "services", null, $this->_lang);
-    	$workRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "work", null, $this->_lang);
+$this->endSection('scripts');
+$this->beginSection();
+
+// START CONTENT
+// Intégrer ci-dessous la vue
+$homeRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "index", null, $this->_lang);
+$aboutRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "about", null, $this->_lang);
+$servicesRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "services", null, $this->_lang);
+$workRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "work", null, $this->_lang);
 ?>
 <div itemscope itemtype="http://schema.org/Person">
 	<div id="colorlib-hero" class="js-fullheight">
 		<?php
 		if (isset($this->Model->_message) && !empty($this->Model->_message)) {
-			?>
+		?>
 			<p class="tooltip-message">
 				<?php echo $this->Model->_message; ?>
 			</p>
@@ -138,7 +139,7 @@
 			</div>
 
 			<div class="row">
-				<p style="margin-bottom: 0;text-align: center;"><a href="<?php echo $serviceRoute; ?>" class="btn btn-primary"><?php echo _("More about my services"); ?></a></p>
+				<p style="margin-bottom: 0;text-align: center;"><a href="<?php echo $servicesRoute; ?>" class="btn btn-primary"><?php echo _("More about my services"); ?></a></p>
 			</div>
 		</div>
 	</div>
@@ -157,7 +158,7 @@
 						<?php
 						$cpt = 1;
 						foreach ($this->Model->_projects as $project) {
-							?>
+						?>
 							<div class="item" itemscope itemtype="http://schema.org/CreativeWork">
 								<div class="col-md-6">
 									<div class="case-img" style="background-image: url(/<?php echo __image_directory__ . '/' . $project->getImage(); ?>);"></div>
@@ -225,7 +226,7 @@
 								<br />
 								<br />
 								<br />
-								
+
 								<div class="col-md-3 text-center animate-box">
 								</div>
 								<div class="col-md-6 text-center animate-box">
