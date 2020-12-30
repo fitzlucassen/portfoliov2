@@ -13,6 +13,9 @@
 	
 	// START CONTENT
 	// Intégrer ci-dessous la vue
+	$aboutRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "about", null, $this->_lang);
+    	$servicesRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "services", null, $this->_lang);
+    	$workRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "work", null, $this->_lang);
 ?>
 <div itemscope itemtype="http://schema.org/Person">
 	<div id="colorlib-hero" class="js-fullheight">
@@ -26,7 +29,6 @@
 		}
 		?>
 		<p class="social-media">
-			<a href="https://www.facebook.com/thibault.dulon.5" target="_blank">Facebook</a>
 			<a href="https://www.instagram.com/the_journey_quest" target="_blank">Instagram</a>
 		</p>
 		<div class="owl-carousel">
@@ -136,7 +138,7 @@
 			</div>
 
 			<div class="row">
-				<p style="margin-bottom: 0;text-align: center;"><a href="/en/services.html" class="btn btn-primary"><?php echo _("More about my services"); ?></a></p>
+				<p style="margin-bottom: 0;text-align: center;"><a href="<?php echo $serviceRoute; ?>" class="btn btn-primary"><?php echo _("More about my services"); ?></a></p>
 			</div>
 		</div>
 	</div>
@@ -166,7 +168,7 @@
 										<p class="tag" itemprop="keywords"><span><?php echo $project->getKeywords(); ?></span></p>
 										<h3 itemprop="name"><a href="#"><?php echo $project->getTitle(); ?></a></h3>
 										<p itemprop="description"><?php echo $project->getDescription(); ?></p>
-										<p><a href="/en/work.html" class="btn btn-primary"><?php echo _("See details"); ?></a></p>
+										<p><a href="<?php echo $workRoute; ?>" class="btn btn-primary"><?php echo _("See details"); ?></a></p>
 									</div>
 								</div>
 							</div>
@@ -187,7 +189,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center animate-box" itemprop="description">
 					<p><?php echo _("Web developer since 7 years now, I'm passionated about web technologies in general."); ?></p>
 					<p><?php echo _("By having seen every side of my job, design, complex algorithm, hosting, architecture, SEO...etc I got what we name a full stack profile. Thanks to that, I can propose you the best of each part to fit your needs at best."); ?></p>
-					<p style="margin-bottom: 0;"><a href="/en/about.html" class="resume"><i class="icon-documents"></i> <?php echo _("Read my resume here"); ?></a></p>
+					<p style="margin-bottom: 0;"><a href="<?php echo $aboutRoute; ?>" class="resume"><i class="icon-documents"></i> <?php echo _("Read my resume here"); ?></a></p>
 				</div>
 			</div>
 			<div class="row" id="contact">
