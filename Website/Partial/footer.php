@@ -50,3 +50,4 @@
 
 <!-- Main JS (Do not remove) -->
 <script src="/<?php echo __js_directory__; ?>/main.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

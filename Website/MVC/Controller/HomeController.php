@@ -28,28 +28,39 @@ class HomeController extends Controller
 		// Une action commencera toujours par l'initilisation de son modèle
 		// Cette initialisation doit obligatoirement contenir le repository manager
 		$Model = new Model\HomeModel($this->_lang, $this->_repositoryManager);
+		$CaptchaHelper = new Helper\Recaptcha();
 
 		if (Core\Request::isPost()) {
 			$data = Core\Request::cleanRequest();
 
 			if (!isset($data["email"]) || empty($data["email"]) || !isset($data["name"]) || empty($data["name"]))
 				$Model->_message = "Please fill your e-mail and your name";
+			else if (!isset($data["g-recaptcha-response"]) || empty($data["g-recaptcha-response"]))
+				$Model->_message = "Please tick captcha verification";
 			else {
-				$Email = new Helper\Email();
-				$Email->from($data['email']);
-				$Email->to('thibault.dulon@gmail.com');
-				$Email->subject($data['name'] . " vous a envoyé un message");
-				$Email->fromName('thibaultdulon.com');
-				$Email->buildHeaders();
+				$captchaSuccess = $CaptchaHelper->Verify($data["g-recaptcha-response"]);
 
-				$Email->vars(array(
-					'text' =>
-					'Une personne vient de vous contacter sur votre portfolio thibaultdulon.com.<br/>
+				if ($captchaSuccess->success == true) {
+
+					$Email = new Helper\Email();
+					$Email->from($data['email']);
+					$Email->to('thibault.dulon@gmail.com');
+					$Email->subject($data['name'] . " vous a envoyé un message");
+					$Email->fromName('thibaultdulon.com');
+					$Email->buildHeaders();
+
+					$Email->vars(array(
+						'text' =>
+						'Une personne vient de vous contacter sur votre portfolio thibaultdulon.com.<br/>
 		    		Voici son message : <br/><br/>' . $data['message']
-				));
-				$Email->send();
+					));
+					$Email->send();
 
-				$Model->_message = 'Your message has been sent!';
+					$Model->_message = 'Your message has been sent!';
+				}
+				else {
+					$Model->_message = 'Robots not allowed!';
+				}
 			}
 		}
 

@@ -223,6 +223,16 @@
 								<br />
 								<br />
 								<br />
+								
+								<div class="col-md-3 text-center animate-box">
+								</div>
+								<div class="col-md-6 text-center animate-box">
+									<div class="g-recaptcha" data-sitekey="6LfGjQcaAAAAAE8nOXAXIGIETF3bZPyQBSVSXVgg" style="width:304px;margin:auto;"></div>
+								</div>
+								<div class="col-md-3 text-center animate-box">
+								</div>
+								<div class="col-md-12">&nbsp;</div>
+
 								<div class="col-md-3 text-center animate-box">
 								</div>
 								<div class="col-md-6 text-center animate-box">

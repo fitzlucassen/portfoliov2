@@ -7,7 +7,7 @@
 		Déscription : Permet de gérer les vues
 	 */
 	class View {
-		protected $Model;
+		protected $Model = null;
 		protected $Sections = array();
 		
 		private $_controller;
@@ -29,7 +29,7 @@
 		 */
 		public function view($model, $contentType = "", $responseCode = 200){
 			if(!isset($model))
-				throw new Adapter\ViewException(Adapter\ViewException::getNO_MODEL(), array("controller" => $controller, "action" => $action));
+				throw new Adapter\ViewException(Adapter\ViewException::getNO_MODEL(), array("controller" => $this->_controller, "action" => $this->_action));
 			
 			$this->Model = $model;
 			
