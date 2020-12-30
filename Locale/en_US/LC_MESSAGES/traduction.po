@@ -6,46 +6,46 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Portfolio\n"
 "Report-Msgid-Bugs-To: thibault.dulon@gmail.com\n"
-"POT-Creation-Date: 2019-05-28 14:42+0200\n"
-"PO-Revision-Date: 2019-05-28 17:37+0200\n"
+"POT-Creation-Date: 2020-12-30 20:58+0100\n"
+"PO-Revision-Date: 2020-12-30 21:06+0100\n"
+"Last-Translator: \n"
 "Language-Team: Thibault Dulon\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-Basepath: ../../../Website\n"
 "X-Poedit-KeywordsList: __;_\n"
-"Last-Translator: \n"
-"Language: en_US\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: MVC/View/Home/about.php:1
-msgid "Who I am - Thibault"
-msgstr "Who I am - Thibault"
+msgid "What kind of developer am I - Thibault Developer"
+msgstr ""
 
-#: MVC/View/Home/about.php:13
+#: MVC/View/Home/about.php:22
 msgid "Who I am"
 msgstr "Who I am"
 
-#: MVC/View/Home/about.php:14
+#: MVC/View/Home/about.php:23
 msgid "Passionated freelance developer"
 msgstr "Passionated freelance developer"
 
-#: MVC/View/Home/about.php:23
+#: MVC/View/Home/about.php:32
 msgid ""
 "I’m Thibault,<br/>Web developer &amp;<br/>Web architect<br/>based in Paris."
 msgstr ""
 "I’m Thibault,<br/>Web developer &amp;<br/>Web architect<br/>based in Paris."
 
-#: MVC/View/Home/about.php:31
+#: MVC/View/Home/about.php:40
 msgid ""
 "After getting my web and e-business master degree, first of my promotion, \n"
 "\t\t\t\t\t\tI've cumulated experiences in very differents companies. Always "
 "passionated by my work, I've always given it all."
 msgstr ""
 
-#: MVC/View/Home/about.php:35
+#: MVC/View/Home/about.php:44
 msgid ""
 "From development to SEO, from server managing to project management, from "
 "algorithm to design, \n"
@@ -55,7 +55,7 @@ msgid ""
 "website."
 msgstr ""
 
-#: MVC/View/Home/about.php:40
+#: MVC/View/Home/about.php:49
 msgid ""
 "Because every one needs and deserves a good website for its business.\n"
 "\t\t\t\t\t\tBecause internet users are more and more demanding and difficult "
@@ -64,46 +64,46 @@ msgid ""
 "business and your needs."
 msgstr ""
 
-#: MVC/View/Home/about.php:47
+#: MVC/View/Home/about.php:56
 msgid "Experience"
 msgstr ""
 
-#: MVC/View/Home/about.php:79
+#: MVC/View/Home/about.php:88
 msgid "Education"
 msgstr ""
 
-#: MVC/View/Home/about.php:111
+#: MVC/View/Home/about.php:120
 msgid "Interests"
 msgstr ""
 
-#: MVC/View/Home/about.php:122
+#: MVC/View/Home/about.php:131
 msgid ""
 "Travelling is definitly my greatest passion.<br/>I've already been in "
 "Australia, Peru, Bolivia, Mexico, Guatemala, Colombia, Ecuador, Iceland..."
 "etc."
 msgstr ""
 
-#: MVC/View/Home/about.php:135
+#: MVC/View/Home/about.php:144
 msgid ""
 "Also passionated about music, I played guitar in a rock band during 5 years "
 "and I'm still much into playing and listening music."
 msgstr ""
 
-#: MVC/View/Home/about.php:148
+#: MVC/View/Home/about.php:157
 msgid ""
 "Another great passion of mine is cinema. I'm a movie addict and I never "
 "refuse to go watching a movie, from drama to comedia and biopic to thriller."
 msgstr ""
 
-#: MVC/View/Home/about.php:163
+#: MVC/View/Home/about.php:172
 msgid "Skills"
 msgstr ""
 
-#: MVC/View/Home/about.php:164
+#: MVC/View/Home/about.php:173
 msgid "My Skills &amp; Abilities"
 msgstr ""
 
-#: MVC/View/Home/about.php:172
+#: MVC/View/Home/about.php:181
 msgid ""
 "Backend side of coding is what user cannot see. \n"
 "\t\t\t\t\t\t\tBackend side of coding is everything that concerned algorithm, "
@@ -112,14 +112,14 @@ msgid ""
 "variety of possibilities. "
 msgstr ""
 
-#: MVC/View/Home/about.php:227
+#: MVC/View/Home/about.php:236
 msgid ""
 "As a backend side developer, you always have to interact with databases.\n"
 "\t\t\t\t\t\t\tDatabase is a great world where optimisation is the main "
 "purpose of everything."
 msgstr ""
 
-#: MVC/View/Home/about.php:239
+#: MVC/View/Home/about.php:248
 msgid ""
 "Frontend side of coding is what user can immediatly see.\n"
 "\t\t\t\t\t\t\tFrontend side of coding is all about design, ergonomy and "
@@ -128,14 +128,14 @@ msgid ""
 "development."
 msgstr ""
 
-#: MVC/View/Home/about.php:294
+#: MVC/View/Home/about.php:303
 msgid ""
 "In the frontend world, there are a lot of tools, API and Framework\n"
 "\t\t\t\t\t\t\tthat can help you to do whatever you want in an easier and "
 "cleaner way."
 msgstr ""
 
-#: MVC/View/Home/about.php:306
+#: MVC/View/Home/about.php:315
 msgid ""
 "I obviously have many more other skills but maybe I sould let a bit of "
 "mystery.\n"
@@ -143,156 +143,160 @@ msgid ""
 "rely on."
 msgstr ""
 
-#: MVC/View/Home/about.php:340
+#: MVC/View/Home/about.php:349
 msgid "Convinced? Send me a message!"
 msgstr ""
 
-#: MVC/View/Home/index.php:34
-msgid "I’m Thibault, a developer from around Paris."
-msgstr "BOUYABABABA."
+#: MVC/View/Home/index.php:1
+msgid "Thibault - Freelance Web Developer Paris"
+msgstr ""
 
-#: MVC/View/Home/index.php:35 MVC/View/Home/index.php:54
+#: MVC/View/Home/index.php:47
+msgid "I'm <b itemprop=\"name\">Thibault</b>, a developer from around Paris."
+msgstr "I'm <b itemprop=\"name\">Thibault</b>, a developer from around Paris."
+
+#: MVC/View/Home/index.php:48 MVC/View/Home/index.php:67
 msgid "Hire me now"
 msgstr ""
 
-#: MVC/View/Home/index.php:53
+#: MVC/View/Home/index.php:66
 msgid "I'm a Web Engineer &amp; Architect based in Paris."
 msgstr ""
 
-#: MVC/View/Home/index.php:68 MVC/View/Home/services.php:13
+#: MVC/View/Home/index.php:81 MVC/View/Home/services.php:23
 msgid "What I Do"
 msgstr ""
 
-#: MVC/View/Home/index.php:69 MVC/View/Home/services.php:14
+#: MVC/View/Home/index.php:82 MVC/View/Home/services.php:24
 msgid "Development, SEO, hosting and a bit of magic"
 msgstr ""
 
-#: MVC/View/Home/index.php:79
+#: MVC/View/Home/index.php:92
 msgid "Showcase website"
 msgstr ""
 
-#: MVC/View/Home/index.php:80
+#: MVC/View/Home/index.php:93
 msgid "One page website"
 msgstr ""
 
-#: MVC/View/Home/index.php:81
+#: MVC/View/Home/index.php:94
 msgid "Contact form"
 msgstr ""
 
-#: MVC/View/Home/index.php:82
+#: MVC/View/Home/index.php:95
 msgid "Showcase of your business"
 msgstr ""
 
-#: MVC/View/Home/index.php:92 MVC/View/Home/services.php:48
+#: MVC/View/Home/index.php:105 MVC/View/Home/services.php:58
 msgid "Complexe features"
 msgstr ""
 
-#: MVC/View/Home/index.php:93
+#: MVC/View/Home/index.php:106
 msgid "Membership management"
 msgstr ""
 
-#: MVC/View/Home/index.php:94
+#: MVC/View/Home/index.php:107
 msgid "Payment"
 msgstr ""
 
-#: MVC/View/Home/index.php:95
+#: MVC/View/Home/index.php:108
 msgid "Algorithm"
 msgstr ""
 
-#: MVC/View/Home/index.php:106
+#: MVC/View/Home/index.php:119
 msgid "Coding practice"
 msgstr ""
 
-#: MVC/View/Home/index.php:107
+#: MVC/View/Home/index.php:120
 msgid "Measurement tooling"
 msgstr ""
 
-#: MVC/View/Home/index.php:108
+#: MVC/View/Home/index.php:121
 msgid "Advices for SEO/SEM"
 msgstr ""
 
-#: MVC/View/Home/index.php:119 MVC/View/Home/services.php:99
+#: MVC/View/Home/index.php:132 MVC/View/Home/services.php:109
 msgid "Hosting"
 msgstr ""
 
-#: MVC/View/Home/index.php:120
+#: MVC/View/Home/index.php:133
 msgid "Domain name reservation"
 msgstr ""
 
-#: MVC/View/Home/index.php:121
+#: MVC/View/Home/index.php:134
 msgid "Hosting solutions"
 msgstr ""
 
-#: MVC/View/Home/index.php:122
+#: MVC/View/Home/index.php:135
 msgid "Advices for more"
 msgstr ""
 
-#: MVC/View/Home/index.php:129
+#: MVC/View/Home/index.php:142
 msgid "More about my services"
 msgstr ""
 
-#: MVC/View/Home/index.php:138 Partial/header.php:23
+#: MVC/View/Home/index.php:151 Partial/header.php:23
 msgid "Work"
 msgstr ""
 
-#: MVC/View/Home/index.php:139 MVC/View/Home/work.php:14
-msgid "Happy spending my time to this projects"
+#: MVC/View/Home/index.php:152
+msgid "Happy spending my time into these web projects"
 msgstr ""
 
-#: MVC/View/Home/index.php:158
+#: MVC/View/Home/index.php:172
 msgid "See details"
 msgstr ""
 
-#: MVC/View/Home/index.php:177
+#: MVC/View/Home/index.php:191
 msgid ""
 "Web developer since 7 years now, I'm passionated about web technologies in "
 "general."
 msgstr ""
 
-#: MVC/View/Home/index.php:178
+#: MVC/View/Home/index.php:192
 msgid ""
 "By having seen every side of my job, design, complex algorithm, hosting, "
 "architecture, SEO...etc I got what we name a full stack profile. Thanks to "
 "that, I can propose you the best of each part to fit your needs at best."
 msgstr ""
 
-#: MVC/View/Home/index.php:179
+#: MVC/View/Home/index.php:193
 msgid "Read my resume here"
 msgstr ""
 
-#: MVC/View/Home/index.php:184
-msgid "Contact me"
+#: MVC/View/Home/index.php:198
+msgid "Ask for my development skills"
 msgstr ""
 
-#: MVC/View/Home/index.php:185
+#: MVC/View/Home/index.php:199
 msgid "Any question or needs? Send me a message!"
 msgstr ""
 
-#: MVC/View/Home/index.php:195
+#: MVC/View/Home/index.php:209
 msgid "Enter your name"
 msgstr ""
 
-#: MVC/View/Home/index.php:200
+#: MVC/View/Home/index.php:214
 msgid "Enter your email"
 msgstr ""
 
-#: MVC/View/Home/index.php:207
+#: MVC/View/Home/index.php:221
 msgid "Tell me more"
 msgstr ""
 
-#: MVC/View/Home/index.php:219
+#: MVC/View/Home/index.php:243
 msgid "Send"
 msgstr ""
 
 #: MVC/View/Home/services.php:1
-msgid "What I Do - Thibault"
+msgid "The services I offer as a developer - Thibault Developer"
 msgstr ""
 
-#: MVC/View/Home/services.php:29
+#: MVC/View/Home/services.php:39
 msgid "Showcase Website"
 msgstr ""
 
-#: MVC/View/Home/services.php:31
+#: MVC/View/Home/services.php:41
 msgid ""
 "You quickly need a website for your business?<br/>\n"
 "\t\t\t\t\t\t\tA visibility on search engines such as Google?<br/>\n"
@@ -307,7 +311,7 @@ msgid ""
 "\t\t\t\t\t\t\tResponsive and multipage options availables on demand."
 msgstr ""
 
-#: MVC/View/Home/services.php:50
+#: MVC/View/Home/services.php:60
 msgid ""
 "You're imagining an online shop? <br/>\n"
 "\t\t\t\t\t\t\tA personnal dashboard for your users?<br/>\n"
@@ -319,7 +323,7 @@ msgid ""
 "\t\t\t\t\t\t\twhatever you need on your website that we can imagine together."
 msgstr ""
 
-#: MVC/View/Home/services.php:82
+#: MVC/View/Home/services.php:92
 msgid ""
 "You dream about being in the first results of Google?<br/>\n"
 "\t\t\t\t\t\t\tYou need to know how to measure your SEO improvment day by day?"
@@ -334,7 +338,7 @@ msgid ""
 "\t\t\t\t\t\t\tgive you advices about them."
 msgstr ""
 
-#: MVC/View/Home/services.php:101
+#: MVC/View/Home/services.php:111
 msgid ""
 "You want to host your website online but you're lost?<br/>\n"
 "\t\t\t\t\t\t\tYou need to reserve your domain name but you don't know how?"
@@ -349,23 +353,27 @@ msgid ""
 "have to do anything."
 msgstr ""
 
-#: MVC/View/Home/services.php:122
+#: MVC/View/Home/services.php:132
 msgid "Tell me more about your project"
 msgstr ""
 
 #: MVC/View/Home/work.php:1
-msgid "My last projects - Thibault"
+msgid "What does my freelance work look like - Thibault Developer"
 msgstr ""
 
-#: MVC/View/Home/work.php:13
+#: MVC/View/Home/work.php:22
 msgid "My last projects"
 msgstr ""
 
-#: MVC/View/Home/work.php:44
+#: MVC/View/Home/work.php:23
+msgid "Happy spending my time to this projects"
+msgstr ""
+
+#: MVC/View/Home/work.php:53
 msgid "See the website"
 msgstr ""
 
-#: MVC/View/Home/work.php:60
+#: MVC/View/Home/work.php:69
 msgid "Convinced? Write me for yours!"
 msgstr ""
 
@@ -391,3 +399,6 @@ msgstr ""
 #: Partial/header.php:22
 msgid "Services"
 msgstr ""
+
+#~ msgid "Who I am - Thibault"
+#~ msgstr "Who I am - Thibault"

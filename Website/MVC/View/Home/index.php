@@ -1,4 +1,4 @@
-<title><?php echo _("Thibault - Freelance Web Developer"); ?></title>
+<title><?php echo _("Thibault - Freelance Web Developer Paris"); ?></title>
 <?php
 // inclure ci-dessus les balises à inclure dans la balise <head> du layout
 $this->endSection('head');
@@ -36,7 +36,7 @@ $workRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "work"
 			<div class="item">
 				<div class="hero-flex js-fullheight">
 					<div class="col-three-forth">
-						<div class="hero-img js-fullheight" style="background-image: url(/<?php echo __image_directory__; ?>/img_bg_1.jpg);background-position: left center;"></div>
+						<div class="hero-img js-fullheight" style="background-image: url(/<?php echo __image_directory__; ?>/img_bg_neige.jpg);background-position: left center;"></div>
 						<link itemprop="image" href="https://www.thibaultdulon.com/<?php echo __image_directory__; ?>/img_bg_1.jpg" />
 					</div>
 					<div class="col-one-forth js-fullheight">

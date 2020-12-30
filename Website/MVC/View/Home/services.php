@@ -1,4 +1,4 @@
-<title><?php echo _("The services I offer as a developer - Thibault"); ?></title>
+<title><?php echo _("The services I offer as a developer - Thibault Developer"); ?></title>
 <?php
 	// inclure ci-dessus les balises à inclure dans la balise <head> du layout
 	$this->endSection('head');

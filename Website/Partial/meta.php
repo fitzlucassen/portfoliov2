@@ -26,10 +26,10 @@
 <meta property="og:description" content="<?php echo isset($this->Model->_headerInformations) ? $this->Model->_headerInformations->getMetaDescription() : ""; ?>" />
 
 <?php if($isLangNeeded) { ?>
-    <link rel="canonical" href="http://<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
-    <link rel="alternate" hreflang="en" href="http://<?php echo $_SERVER["HTTP_HOST"] . $urlsByLang["en"]; ?>" />
-    <link rel="alternate" hreflang="fr" href="http://<?php echo $_SERVER["HTTP_HOST"] . $urlsByLang["fr"]; ?>" />
-    <link rel="alternate" hreflang="x-default" href="http://<?php echo $_SERVER["HTTP_HOST"] . $urlsByLang["en"]; ?>" />
+    <link rel="canonical" href="https://<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
+    <link rel="alternate" hreflang="en" href="https://<?php echo $_SERVER["HTTP_HOST"] . $urlsByLang["en"]; ?>" />
+    <link rel="alternate" hreflang="fr" href="https://<?php echo $_SERVER["HTTP_HOST"] . $urlsByLang["fr"]; ?>" />
+    <link rel="alternate" hreflang="x-default" href="https://<?php echo $_SERVER["HTTP_HOST"] . $urlsByLang["fr"]; ?>" />
 <?php } ?>
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 <link rel="shortcut icon" href="/favicon.ico">

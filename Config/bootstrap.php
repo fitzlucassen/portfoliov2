@@ -21,7 +21,7 @@
     // Put your router config here
     Core\Router::SetDefaultAction("index");
     Core\Router::SetDefaultController("home");
-    Core\Router::SetDefaultLanguage("en");
+    Core\Router::SetDefaultLanguage("fr");
     // End router config
 
     // Put your logger config here

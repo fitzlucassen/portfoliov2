@@ -1,4 +1,4 @@
-<title><?php echo _("What does my work look like - Thibault"); ?></title>
+<title><?php echo _("What does my freelance work look like - Thibault Developer"); ?></title>
 <?php
 	// inclure ci-dessus les balises à inclure dans la balise <head> du layout
 	$this->endSection('head');
