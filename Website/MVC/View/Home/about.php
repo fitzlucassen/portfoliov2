@@ -13,6 +13,7 @@
 	
 	// START CONTENT
 	// Intégrer ci-dessous la vue
+	$homeRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "index", null, $this->_lang);
 ?>
 <div class="colorlib-about" style="padding-bottom: 0;">
 	<div class="container">
@@ -345,7 +346,7 @@
 		<br/><br/>
 		
 		<div class="row">
-			<p class="btn-footer" style="text-align: center;"><a href="/en/#contact"><?php echo _("Convinced? Send me a message!"); ?></a></p>
+			<p class="btn-footer" style="text-align: center;"><a href="<?php echo $homeRoute; ?>#contact"><?php echo _("Convinced? Send me a message!"); ?></a></p>
 		</div>
 	</div>
 </div>
