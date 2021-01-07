@@ -24,8 +24,10 @@
             <div class="col-md-4 col-md-offset-4 text-center">
                 <p>
                     <small class="block">
-                        &copy; Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" rel="nofollow">Colorlib</a>
-                    </small> 
+                        &copy; Copyright &copy;<script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" rel="nofollow">Colorlib</a>
+                    </small>
                 </p>
             </div>
         </div>
@@ -42,11 +44,28 @@
 <!-- Waypoints -->
 <script src="/<?php echo __js_directory__; ?>/jquery.waypoints.min.js"></script>
 <!-- Owl Carousel -->
-<script src="/<?php echo __js_directory__; ?>/owl.carousel.min.js"></script>
+<script src="/<?php echo __js_directory__; ?>/owl.carousel.min.js" ></script>
 <!-- Magnific Popup -->
-<script src="/<?php echo __js_directory__; ?>/jquery.magnific-popup.min.js"></script>
-<script src="/<?php echo __js_directory__; ?>/magnific-popup-options.js"></script>
+<script src="/<?php echo __js_directory__; ?>/jquery.magnific-popup.min.js" async defer></script>
+<script src="/<?php echo __js_directory__; ?>/magnific-popup-options.js" async defer></script>
 
 <!-- Main JS (Do not remove) -->
 <script src="/<?php echo __js_directory__; ?>/main.js"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<script>
+    $(document).ready(function() {
+        Modernizr.on('webp', function(result) {
+            if (result) {
+                $('img').each(function() {
+                    $(this).attr('src', $(this).attr('src').substr(0, $(this).attr('src').lastIndexOf('.')) + '.webp');
+                });
+                $('.hero-img,.case-img').each(function(){
+                    $(this).css('background-image', $(this).css('background-image').substr(0, $(this).css('background-image').lastIndexOf('.')) + '.webp")');
+                });
+            } else {
+                // No WebP support
+            }
+        });
+    });
+</script>

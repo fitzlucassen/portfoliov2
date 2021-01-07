@@ -58,7 +58,7 @@
 <link rel="stylesheet" href="/<?php echo __css_directory__; ?>/style.css">
 
 <!-- Modernizr JS -->
-<script src="/<?php echo __js_directory__; ?>/modernizr-2.6.2.min.js"></script>
+<script src="/<?php echo __js_directory__; ?>/modernizr.min.js"></script>
 <!-- FOR IE9 below -->
 <!--[if lt IE 9]>
 <script src="/<?php echo __js_directory__; ?>/respond.min.js"></script>
