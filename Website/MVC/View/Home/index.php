@@ -35,9 +35,13 @@ $workRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "work"
 		<div class="owl-carousel">
 			<div class="item">
 				<div class="hero-flex js-fullheight">
-					<div class="col-three-forth">
-						<div class="hero-img js-fullheight" style="background-image: url(/<?php echo __image_directory__; ?>/img_bg_neige.jpg);background-position: left center;"></div>
-						<link itemprop="image" href="https://www.thibaultdulon.com/<?php echo __image_directory__; ?>/img_bg_1.jpg" />
+					<div class="col-three-forth" style="position: relative;overflow-x:hidden;">
+						<picture class="hero-img js-fullheight" style="position:absolute;left:0;top:0;">
+							<source srcset="/<?php echo __image_directory__; ?>/img_bg_neige.webp" type="image/webp">
+							<source srcset="/<?php echo __image_directory__; ?>/img_bg_neige.jpg" type="image/jpeg">
+							<img src="/<?php echo __image_directory__; ?>/img_bg_neige.jpg" alt="Un développeur est un créatif" class="js-fullheight" style="width:auto"/>
+						</picture>
+						<link itemprop="image" href="https://www.thibaultdulon.com/<?php echo __image_directory__; ?>/img_bg_1.webp" />
 					</div>
 					<div class="col-one-forth js-fullheight">
 						<div class="display-t js-fullheight">
@@ -56,7 +60,11 @@ $workRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "work"
 			<div class="item">
 				<div class="hero-flex js-fullheight">
 					<div class="col-three-forth">
-						<div class="hero-img js-fullheight" style="background-image: url(/<?php echo __image_directory__; ?>/img_bg_2.jpg);background-position: left center;"></div>
+						<picture class="hero-img js-fullheight" style="position:absolute;left:0;top:0;">
+							<source srcset="/<?php echo __image_directory__; ?>/img_bg_2.webp" type="image/webp">
+							<source srcset="/<?php echo __image_directory__; ?>/img_bg_2.jpg" type="image/jpeg">
+							<img src="/<?php echo __image_directory__; ?>/img_bg_2.jpg" alt="Un développeur aime voyager" class="js-fullheight" style="width:auto"/>
+						</picture>
 					</div>
 					<div class="col-one-forth js-fullheight">
 						<div class="display-t js-fullheight">
@@ -161,8 +169,12 @@ $workRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "work"
 						?>
 							<div class="item" itemscope itemtype="http://schema.org/CreativeWork">
 								<div class="col-md-6">
-									<div class="case-img" style="background-image: url(/<?php echo __image_directory__ . '/' . $project->getImage(); ?>);"></div>
-									<link itemprop="image" href="https://www.thibaultdulon.com/<?php echo __image_directory__; ?>/<?php echo $project->getImage(); ?>" />
+									<picture class="case-img" style="overflow:hidden;text-align:center;">
+										<source srcset="/<?php echo __image_directory__ . '/' . $project->getImage(); ?>.webp" type="image/webp">
+										<source srcset="/<?php echo __image_directory__ . '/' . $project->getImage(); ?>.jpg" type="image/jpeg"> 
+										<img src="/<?php echo __image_directory__ . '/' . $project->getImage(); ?>.jpg" alt="<?php echo $project->getTitle(); ?>" class="case-img" style="width: auto;display:inline-block;">
+									</picture>
+									<link itemprop="image" href="https://www.thibaultdulon.com/<?php echo __image_directory__; ?>/<?php echo $project->getImage(); ?>.webp" />
 								</div>
 								<div class="col-md-6">
 									<div class="case-desc">

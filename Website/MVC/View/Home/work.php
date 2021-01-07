@@ -33,8 +33,11 @@
 					<div class="col-three-forth js-fullheight">
 						<div class="row no-gutters">
 							<div class="col-md-12 col-md-offset-0 <?php echo $cpt % 2 == 0 ? "col-md-push-12" : ""; ?> no-gutters">
-								<div class="work-img js-fullheight" style="background-image: url(/<?php echo __image_directory__ . '/' . $project->getImage(); ?>);">
-								</div>
+								<picture>
+									<source srcset="/<?php echo __image_directory__ . '/' . $project->getImage(); ?>.webp" type="image/webp">
+									<source srcset="/<?php echo __image_directory__ . '/' . $project->getImage(); ?>.jpg" type="image/jpeg">
+									<img class="work-img js-fullheight" src="/<?php echo __image_directory__ . '/' . $project->getImage(); ?>.jpg" class="about-2 img-responsive" alt="<?php echo $project->getTitle(); ?>">
+								</picture>
 							</div>
 						</div>
 					</div>

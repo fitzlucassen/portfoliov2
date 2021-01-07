@@ -46,26 +46,9 @@
 <!-- Owl Carousel -->
 <script src="/<?php echo __js_directory__; ?>/owl.carousel.min.js" ></script>
 <!-- Magnific Popup -->
-<script src="/<?php echo __js_directory__; ?>/jquery.magnific-popup.min.js" async defer></script>
-<script src="/<?php echo __js_directory__; ?>/magnific-popup-options.js" async defer></script>
+<script src="/<?php echo __js_directory__; ?>/jquery.magnific-popup.min.js" ></script>
+<script src="/<?php echo __js_directory__; ?>/magnific-popup-options.js" ></script>
 
 <!-- Main JS (Do not remove) -->
 <script src="/<?php echo __js_directory__; ?>/main.js"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-<script>
-    $(document).ready(function() {
-        Modernizr.on('webp', function(result) {
-            if (result) {
-                $('img').each(function() {
-                    $(this).attr('src', $(this).attr('src').substr(0, $(this).attr('src').lastIndexOf('.')) + '.webp');
-                });
-                $('.hero-img,.case-img').each(function(){
-                    $(this).css('background-image', $(this).css('background-image').substr(0, $(this).css('background-image').lastIndexOf('.')) + '.webp")');
-                });
-            } else {
-                // No WebP support
-            }
-        });
-    });
-</script>

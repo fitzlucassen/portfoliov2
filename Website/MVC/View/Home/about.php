@@ -25,7 +25,11 @@
 		</div>
 		<div class="row row-padded-bottom">
 			<div class="col-md-6 animate-box">
-				<img src="/<?php echo __image_directory__; ?>/img_bg_2_1.jpg" class="about-2 img-responsive" alt="Picture of me, taking inspiration">
+				<picture>
+					<source srcset="/<?php echo __image_directory__; ?>/img_bg_2_1.webp" type="image/webp">
+					<source srcset="/<?php echo __image_directory__; ?>/img_bg_2_1.webp" type="image/jpeg">
+					<img src="/<?php echo __image_directory__; ?>/img_bg_2_1.jpg" class="about-2 img-responsive" alt="Picture of me, taking inspiration">
+				</picture>
 			</div>
 			<div class="col-md-6 animate-box">
 				<div class="about-desc">
