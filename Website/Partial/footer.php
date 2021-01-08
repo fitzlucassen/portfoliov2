@@ -46,9 +46,9 @@
 <!-- Owl Carousel -->
 <script src="/<?php echo __js_directory__; ?>/owl.carousel.min.js" ></script>
 <!-- Magnific Popup -->
-<script src="/<?php echo __js_directory__; ?>/jquery.magnific-popup.min.js" ></script>
-<script src="/<?php echo __js_directory__; ?>/magnific-popup-options.js" ></script>
+<script src="/<?php echo __js_directory__; ?>/jquery.magnific-popup.min.js" async defer></script>
+<script src="/<?php echo __js_directory__; ?>/magnific-popup-options.js" async defer></script>
 
 <!-- Main JS (Do not remove) -->
-<script src="/<?php echo __js_directory__; ?>/main.js"></script>
+<script src="/<?php echo __js_directory__; ?>/main.js" async defer></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>

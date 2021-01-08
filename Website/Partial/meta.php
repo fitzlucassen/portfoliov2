@@ -42,18 +42,26 @@
 <link rel="apple-touch-icon" sizes="72x72" href="/favicon72.png" />
 <link rel="apple-touch-icon" sizes="114x114" href="/favicon114.png" />
 
-<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800"></noscript>
+
 <!-- Animate.css -->
-<link rel="stylesheet" href="/<?php echo __css_directory__; ?>/animate.css">
+<link rel="preload" href="/<?php echo __css_directory__; ?>/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/<?php echo __css_directory__; ?>/animate.css"></noscript>
+
 <!-- Icomoon Icon Fonts-->
-<link rel="stylesheet" href="/<?php echo __css_directory__; ?>/icomoon.css">
+<link rel="preload" href="/<?php echo __css_directory__; ?>/icomoon.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/<?php echo __css_directory__; ?>/icomoon.css"></noscript>
+
 <!-- Bootstrap  -->
 <link rel="stylesheet" href="/<?php echo __css_directory__; ?>/bootstrap.css">
 <!-- Owl Carousel -->
 <link rel="stylesheet" href="/<?php echo __css_directory__; ?>/owl.carousel.min.css">
 <link rel="stylesheet" href="/<?php echo __css_directory__; ?>/owl.theme.default.min.css">
+
 <!-- Magnific Popup -->
-<link rel="stylesheet" href="/<?php echo __css_directory__; ?>/magnific-popup.css">
+<link rel="preload" href="/<?php echo __css_directory__; ?>/magnific-popup.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/<?php echo __css_directory__; ?>/magnific-popup.css"></noscript>
 
 <link rel="stylesheet" href="/<?php echo __css_directory__; ?>/style.css">
 

@@ -23,6 +23,6 @@ RewriteCond %{REQUEST_FILENAME} !-l
 RewriteRule ^(.*)$ index.php [L,QSA]
 
 # Caching schema
-# <FilesMatch "\.(jpg|png|css|js|ttf|otf)$">
-# Header set Cache-Control "public, max-age=3600"
+# <FilesMatch "\.(jpg|png|css|js|ttf|otf|webp)$">
+# Header set Cache-Control "public, max-age=86400"
 # </FilesMatch>
