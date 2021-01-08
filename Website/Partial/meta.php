@@ -19,9 +19,9 @@
 
 <meta name="description" content="<?php echo isset($this->Model->_headerInformations) ? $this->Model->_headerInformations->getMetaDescription() : ""; ?>" >
 
-<meta property="og:title" content="Thibault - Freelance web developer" />
+<meta property="og:title" content="Thibault - Freelance web developer Paris" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
+<meta property="og:url" content="https://<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
 <meta property="og:image" content="https://www.thibaultdulon.com/Website/Content/Media/Image/img_bg_1.jpg" />
 <meta property="og:description" content="<?php echo isset($this->Model->_headerInformations) ? $this->Model->_headerInformations->getMetaDescription() : ""; ?>" />
 
@@ -63,7 +63,7 @@
 <link rel="preload" href="/<?php echo __css_directory__; ?>/magnific-popup.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="/<?php echo __css_directory__; ?>/magnific-popup.css"></noscript>
 
-<link rel="stylesheet" href="/<?php echo __css_directory__; ?>/style.css">
+<link rel="stylesheet" href="/<?php echo __css_directory__; ?>/_built.css">
 
 <!-- Modernizr JS -->
 <script src="/<?php echo __js_directory__; ?>/modernizr.min.js"></script>

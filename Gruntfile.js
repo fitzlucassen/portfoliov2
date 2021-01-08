@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     var jsSrc = ['Website/Content/JS/**/*.js', '!' + jsDist, '!Website/Content/JS/Base/jquery-1.10.min.js', '!Website/Content/JS/Base/jquery.mixitup.min.js', '!Website/Content/JS/Base/materialize.min.js', '!Website/Content/JS/Base/validator.min.js', '!Website/Content/JS/Base/wow.min.js'];
 
 	var cssDist = 'Website/Content/Css/_built.css';
-    var cssSrc = ['Website/Content/Css/**/*.css', '!' + cssDist, '!Website/Content/Css/Module/**/*.css'];
+    var cssSrc = ['Website/Content/Css/style.css'];
 	
     // Configuration de Grunt
     grunt.initConfig({
