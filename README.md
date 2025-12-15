@@ -1,7 +1,7 @@
 portfoliov2
 ===========
 
-The last current version of my portfolio currently online (http://www.thibaultdulon.com)
+The last current version of my portfolio currently online (https://www.thibaultdulon.com)
 
 Stack
 -----
