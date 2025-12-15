@@ -111,9 +111,9 @@ $workRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "work"
 								</span>
 									<div class="desc">
 										<h3><a href="#"><?php echo _("Platform &amp; architecture"); ?></a></h3>
-										<h4><?php echo _("Monolith, microservices and distributed systems"); ?></h4>
-										<h4><?php echo _("Scalable, resilient payment platforms"); ?></h4>
-										<h4><?php echo _("API gateway, identity provider, queuing, logging"); ?></h4>
+										<h4><?php echo _("Distributed systems"); ?></h4>
+										<h4><?php echo _("Scalable and resilient payment platforms"); ?></h4>
+										<h4><?php echo _("API gateway, identity provider, queuing, logging...etc."); ?></h4>
 									</div>
 					</div>
 				</div>

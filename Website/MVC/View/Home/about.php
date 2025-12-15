@@ -199,9 +199,7 @@
 				<div class="row">
 					<div class="col-md-6 animate-box">
 						<p>
-						<?php echo _("Backend side of coding is what user cannot see. 
-							Backend side of coding is everything that concerned algorithm, logic and data persistence.
-							I always was more interesting by backend development and its variety of possibilities. "); ?>
+						<?php echo _("Backend side of coding is what user cannot see. Backend side of coding is everything that concerned algorithm, logic and data persistence. I always was more interesting by backend development and its variety of possibilities. "); ?>
 						</p>
 					</div>
 					<div class="col-md-6">
@@ -254,8 +252,7 @@
 					</div>
 					<div class="col-md-6 animate-box">
 						<p>
-						<?php echo _("As a backend side developer, you always have to interact with databases.
-							Database is a great world where optimisation is the main purpose of everything."); ?>
+						<?php echo _("As a backend side developer, you always have to interact with databases. Database is a great world where optimisation is the main purpose of everything."); ?>
 						</p>
 					</div>
 				</div>
@@ -266,9 +263,7 @@
 				<div class="row">
 					<div class="col-md-6 animate-box">
 						<p>
-						<?php echo _("Frontend side of coding is what user can immediatly see.
-							Frontend side of coding is all about design, ergonomy and behavior.
-							I always liked to complete my work with some frontend development."); ?>
+						<?php echo _("Frontend side of coding is what user can immediatly see. Frontend side of coding is all about design, ergonomy and behavior. I always liked to complete my work with some frontend development."); ?>
 						</p>
 					</div>
 					<div class="col-md-6">
@@ -321,8 +316,7 @@
 					</div>
 					<div class="col-md-6 animate-box">
 						<p>
-						<?php echo _("In the frontend world, there are a lot of tools, API and Framework
-							that can help you to do whatever you want in an easier and cleaner way."); ?>
+						<?php echo _("In the frontend world, there are a lot of tools, API and Framework that can help you to do whatever you want in an easier and cleaner way."); ?>
 						</p>
 					</div>
 				</div>
@@ -333,8 +327,7 @@
 				<div class="row">
 					<div class="col-md-6 animate-box">
 						<p>
-						<?php echo _("I obviously have many more other skills but maybe I sould let a bit of mystery.
-							Finally, here are some other usefull things I know and you can rely on."); ?>
+						<?php echo _("I obviously have many more other skills but maybe I sould let a bit of mystery. Finally, here are some other usefull things I know and you can rely on."); ?>
 						</p>
 					</div>
 					<div class="col-md-6">

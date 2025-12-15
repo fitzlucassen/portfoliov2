@@ -112,6 +112,26 @@
 					</span>
 				</div>
 			</div>
+			<div style="clear:both;"></div>
+
+			<div class="col-md-3 text-center animate-box iconService">
+				<div class="services" style="padding-top: 130px;background: none;">
+					<span class="icon">
+						<i class="icon-arrow-loop"></i>
+					</span>
+				</div>
+			</div>
+			<div class="col-md-9 text-center animate-box">
+				<div class="services">
+					<div class="desc">
+						<h3><a href="#">BlockChain Smart Contract Audit</a></h3>
+						<p style="font-size:14px;text-align:justify">
+						<?php echo _("SERVICES_TEXT_BLOCKCHAIN_AUDIT"); ?>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
 		</div>
 
 			<div class="row">
