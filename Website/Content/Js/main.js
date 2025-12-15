@@ -139,16 +139,50 @@
 		});
 	};
 
-	
+		// Simple parallax on hero & work images
+		var parallaxHero = function() {
+			var $parallax = $('.js-parallax');
 
+			if ($parallax.length === 0) {
+				return;
+			}
 
+			var ticking = false;
+			var update = function() {
+				var scrollTop = $(window).scrollTop();
+				$parallax.each(function(){
+					var $el = $(this);
+					var speed = parseFloat($el.data('parallax-speed')) || 0.25;
+					var offset = scrollTop * speed * -1;
+					$el.css('transform', 'translate3d(0,'+ offset +'px,0)');
+				});
+				ticking = false;
+			};
+
+			$(window).on('scroll', function(){
+				if (!ticking) {
+					if (window.requestAnimationFrame) {
+						window.requestAnimationFrame(update);
+					} else {
+						update();
+					}
+					ticking = true;
+				}
+			});
+
+			// Initial position
+			update();
+		};
+
+		
 	// Document on load.
 	$(function(){
 		fullHeight();
 		burgerMenu();
 		// counterWayPoint();
-		contentWayPoint();
-		owlCarouselFeatureSlide();
+			contentWayPoint();
+			owlCarouselFeatureSlide();
+			parallaxHero();
 	});
 
 

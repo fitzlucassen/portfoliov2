@@ -1,4 +1,4 @@
-<title><?php echo _("What kind of developer am I - Thibault Developer"); ?></title>
+<title><?php echo _("About - Thibault Dulon"); ?></title>
 <?php
 	// inclure ci-dessus les balises à inclure dans la balise <head> du layout
 	$this->endSection('head');
@@ -15,46 +15,35 @@
 	// Intégrer ci-dessous la vue
 	$homeRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "index", null, $this->_lang);
 ?>
-<div class="colorlib-about" style="padding-bottom: 0;">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-				<span><?php echo _("Who I am"); ?></span>
-				<h1><?php echo _("Passionated freelance developer"); ?></h1>
-			</div>
-		</div>
-		<div class="row row-padded-bottom">
-			<div class="col-md-6 animate-box">
-				<picture>
-					<source srcset="/<?php echo __image_directory__; ?>/img_bg_2_1.webp" type="image/webp">
-					<source srcset="/<?php echo __image_directory__; ?>/img_bg_2_1.webp" type="image/jpeg">
-					<img src="/<?php echo __image_directory__; ?>/img_bg_2_1.jpg" class="about-2 img-responsive" alt="Picture of me, taking inspiration">
-				</picture>
-			</div>
-			<div class="col-md-6 animate-box">
-				<div class="about-desc">
-					<h1><?php echo _("I’m Thibault,<br/>Web developer &amp;<br/>Web architect<br/>based in Paris."); ?></h1>
+	<div class="colorlib-about" style="padding-bottom: 0;">
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+						<span><?php echo _("Who I am"); ?></span>
+						<h1><?php echo _("Head of Platform &amp; engineering leader"); ?></h1>
+					</div>
+				</div>
+			<div class="row row-padded-bottom">
+				<div class="col-md-6 animate-box">
+					<picture>
+						<source srcset="/<?php echo __image_directory__; ?>/img_bg_2_1.webp" type="image/webp">
+						<source srcset="/<?php echo __image_directory__; ?>/img_bg_2_1.webp" type="image/jpeg">
+						<img src="/<?php echo __image_directory__; ?>/img_bg_2_1.jpg" class="about-2 img-responsive" alt="Picture of me, taking inspiration">
+					</picture>
+				</div>
+				<div class="col-md-6 animate-box">
+					<div class="about-desc">
+							<h1><?php echo _("I'm Thibault,<br/>Head of Platform &amp;<br/>engineering leader<br/>based in France."); ?></h1>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<div class="about-info animate-box" style="text-align: justify;">
-					<p>
-					<?php echo _("After getting my web and e-business master degree, first of my promotion, 
-						I've cumulated experiences in very differents companies. Always passionated by my work, I've always given it all."); ?>
-					</p>
-					<p>
-					<?php echo _("From development to SEO, from server managing to project management, from algorithm to design, 
-						I've seen almost all side of my profession. Thanks to this experience, I've decided to help people
-						that doesn't have enough web knowledge to create their showcase website."); ?>
-					</p>
-					<p>
-					<?php echo _("Because every one needs and deserves a good website for its business.
-						Because internet users are more and more demanding and difficult to satisfy.
-						I'm offering you to make you own website that match your business and your needs."); ?>
-					</p>
-				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="about-info animate-box" style="text-align: justify;">
+							<p><?php echo _("After a web &amp; e-business master, where I graduated top of my class, I worked in very different environments: agencies, e-commerce, startups and fintech."); ?></p>
+							<p><?php echo _("Curious by nature, I've touched many aspects of the job: backend and frontend development, SEO, server management, architecture, cloud, web3… This breadth gives me a holistic view of the systems I build."); ?></p>
+							<p><?php echo _("Today, as Head of Platform at Mangopay, I focus on designing robust and scalable platforms, improving developer experience and supporting engineering teams."); ?></p>
+						</div>
 				<div class="about-info animate-box">
 					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading intro-heading-2">
 						<span style="font-size:18px;"><?php echo _("Experience"); ?></span>
@@ -162,11 +151,39 @@
 								</p>
 							</div>
 						</div>
+						</div>
+
+							<div class="about-info animate-box">
+								<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading intro-heading-2">
+									<span style="font-size:18px;"><?php echo _("Contributions &amp; talks"); ?></span>
+								</div>
+								<div class="row">
+									<div class="wrap" style="border:none;">
+										<div class="col-md-12 col-xs-12">
+											<p class="job"><?php echo _("Medium article &mdash; How building a tiny home in a van made me a better lead dev."); ?></p>
+											<p><a href="https://medium.com/mangopay/how-building-a-tiny-home-in-a-van-made-me-a-better-lead-dev-5f1c29667792" target="_blank" class="btn-view"><?php echo _("Read the article"); ?></a></p>
+										</div>
+									</div>
+
+									<div class="wrap" style="border:none;">
+										<div class="col-md-12 col-xs-12">
+											<p class="job"><?php echo _("Medium article &mdash; Parallels between scaling the Matterhorn and building technical platforms."); ?></p>
+											<p><a href="https://medium.com/mangopay/conquering-the-summit-navigating-the-parallels-between-scaling-the-matterhorn-and-building-a-3458e5dd70ad" target="_blank" class="btn-view"><?php echo _("Read the article"); ?></a></p>
+										</div>
+									</div>
+
+									<div class="wrap" style="border:none;">
+										<div class="col-md-12 col-xs-12">
+											<p class="job"><?php echo _("Podcast (FR) &mdash; Conversation about my journey and platform engineering."); ?></p>
+											<p><a href="https://www.youtube.com/watch?v=QPh_b5qGxEA" target="_blank" class="btn-view"><?php echo _("Listen to the episode"); ?></a></p>
+										</div>
+									</div>
+								</div>
+							</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 </div>
 
 <div class="colorlib-skills">
@@ -350,7 +367,9 @@
 		<br/><br/>
 		
 		<div class="row">
-			<p class="btn-footer" style="text-align: center;"><a href="<?php echo $homeRoute; ?>#contact"><?php echo _("Convinced? Send me a message!"); ?></a></p>
+					<p class="btn-footer" style="text-align: center;">
+						<a href="<?php echo $homeRoute; ?>#contact"><?php echo _("Want to talk? Get in touch."); ?></a>
+					</p>
 		</div>
 	</div>
 </div>

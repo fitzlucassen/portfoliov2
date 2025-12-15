@@ -1,4 +1,4 @@
-<title><?php echo _("Thibault - Freelance Web Developer Paris"); ?></title>
+<title><?php echo _("Thibault Dulon - Head of Platform &amp; Engineering Leader"); ?></title>
 <?php
 // inclure ci-dessus les balises à inclure dans la balise <head> du layout
 $this->endSection('head');
@@ -33,10 +33,10 @@ $workRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "work"
 			<a href="https://www.instagram.com/the_journey_quest" target="_blank">Instagram</a>
 		</p>
 		<div class="owl-carousel">
-			<div class="item">
-				<div class="hero-flex js-fullheight">
-					<div class="col-three-forth" style="position: relative;overflow-x:hidden;">
-						<picture class="hero-img js-fullheight" style="position:absolute;left:0;top:0;">
+				<div class="item">
+					<div class="hero-flex js-fullheight">
+						<div class="col-three-forth" style="position: relative;overflow-x:hidden;">
+							<picture class="hero-img js-fullheight js-parallax" data-parallax-speed="0.25" style="position:absolute;left:0;top:0;">
 							<source srcset="/<?php echo __image_directory__; ?>/img_bg_neige.webp" type="image/webp">
 							<source srcset="/<?php echo __image_directory__; ?>/img_bg_neige.jpg" type="image/jpeg">
 							<img src="/<?php echo __image_directory__; ?>/img_bg_neige.jpg" alt="Un développeur est un créatif" class="js-fullheight" style="width:auto"/>
@@ -46,21 +46,21 @@ $workRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "work"
 					<div class="col-one-forth js-fullheight">
 						<div class="display-t js-fullheight">
 							<div class="display-tc js-fullheight">
-								<div class="text-inner">
-									<div class="desc">
-										<h1><?php echo _("I'm <b itemprop=\"name\">Thibault</b>, a developer from around Paris."); ?></h1>
-										<p><a href="#contact" class="btn-view"><?php echo _("Hire me now"); ?> <i class="icon-arrow-right3"></i></a></p>
-									</div>
-								</div>
+						<div class="text-inner">
+							<div class="desc">
+								<h1><?php echo _("I'm <b itemprop=\"name\">Thibault</b>, a Head of Platform and engineering leader."); ?></h1>
+								<p><a href="#contact" class="btn-view"><?php echo _("Get in touch"); ?> <i class="icon-arrow-right3"></i></a></p>
+							</div>
+						</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="item">
-				<div class="hero-flex js-fullheight">
-					<div class="col-three-forth">
-						<picture class="hero-img js-fullheight" style="position:absolute;left:0;top:0;">
+				<div class="item">
+					<div class="hero-flex js-fullheight">
+						<div class="col-three-forth">
+							<picture class="hero-img js-fullheight js-parallax" data-parallax-speed="0.2" style="position:absolute;left:0;top:0;">
 							<source srcset="/<?php echo __image_directory__; ?>/img_bg_2.webp" type="image/webp">
 							<source srcset="/<?php echo __image_directory__; ?>/img_bg_2.jpg" type="image/jpeg">
 							<img src="/<?php echo __image_directory__; ?>/img_bg_2.jpg" alt="Un développeur aime voyager" class="js-fullheight" style="width:auto"/>
@@ -69,12 +69,12 @@ $workRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "work"
 					<div class="col-one-forth js-fullheight">
 						<div class="display-t js-fullheight">
 							<div class="display-tc js-fullheight">
-								<div class="text-inner">
-									<div class="desc">
-										<h1><?php echo _("I'm a Web Engineer &amp; Architect based in Paris."); ?></h1>
-										<p><a href="#contact" class="btn-view"><?php echo _("Hire me now"); ?> <i class="icon-arrow-right3"></i></a></p>
-									</div>
-								</div>
+						<div class="text-inner">
+							<div class="desc">
+								<h1><?php echo _("I design resilient, scalable platforms for fintech."); ?></h1>
+								<p><a href="#contact" class="btn-view"><?php echo _("Get in touch"); ?> <i class="icon-arrow-right3"></i></a></p>
+							</div>
+						</div>
 							</div>
 						</div>
 					</div>
@@ -82,84 +82,88 @@ $workRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "work"
 			</div>
 		</div>
 	</div>
-	<div class="colorlib-services">
+		<div class="colorlib-services">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-					<span><?php echo _("What I Do"); ?></span>
-					<h2 itemprop="jobTitle"><?php echo _("Development, SEO, hosting and a bit of magic"); ?></h2>
+				<div class="row">
+						<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+							<span><?php echo _("What I do"); ?></span>
+							<h2 itemprop="jobTitle"><?php echo _("Platforms, engineering leadership &amp; developer experience"); ?></h2>
+						</div>
 				</div>
-			</div>
 			<div class="row">
 				<div class="col-md-3 text-center animate-box">
 					<div class="services">
-						<span class="icon">
-							<i class="icon-briefcase"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#"><?php echo _("Showcase website"); ?></a></h3>
-							<h4><?php echo _("One page website"); ?></h4>
-							<h4><?php echo _("Contact form"); ?></h4>
-							<h4><?php echo _("Showcase of your business"); ?></h4>
-						</div>
+								<span class="icon">
+									<i class="icon-briefcase"></i>
+								</span>
+									<div class="desc">
+										<h3><a href="#"><?php echo _("Engineering leadership"); ?></a></h3>
+										<h4><?php echo _("Technical vision aligned with business"); ?></h4>
+										<h4><?php echo _("Coaching, mentoring &amp; team culture"); ?></h4>
+										<h4><?php echo _("Technical roadmapping &amp; prioritisation"); ?></h4>
+									</div>
 					</div>
 				</div>
 				<div class="col-md-3 text-center animate-box">
 					<div class="services">
-						<span class="icon">
-							<i class="icon-lightbulb"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#"><?php echo _("Complexe features"); ?></a></h3>
-							<h4><?php echo _("Membership management"); ?></h4>
-							<h4><?php echo _("Payment"); ?></h4>
-							<h4><?php echo _("Algorithm"); ?></h4>
-						</div>
+								<span class="icon">
+									<i class="icon-lightbulb"></i>
+								</span>
+									<div class="desc">
+										<h3><a href="#"><?php echo _("Platform &amp; architecture"); ?></a></h3>
+										<h4><?php echo _("Monolith, microservices and distributed systems"); ?></h4>
+										<h4><?php echo _("Scalable, resilient payment platforms"); ?></h4>
+										<h4><?php echo _("API gateway, identity provider, queuing, logging"); ?></h4>
+									</div>
 					</div>
 				</div>
 				<div class="col-md-3 text-center animate-box">
 					<div class="services">
-						<span class="icon">
-							<i class="icon-list"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">SEO</a></h3>
-							<h4><?php echo _("Coding practice"); ?></h4>
-							<h4><?php echo _("Measurement tooling"); ?></h4>
-							<h4><?php echo _("Advices for SEO/SEM"); ?></h4>
-						</div>
+								<span class="icon">
+									<i class="icon-list"></i>
+								</span>
+									<div class="desc">
+										<h3><a href="#"><?php echo _("Developer experience"); ?></a></h3>
+										<h4><?php echo _("Internal tooling, CI/CD and test automation"); ?></h4>
+										<h4><?php echo _("Shared libraries and internal platforms"); ?></h4>
+										<h4><?php echo _("Documentation and architecture decision records"); ?></h4>
+									</div>
 					</div>
 				</div>
 
 				<div class="col-md-3 text-center animate-box">
 					<div class="services">
-						<span class="icon">
-							<i class="icon-hard-drive"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#"><?php echo _("Hosting"); ?></a></h3>
-							<h4><?php echo _("Domain name reservation"); ?></h4>
-							<h4><?php echo _("Hosting solutions"); ?></h4>
-							<h4><?php echo _("Advices for more"); ?></h4>
-						</div>
+								<span class="icon">
+									<i class="icon-hard-drive"></i>
+								</span>
+									<div class="desc">
+										<h3><a href="#"><?php echo _("Cloud &amp; operations"); ?></a></h3>
+										<h4><?php echo _("Operability, observability and incident management"); ?></h4>
+										<h4><?php echo _("SRE culture and platform reliability"); ?></h4>
+										<h4><?php echo _("AWS, containers, Kubernetes, FinOps"); ?></h4>
+									</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="row">
-				<p style="margin-bottom: 0;text-align: center;"><a href="<?php echo $servicesRoute; ?>" class="btn btn-primary"><?php echo _("More about my services"); ?></a></p>
-			</div>
+					<div class="row">
+						<p style="margin-bottom: 0;text-align: center;">
+							<a href="<?php echo $servicesRoute; ?>" class="btn btn-primary">
+								<?php echo _("Learn more about how I can help"); ?>
+							</a>
+						</p>
+					</div>
 		</div>
 	</div>
 
-	<div class="colorlib-case colorlib-bg-white">
+		<div class="colorlib-case colorlib-bg-white">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-					<span><?php echo _("Work"); ?></span>
-					<h2><?php echo _("Happy spending my time into these web projects"); ?></h2>
+				<div class="row">
+						<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+							<span><?php echo _("Projects"); ?></span>
+							<h2><?php echo _("A selection of technical projects I'm proud of"); ?></h2>
+						</div>
 				</div>
-			</div>
 			<div class="work-wrap">
 				<div class="row animate-box">
 					<div class="owl-carousel1">
@@ -197,19 +201,23 @@ $workRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "work"
 
 	<div id="colorlib-subscribe">
 		<div class="overlay"></div>
-		<div class="container">
+			<div class="container">
 			<div class="row row-padded-bottom">
-				<div class="col-md-8 col-md-offset-2 text-center animate-box" itemprop="description">
-					<p><?php echo _("Web developer since 7 years now, I'm passionated about web technologies in general."); ?></p>
-					<p><?php echo _("By having seen every side of my job, design, complex algorithm, hosting, architecture, SEO...etc I got what we name a full stack profile. Thanks to that, I can propose you the best of each part to fit your needs at best."); ?></p>
-					<p style="margin-bottom: 0;"><a href="<?php echo $aboutRoute; ?>" class="resume"><i class="icon-documents"></i> <?php echo _("Read my resume here"); ?></a></p>
-				</div>
+					<div class="col-md-8 col-md-offset-2 text-center animate-box" itemprop="description">
+							<p><?php echo _("As Head of Platform at Mangopay, I help engineering teams design and run resilient, scalable and secure payment platforms."); ?></p>
+							<p><?php echo _("After a web &amp; e‑business master (top of my class) and 10+ years across agencies, e‑commerce, startups and fintech, I grew from backend developer to lead developer and platform engineering leader."); ?></p>
+							<p style="margin-bottom: 0;">
+								<a href="<?php echo $aboutRoute; ?>" class="resume">
+									<i class="icon-documents"></i> <?php echo _("Read more about my journey"); ?>
+								</a>
+							</p>
+					</div>
 			</div>
-			<div class="row" id="contact">
-				<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-					<h2><?php echo _("Ask for my development skills"); ?></h2>
-					<p><?php echo _("Any question or needs? Send me a message!"); ?></p>
-				</div>
+				<div class="row" id="contact">
+						<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+							<h2><?php echo _("Get in touch"); ?></h2>
+							<p><?php echo _("Have an opportunity, a collaboration idea or just want to chat? Drop me a message."); ?></p>
+					</div>
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2">

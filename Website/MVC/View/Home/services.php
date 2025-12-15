@@ -1,4 +1,4 @@
-<title><?php echo _("The services I offer as a developer - Thibault Developer"); ?></title>
+<title><?php echo _("How I help engineering teams - Thibault Dulon"); ?></title>
 <?php
 	// inclure ci-dessus les balises à inclure dans la balise <head> du layout
 	$this->endSection('head');
@@ -17,57 +17,50 @@
 ?>
 
 <div class="colorlib-services">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-				<span><?php echo _("What I Do"); ?></span>
-				<h1><?php echo _("Development, SEO, hosting and a bit of magic"); ?></h1>
+		<div class="container">
+			<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+						<span><?php echo _("What I do"); ?></span>
+						<h1><?php echo _("Platform, engineering leadership &amp; developer experience"); ?></h1>
+					</div>
 			</div>
-		</div>
 		
-		<div class="row">
-			<div class="col-md-3 text-center animate-box iconService">
+			<div class="row">
+				<div class="col-md-3 text-center animate-box iconService">
 				<div class="services" style="padding-top: 130px;background: none;">
 					<span class="icon">
 						<i class="icon-briefcase"></i>
 					</span>
 				</div>
 			</div>
-			<div class="col-md-9 text-center animate-box">
-				<div class="services">
-					<div class="desc">
-						<h3><a href="#"><?php echo _("Showcase Website"); ?></a></h3>
-						<p style="font-size:14px;text-align:justify">
-						<?php echo _("You quickly need a website for your business?<br/>
-							A visibility on search engines such as Google?<br/>
-							You don't want to spend much money or you just need a showcase in one page?
-							<br/>
-							<br/>
-							This option is for you. In less than a week I can create a one page website with a contact form
-							that allows you to show what you do and explain your concept letting the option to visitors to contact you.
-							Responsive and multipage options availables on demand."); ?>
-						</p>
+				<div class="col-md-9 text-center animate-box">
+					<div class="services">
+						<div class="desc">
+								<h3><a href="#"><?php echo _("Engineering leadership &amp; platform vision"); ?></a></h3>
+								<p style="font-size:14px;text-align:justify">
+								<?php echo _("As Head of Platform, I help product and tech teams define a clear technical vision: aligning platform strategy with business goals, setting a direction and making it actionable for the teams."); ?>
+								<br/>
+								<br/>
+								<?php echo _("I build technical roadmaps, facilitate trade-offs (risk / impact / cost), run rituals (design reviews, architecture guilds...) and support engineers through mentoring and coaching."); ?>
+								</p>
+						</div>
 					</div>
 				</div>
-			</div>
 			<div style="clear:both;"></div>
 
-			<div class="col-md-9 text-center animate-box">
-				<div class="services">
-					<div class="desc">
-						<h3><a href="#"><?php echo _("Complexe features"); ?></a></h3>
-						<p style="font-size:14px;text-align:justify">
-						<?php echo _("You're imagining an online shop? <br/>
-							A personnal dashboard for your users?<br/>
-							You need some more complex features in your website?
-							<br/>
-							<br/>
-							Then you need to think about this option. Payment, membership, dashboard, newsletter, I can do
-							whatever you need on your website that we can imagine together."); ?>
-						</p>
+				<div class="col-md-9 text-center animate-box">
+					<div class="services">
+						<div class="desc">
+								<h3><a href="#"><?php echo _("Platform &amp; architecture"); ?></a></h3>
+								<p style="font-size:14px;text-align:justify">
+								<?php echo _("I've worked on turning monoliths into distributed systems, building high-volume payment APIs and designing cross-cutting components (identity provider, API gateway, messaging, logging...)."); ?>
+								<br/>
+								<br/>
+								<?php echo _("I help teams define the right domain boundaries, pick the appropriate patterns (CQRS, event-driven, microservices when it makes sense) and keep architectures simple enough to be operable."); ?>
+								</p>
+						</div>
 					</div>
 				</div>
-			</div>
 			<div class="col-md-3 text-center animate-box iconService">
 				<div class="services" style="padding-top: 130px;background: none;">
 					<span class="icon">
@@ -84,41 +77,34 @@
 					</span>
 				</div>
 			</div>
-			<div class="col-md-9 text-center animate-box">
-				<div class="services">
-					<div class="desc">
-						<h3><a href="#">SEO</a></h3>
-						<p style="font-size:14px;text-align:justify">
-						<?php echo _("You dream about being in the first results of Google?<br/>
-							You need to know how to measure your SEO improvment day by day?<br/>
-							You don't know much about SEO but you need visibility?
-							<br/>
-							<br/>
-							In this case, you'll like this option. I assure you to use all the best coding practice
-							to improve your website SEO. Moreover, I can provide some tools to measure it and 
-							give you advices about them."); ?>
-						</p>
+				<div class="col-md-9 text-center animate-box">
+					<div class="services">
+						<div class="desc">
+								<h3><a href="#"><?php echo _("Developer experience &amp; internal tooling"); ?></a></h3>
+								<p style="font-size:14px;text-align:justify">
+								<?php echo _("I design internal platforms and tooling to make engineers faster: shared libraries, CLIs and generators, CI/CD pipelines, living documentation, ADR templates, and healthy code review practices."); ?>
+								<br/>
+								<br/>
+								<?php echo _("The goal is to reduce the time from idea to production while keeping a high standard of quality and reliability."); ?>
+								</p>
+						</div>
 					</div>
 				</div>
-			</div>
 			<div style="clear:both;"></div>
 			
-			<div class="col-md-9 text-center animate-box iconService">
-				<div class="services">
-					<div class="desc">
-						<h3><a href="#"><?php echo _("Hosting"); ?></a></h3>
-						<p style="font-size:14px;text-align:justify">
-						<?php echo _("You want to host your website online but you're lost?<br/>
-							You need to reserve your domain name but you don't know how?<br/>
-							You don't have time to bother about what's the best option among the hosting providers?
-							<br/>
-							<br/>
-							So you'll probably need this option too! I can give you advices about domain names and hosting solutions.
-							More! I also absolutely can do it for you so that you don't have to do anything."); ?>
-						</p>
+				<div class="col-md-9 text-center animate-box iconService">
+					<div class="services">
+						<div class="desc">
+								<h3><a href="#"><?php echo _("Cloud, reliability &amp; compliance"); ?></a></h3>
+								<p style="font-size:14px;text-align:justify">
+								<?php echo _("I work with product, security and operations teams to make systems truly operable: observability, incident management, SRE practices, automation and FinOps."); ?>
+								<br/>
+								<br/>
+								<?php echo _("I also partner with risk, compliance and legal teams so that architectures remain aligned with regulatory constraints (especially in a fintech / payments context)."); ?>
+								</p>
+						</div>
 					</div>
 				</div>
-			</div>
 			<div class="col-md-3 text-center animate-box iconService">
 				<div class="services" style="padding-top: 130px;background: none;">
 					<span class="icon">
@@ -128,8 +114,10 @@
 			</div>
 		</div>
 
-		<div class="row">
-			<p class="btn-footer" style="text-align: center;"><a href="<?php echo $homeRoute; ?>#contact"><?php echo _("Tell me more about your project"); ?></a></p>
-		</div>
+			<div class="row">
+					<p class="btn-footer" style="text-align: center;">
+						<a href="<?php echo $homeRoute; ?>#contact"><?php echo _("Want to discuss your platform challenges? Get in touch."); ?></a>
+					</p>
+			</div>
 	</div>
 </div>
