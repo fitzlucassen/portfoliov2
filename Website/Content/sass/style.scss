@@ -4,8 +4,9 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #ffdd00 !default;
-$brand-secondary: #002bdc !default; 
+// Refreshed 2025 palette: warm light yellow + deep navy
+$brand-primary: #ffda3a !default;
+$brand-secondary: #102a43 !default; 
 
 $brand-white: #fff;
 $brand-black: #000;
@@ -612,7 +613,7 @@ header{
 }
 
 
-// SERVICES
+	// SERVICES
 .services{
 	margin-bottom: 40px;
 	padding: 2em;
@@ -663,7 +664,7 @@ header{
 	}
 }
 
-//CASE
+	//CASE
 .work-wrap{
 	.owl-theme .owl-controls{
 		position: absolute;
@@ -694,6 +695,18 @@ header{
 			text-transform: uppercase;
 			letter-spacing: 4px;
 		}
+	}
+
+	// Subtle hover zoom for visual cards
+	.case-img img,
+	.work-img img{
+		transition: transform .6s cubic-bezier(.19, 1, .22, 1);
+		transform-origin: center center;
+	}
+
+	.case-img:hover img,
+	.work-img:hover img{
+		transform: scale(1.05);
 	}
 	h3{
 		font-size: 40px;
@@ -878,7 +891,7 @@ header{
 }
 
 
-//COVER BACKGROUND]
+	//COVER BACKGROUND]
 .user-img,
 .blog-img,
 .case-img,
@@ -890,6 +903,12 @@ header{
 	background-repeat: no-repeat;
 	position: relative;
 }
+
+	// Parallax-ready elements (hero, work images)
+	.js-parallax{
+		will-change: transform;
+		transform: translateZ(0);
+	}
 
 
 // ---------------------------------------------------

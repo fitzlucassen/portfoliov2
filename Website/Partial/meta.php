@@ -19,7 +19,7 @@
 
 <meta name="description" content="<?php echo isset($this->Model->_headerInformations) ? $this->Model->_headerInformations->getMetaDescription() : ""; ?>" >
 
-<meta property="og:title" content="Thibault - Freelance web developer Paris" />
+<meta property="og:title" content="Thibault Dulon - Head of Platform &amp; Engineering Leader" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
 <meta property="og:image" content="https://www.thibaultdulon.com/Website/Content/Media/Image/img_bg_1.jpg" />

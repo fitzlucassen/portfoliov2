@@ -1,4 +1,4 @@
-<title><?php echo _("What does my freelance work look like - Thibault Developer"); ?></title>
+<title><?php echo _("My technical projects - Thibault Dulon"); ?></title>
 <?php
 	// inclure ci-dessus les balises à inclure dans la balise <head> du layout
 	$this->endSection('head');
@@ -16,13 +16,13 @@
 	$homeRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "index", null, $this->_lang);
 ?>
 <div class="colorlib-work">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-				<span><?php echo _("My last projects"); ?></span>
-				<h1><?php echo _("Happy spending my time to this projects"); ?></h1>
+		<div class="container-fluid">
+			<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+						<span><?php echo _("Projects"); ?></span>
+						<h1><?php echo _("A selection of recent technical projects I'm proud of"); ?></h1>
+					</div>
 			</div>
-		</div>
 		<div class="row">
 			<?php
 				$cpt = 1;
@@ -68,8 +68,10 @@
 			?>
 		</div>
 		
-		<div class="row">
-			<p class="btn-footer" style="text-align: center;"><a href="<?php echo $homeRoute; ?>#contact"><?php echo _("Convinced? Write me for yours!"); ?></a></p>
-		</div>
+			<div class="row">
+					<p class="btn-footer" style="text-align: center;">
+						<a href="<?php echo $homeRoute; ?>#contact"><?php echo _("Want to talk about these projects or collaborate? Get in touch."); ?></a>
+					</p>
+			</div>
 	</div>
 </div>
