@@ -41,18 +41,13 @@
 			<div class="col-md-10 col-md-offset-1">
 				<div class="about-info animate-box" style="text-align: justify;">
 					<p>
-					<?php echo _("After getting my web and e-business master degree, first of my promotion, 
-						I've cumulated experiences in very differents companies. Always passionated by my work, I've always given it all."); ?>
+					<?php echo _("After getting my web and e-business master degree, first of my promotion, I've cumulated experiences in very differents companies. Always passionated by my work, I've always given it all."); ?>
 					</p>
 					<p>
-					<?php echo _("From development to SEO, from server managing to project management, from algorithm to design, 
-						I've seen almost all side of my profession. Thanks to this experience, I've decided to help people
-						that doesn't have enough web knowledge to create their showcase website."); ?>
+					<?php echo _("From development to SEO, from server managing to project management, from algorithm to design, I've seen almost all side of my profession. Thanks to this experience, I've decided to help people that doesn't have enough web knowledge to create their showcase website."); ?>
 					</p>
 					<p>
-					<?php echo _("Because every one needs and deserves a good website for its business.
-						Because internet users are more and more demanding and difficult to satisfy.
-						I'm offering you to make you own website that match your business and your needs."); ?>
+					<?php echo _("Because every one needs and deserves a good website for its business. Because internet users are more and more demanding and difficult to satisfy. I'm offering you to make you own website that match your business and your needs."); ?>
 					</p>
 				</div>
 				<div class="about-info animate-box">
@@ -182,9 +177,7 @@
 				<div class="row">
 					<div class="col-md-6 animate-box">
 						<p>
-						<?php echo _("Backend side of coding is what user cannot see. 
-							Backend side of coding is everything that concerned algorithm, logic and data persistence.
-							I always was more interesting by backend development and its variety of possibilities. "); ?>
+						<?php echo _("Backend side of coding is what user cannot see. Backend side of coding is everything that concerned algorithm, logic and data persistence. I always was more interesting by backend development and its variety of possibilities. "); ?>
 						</p>
 					</div>
 					<div class="col-md-6">
@@ -237,8 +230,7 @@
 					</div>
 					<div class="col-md-6 animate-box">
 						<p>
-						<?php echo _("As a backend side developer, you always have to interact with databases.
-							Database is a great world where optimisation is the main purpose of everything."); ?>
+						<?php echo _("As a backend side developer, you always have to interact with databases. Database is a great world where optimisation is the main purpose of everything."); ?>
 						</p>
 					</div>
 				</div>
@@ -249,9 +241,7 @@
 				<div class="row">
 					<div class="col-md-6 animate-box">
 						<p>
-						<?php echo _("Frontend side of coding is what user can immediatly see.
-							Frontend side of coding is all about design, ergonomy and behavior.
-							I always liked to complete my work with some frontend development."); ?>
+						<?php echo _("Frontend side of coding is what user can immediatly see. Frontend side of coding is all about design, ergonomy and behavior. I always liked to complete my work with some frontend development."); ?>
 						</p>
 					</div>
 					<div class="col-md-6">
@@ -304,8 +294,7 @@
 					</div>
 					<div class="col-md-6 animate-box">
 						<p>
-						<?php echo _("In the frontend world, there are a lot of tools, API and Framework
-							that can help you to do whatever you want in an easier and cleaner way."); ?>
+						<?php echo _("In the frontend world, there are a lot of tools, API and Framework that can help you to do whatever you want in an easier and cleaner way."); ?>
 						</p>
 					</div>
 				</div>
@@ -316,8 +305,7 @@
 				<div class="row">
 					<div class="col-md-6 animate-box">
 						<p>
-						<?php echo _("I obviously have many more other skills but maybe I sould let a bit of mystery.
-							Finally, here are some other usefull things I know and you can rely on."); ?>
+						<?php echo _("I obviously have many more other skills but maybe I sould let a bit of mystery. Finally, here are some other usefull things I know and you can rely on."); ?>
 						</p>
 					</div>
 					<div class="col-md-6">

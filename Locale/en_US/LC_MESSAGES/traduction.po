@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Portfolio\n"
 "Report-Msgid-Bugs-To: thibault.dulon@gmail.com\n"
-"POT-Creation-Date: 2020-12-30 20:58+0100\n"
-"PO-Revision-Date: 2020-12-30 21:06+0100\n"
+"POT-Creation-Date: 2022-11-27 15:41+0100\n"
+"PO-Revision-Date: 2022-11-27 17:24+0100\n"
 "Last-Translator: \n"
 "Language-Team: Thibault Dulon\n"
 "Language: en_US\n"
@@ -15,14 +15,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-Basepath: ../../../Website\n"
 "X-Poedit-KeywordsList: __;_\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: MVC/View/Home/about.php:1
 msgid "What kind of developer am I - Thibault Developer"
-msgstr ""
+msgstr "What kind of developer am I - Thibault Web Architect"
 
 #: MVC/View/Home/about.php:22
 msgid "Who I am"
@@ -30,352 +30,424 @@ msgstr "Who I am"
 
 #: MVC/View/Home/about.php:23
 msgid "Passionated freelance developer"
-msgstr "Passionated freelance developer"
+msgstr "Passionated freelance Web Architect"
 
-#: MVC/View/Home/about.php:32
+#: MVC/View/Home/about.php:36
 msgid ""
 "I’m Thibault,<br/>Web developer &amp;<br/>Web architect<br/>based in Paris."
 msgstr ""
-"I’m Thibault,<br/>Web developer &amp;<br/>Web architect<br/>based in Paris."
-
-#: MVC/View/Home/about.php:40
-msgid ""
-"After getting my web and e-business master degree, first of my promotion, \n"
-"\t\t\t\t\t\tI've cumulated experiences in very differents companies. Always "
-"passionated by my work, I've always given it all."
-msgstr ""
+"I’m Thibault,<br/>Lead Tech &amp;<br/>Web architect<br/>based in Paris."
 
 #: MVC/View/Home/about.php:44
 msgid ""
-"From development to SEO, from server managing to project management, from "
-"algorithm to design, \n"
-"\t\t\t\t\t\tI've seen almost all side of my profession. Thanks to this "
-"experience, I've decided to help people\n"
-"\t\t\t\t\t\tthat doesn't have enough web knowledge to create their showcase "
-"website."
+"After getting my web and e-business master degree, first of my promotion, "
+"I've cumulated experiences in very differents companies. Always passionated "
+"by my work, I've always given it all."
 msgstr ""
+"After getting my web and e-business master degree, first of my promotion, "
+"I've cumulated experiences in very different companies. Always passionated "
+"by my work, I've always given it all."
 
-#: MVC/View/Home/about.php:49
+#: MVC/View/Home/about.php:47
 msgid ""
-"Because every one needs and deserves a good website for its business.\n"
-"\t\t\t\t\t\tBecause internet users are more and more demanding and difficult "
-"to satisfy.\n"
-"\t\t\t\t\t\tI'm offering you to make you own website that match your "
-"business and your needs."
+"From development to SEO, from server managing to project management, from "
+"algorithm to design, I've seen almost all side of my profession. Thanks to "
+"this experience, I've decided to help people that doesn't have enough web "
+"knowledge to create their showcase website."
 msgstr ""
+"From development to SEO, from server managing to project management, from "
+"algorithm to design, from Cloud architecture to Blockchain, I've seen almost "
+"all side of my profession. Thanks to this experience, I've decided to help "
+"people that doesn't have enough web knowledge to create their showcase "
+"website."
 
-#: MVC/View/Home/about.php:56
+#: MVC/View/Home/about.php:50
+msgid ""
+"Because every one needs and deserves a good website for its business. "
+"Because internet users are more and more demanding and difficult to satisfy. "
+"I'm offering you to make you own website that match your business and your "
+"needs."
+msgstr ""
+"Because every one needs and deserves a good website for its business. "
+"Because internet users are more and more demanding and difficult to satisfy. "
+"I'm offering you to make you own website that match your business and your "
+"needs."
+
+#: MVC/View/Home/about.php:55
 msgid "Experience"
-msgstr ""
+msgstr "Experience"
 
-#: MVC/View/Home/about.php:88
+#: MVC/View/Home/about.php:87
 msgid "Education"
-msgstr ""
+msgstr "Education"
 
-#: MVC/View/Home/about.php:120
+#: MVC/View/Home/about.php:119
 msgid "Interests"
-msgstr ""
+msgstr "Interests"
 
-#: MVC/View/Home/about.php:131
+#: MVC/View/Home/about.php:130
 msgid ""
 "Travelling is definitly my greatest passion.<br/>I've already been in "
 "Australia, Peru, Bolivia, Mexico, Guatemala, Colombia, Ecuador, Iceland..."
 "etc."
 msgstr ""
+"Travelling is definitly my greatest passion.<br/>I've already been in "
+"Australia, Peru, Bolivia, Mexico, Guatemala, Colombia, Ecuador, Iceland..."
+"etc."
 
-#: MVC/View/Home/about.php:144
+#: MVC/View/Home/about.php:143
 msgid ""
 "Also passionated about music, I played guitar in a rock band during 5 years "
 "and I'm still much into playing and listening music."
 msgstr ""
+"Also passionated about music, I played guitar in a rock band during 5 years "
+"and I'm still much into playing and listening music."
 
-#: MVC/View/Home/about.php:157
+#: MVC/View/Home/about.php:156
 msgid ""
 "Another great passion of mine is cinema. I'm a movie addict and I never "
 "refuse to go watching a movie, from drama to comedia and biopic to thriller."
 msgstr ""
+"Another great passion of mine is cinema. I'm a movie addict and I never "
+"refuse to go watching a movie, from drama to comedia and biopic to thriller."
+
+#: MVC/View/Home/about.php:171
+msgid "Skills"
+msgstr "Skills"
 
 #: MVC/View/Home/about.php:172
-msgid "Skills"
-msgstr ""
-
-#: MVC/View/Home/about.php:173
 msgid "My Skills &amp; Abilities"
-msgstr ""
+msgstr "My Skills &amp; Abilities"
 
-#: MVC/View/Home/about.php:181
+#: MVC/View/Home/about.php:180
 msgid ""
+"Backend side of coding is what user cannot see. Backend side of coding is "
+"everything that concerned algorithm, logic and data persistence. I always "
+"was more interesting by backend development and its variety of "
+"possibilities. "
+msgstr ""
 "Backend side of coding is what user cannot see. \n"
-"\t\t\t\t\t\t\tBackend side of coding is everything that concerned algorithm, "
-"logic and data persistence.\n"
-"\t\t\t\t\t\t\tI always was more interesting by backend development and its "
-"variety of possibilities. "
-msgstr ""
+"Backend side of coding is everything that concerned algorithm, logic and "
+"data persistence.\n"
+"I always was more interesting by backend development and its variety of "
+"possibilities. "
 
-#: MVC/View/Home/about.php:236
+#: MVC/View/Home/about.php:233
 msgid ""
-"As a backend side developer, you always have to interact with databases.\n"
-"\t\t\t\t\t\t\tDatabase is a great world where optimisation is the main "
-"purpose of everything."
+"As a backend side developer, you always have to interact with databases. "
+"Database is a great world where optimisation is the main purpose of "
+"everything."
 msgstr ""
+"As a backend side developer, you always have to interact with databases. "
+"Database is a great world where optimisation is the main purpose of "
+"everything."
 
-#: MVC/View/Home/about.php:248
+#: MVC/View/Home/about.php:244
 msgid ""
-"Frontend side of coding is what user can immediatly see.\n"
-"\t\t\t\t\t\t\tFrontend side of coding is all about design, ergonomy and "
-"behavior.\n"
-"\t\t\t\t\t\t\tI always liked to complete my work with some frontend "
-"development."
+"Frontend side of coding is what user can immediatly see. Frontend side of "
+"coding is all about design, ergonomy and behavior. I always liked to "
+"complete my work with some frontend development."
 msgstr ""
+"Frontend side of coding is what user can immediatly see. Frontend side of "
+"coding is all about design, ergonomy and behavior. I always liked to "
+"complete my work with some frontend development."
 
-#: MVC/View/Home/about.php:303
+#: MVC/View/Home/about.php:297
 msgid ""
-"In the frontend world, there are a lot of tools, API and Framework\n"
-"\t\t\t\t\t\t\tthat can help you to do whatever you want in an easier and "
-"cleaner way."
+"In the frontend world, there are a lot of tools, API and Framework that can "
+"help you to do whatever you want in an easier and cleaner way."
 msgstr ""
+"In the frontend world, there are a lot of tools, API and Framework that can "
+"help you to do whatever you want in an easier and cleaner way."
 
-#: MVC/View/Home/about.php:315
+#: MVC/View/Home/about.php:308
 msgid ""
 "I obviously have many more other skills but maybe I sould let a bit of "
-"mystery.\n"
-"\t\t\t\t\t\t\tFinally, here are some other usefull things I know and you can "
-"rely on."
+"mystery. Finally, here are some other usefull things I know and you can rely "
+"on."
 msgstr ""
+"I obviously have many more other skills but maybe I sould let a bit of "
+"mystery. Finally, here are some other usefull things I know and you can rely "
+"on."
 
-#: MVC/View/Home/about.php:349
+#: MVC/View/Home/about.php:341
 msgid "Convinced? Send me a message!"
-msgstr ""
+msgstr "Convinced? Send me a message!"
 
 #: MVC/View/Home/index.php:1
 msgid "Thibault - Freelance Web Developer Paris"
-msgstr ""
+msgstr "Thibault - Freelance Web Architect & Tech Lead - Paris"
 
-#: MVC/View/Home/index.php:47
+#: MVC/View/Home/index.php:51
 msgid "I'm <b itemprop=\"name\">Thibault</b>, a developer from around Paris."
-msgstr "I'm <b itemprop=\"name\">Thibault</b>, a developer from around Paris."
+msgstr ""
+"I'm <b itemprop=\"name\">Thibault</b>, a Web Architect from around Paris."
 
-#: MVC/View/Home/index.php:48 MVC/View/Home/index.php:67
+#: MVC/View/Home/index.php:52 MVC/View/Home/index.php:75
 msgid "Hire me now"
-msgstr ""
+msgstr "Hire me now"
 
-#: MVC/View/Home/index.php:66
+#: MVC/View/Home/index.php:74
 msgid "I'm a Web Engineer &amp; Architect based in Paris."
-msgstr ""
+msgstr "I'm a Lead Tech &amp; Web Architect based in Paris."
 
-#: MVC/View/Home/index.php:81 MVC/View/Home/services.php:23
+#: MVC/View/Home/index.php:89 MVC/View/Home/services.php:23
 msgid "What I Do"
-msgstr ""
+msgstr "What I Do"
 
-#: MVC/View/Home/index.php:82 MVC/View/Home/services.php:24
+#: MVC/View/Home/index.php:90 MVC/View/Home/services.php:24
 msgid "Development, SEO, hosting and a bit of magic"
-msgstr ""
+msgstr "Development, SEO, hosting/Cloud and a bit of magic"
 
-#: MVC/View/Home/index.php:92
+#: MVC/View/Home/index.php:100
 msgid "Showcase website"
-msgstr ""
+msgstr "Showcase website"
 
-#: MVC/View/Home/index.php:93
+#: MVC/View/Home/index.php:101
 msgid "One page website"
-msgstr ""
+msgstr "One page website"
 
-#: MVC/View/Home/index.php:94
+#: MVC/View/Home/index.php:102
 msgid "Contact form"
-msgstr ""
+msgstr "Contact form"
 
-#: MVC/View/Home/index.php:95
+#: MVC/View/Home/index.php:103
 msgid "Showcase of your business"
-msgstr ""
+msgstr "Showcase of your business"
 
-#: MVC/View/Home/index.php:105 MVC/View/Home/services.php:58
+#: MVC/View/Home/index.php:113 MVC/View/Home/services.php:51
 msgid "Complexe features"
-msgstr ""
+msgstr "Complexe features"
 
-#: MVC/View/Home/index.php:106
+#: MVC/View/Home/index.php:114
 msgid "Membership management"
-msgstr ""
+msgstr "Membership management"
 
-#: MVC/View/Home/index.php:107
+#: MVC/View/Home/index.php:115
 msgid "Payment"
-msgstr ""
+msgstr "Payment"
 
-#: MVC/View/Home/index.php:108
+#: MVC/View/Home/index.php:116
 msgid "Algorithm"
-msgstr ""
+msgstr "Algorithm"
 
-#: MVC/View/Home/index.php:119
+#: MVC/View/Home/index.php:117
+msgid "Blockchain/Web3"
+msgstr "Blockchain/Web3"
+
+#: MVC/View/Home/index.php:128
 msgid "Coding practice"
-msgstr ""
+msgstr "Coding practice"
 
-#: MVC/View/Home/index.php:120
+#: MVC/View/Home/index.php:129
 msgid "Measurement tooling"
-msgstr ""
+msgstr "Measurement tooling"
 
-#: MVC/View/Home/index.php:121
+#: MVC/View/Home/index.php:130
 msgid "Advices for SEO/SEM"
-msgstr ""
+msgstr "Advices for SEO/SEM"
 
-#: MVC/View/Home/index.php:132 MVC/View/Home/services.php:109
+#: MVC/View/Home/index.php:141 MVC/View/Home/services.php:89
 msgid "Hosting"
-msgstr ""
-
-#: MVC/View/Home/index.php:133
-msgid "Domain name reservation"
-msgstr ""
-
-#: MVC/View/Home/index.php:134
-msgid "Hosting solutions"
-msgstr ""
-
-#: MVC/View/Home/index.php:135
-msgid "Advices for more"
-msgstr ""
+msgstr "Hosting"
 
 #: MVC/View/Home/index.php:142
-msgid "More about my services"
-msgstr ""
+msgid "Domain name reservation"
+msgstr "Domain name reservation"
 
-#: MVC/View/Home/index.php:151 Partial/header.php:23
-msgid "Work"
-msgstr ""
+#: MVC/View/Home/index.php:143
+msgid "Hosting solutions"
+msgstr "Hosting solutions"
+
+#: MVC/View/Home/index.php:144
+msgid "Cloud Architecture"
+msgstr "Cloud Architecture"
+
+#: MVC/View/Home/index.php:145
+msgid "Advices for more"
+msgstr "Advices for more"
 
 #: MVC/View/Home/index.php:152
+msgid "More about my services"
+msgstr "More about my services"
+
+#: MVC/View/Home/index.php:161 Partial/header.php:23
+msgid "Work"
+msgstr "Work"
+
+#: MVC/View/Home/index.php:162
 msgid "Happy spending my time into these web projects"
-msgstr ""
+msgstr "Happy spending my time into these web projects"
 
-#: MVC/View/Home/index.php:172
+#: MVC/View/Home/index.php:186
 msgid "See details"
-msgstr ""
+msgstr "See details"
 
-#: MVC/View/Home/index.php:191
+#: MVC/View/Home/index.php:205
 msgid ""
 "Web developer since 7 years now, I'm passionated about web technologies in "
 "general."
 msgstr ""
+"Web developer then Lead tech since 7 years now, I'm passionated about web "
+"technologies in general."
 
-#: MVC/View/Home/index.php:192
+#: MVC/View/Home/index.php:206
 msgid ""
 "By having seen every side of my job, design, complex algorithm, hosting, "
 "architecture, SEO...etc I got what we name a full stack profile. Thanks to "
 "that, I can propose you the best of each part to fit your needs at best."
 msgstr ""
+"By having seen every side of my job, design, complex algorithm, hosting, "
+"architecture, SEO, Blockchain...etc I got what we name a full stack profile. "
+"Thanks to that, I can propose you the best of each part to fit your needs at "
+"best."
 
-#: MVC/View/Home/index.php:193
+#: MVC/View/Home/index.php:207
 msgid "Read my resume here"
-msgstr ""
+msgstr "Read my resume here"
 
-#: MVC/View/Home/index.php:198
+#: MVC/View/Home/index.php:212
 msgid "Ask for my development skills"
-msgstr ""
+msgstr "Ask for my development skills"
 
-#: MVC/View/Home/index.php:199
+#: MVC/View/Home/index.php:213
 msgid "Any question or needs? Send me a message!"
-msgstr ""
+msgstr "Any question or needs? Send me a message!"
 
-#: MVC/View/Home/index.php:209
+#: MVC/View/Home/index.php:223
 msgid "Enter your name"
-msgstr ""
+msgstr "Enter your name"
 
-#: MVC/View/Home/index.php:214
+#: MVC/View/Home/index.php:228
 msgid "Enter your email"
-msgstr ""
+msgstr "Enter your email"
 
-#: MVC/View/Home/index.php:221
+#: MVC/View/Home/index.php:235
 msgid "Tell me more"
-msgstr ""
+msgstr "Tell me more"
 
-#: MVC/View/Home/index.php:243
+#: MVC/View/Home/index.php:257
 msgid "Send"
-msgstr ""
+msgstr "Send"
 
 #: MVC/View/Home/services.php:1
 msgid "The services I offer as a developer - Thibault Developer"
-msgstr ""
+msgstr "The services I offer as a developer - Thibault Developer"
 
 #: MVC/View/Home/services.php:39
 msgid "Showcase Website"
-msgstr ""
+msgstr "Showcase Website"
 
 #: MVC/View/Home/services.php:41
 msgid ""
+"You quickly need a website for your business?<br/>A visibility on search "
+"engines such as Google?<br/>You don't want to spend much money or you just "
+"need a showcase in one page? <br/><br/>This option is for you. In less than "
+"a week I can create a one page website with a contact form that allows you "
+"to show what you do and explain your concept letting the option to visitors "
+"to contact you. Responsive and multipage options availables on demand."
+msgstr ""
 "You quickly need a website for your business?<br/>\n"
-"\t\t\t\t\t\t\tA visibility on search engines such as Google?<br/>\n"
-"\t\t\t\t\t\t\tYou don't want to spend much money or you just need a showcase "
-"in one page?\n"
-"\t\t\t\t\t\t\t<br/>\n"
-"\t\t\t\t\t\t\t<br/>\n"
-"\t\t\t\t\t\t\tThis option is for you. In less than a week I can create a one "
-"page website with a contact form\n"
-"\t\t\t\t\t\t\tthat allows you to show what you do and explain your concept "
-"letting the option to visitors to contact you.\n"
-"\t\t\t\t\t\t\tResponsive and multipage options availables on demand."
-msgstr ""
+"A visibility on search engines such as Google?<br/>\n"
+"You don't want to spend much money or you just need a showcase in one page?\n"
+"<br/>\n"
+"<br/>\n"
+"This option is for you. In less than a week I can create a one page website "
+"with a contact form\n"
+"that allows you to show what you do and explain your concept letting the "
+"option to visitors to contact you.\n"
+"Responsive and multipage options availables on demand."
 
-#: MVC/View/Home/services.php:60
+#: MVC/View/Home/services.php:53
 msgid ""
+"You're imagining an online shop? <br/>A personnal dashboard for your users?"
+"<br/>You need some more complex features in your website?<br/><br/>Then you "
+"need to think about this option. Payment, membership, dashboard, newsletter, "
+"I can do whatever you need on your website that we can imagine together."
+msgstr ""
 "You're imagining an online shop? <br/>\n"
-"\t\t\t\t\t\t\tA personnal dashboard for your users?<br/>\n"
-"\t\t\t\t\t\t\tYou need some more complex features in your website?\n"
-"\t\t\t\t\t\t\t<br/>\n"
-"\t\t\t\t\t\t\t<br/>\n"
-"\t\t\t\t\t\t\tThen you need to think about this option. Payment, membership, "
-"dashboard, newsletter, I can do\n"
-"\t\t\t\t\t\t\twhatever you need on your website that we can imagine together."
-msgstr ""
+"A personnal dashboard for your users?<br/>\n"
+"You need some more complex features in your website?\n"
+"<br/>\n"
+"<br/>\n"
+"Then you need to think about this option. Payment, membership, dashboard, "
+"newsletter, I can do\n"
+"whatever you need on your website that we can imagine together."
 
-#: MVC/View/Home/services.php:92
+#: MVC/View/Home/services.php:79
 msgid ""
+"You dream about being in the first results of Google?<br/>You need to know "
+"how to measure your SEO improvment day by day?<br/>You don't know much about "
+"SEO but you need visibility? <br/><br/> In this case, you'll like this "
+"option. I assure you to use all the best coding practice to improve your "
+"website SEO. Moreover, I can provide some tools to measure it and give you "
+"advices about them."
+msgstr ""
 "You dream about being in the first results of Google?<br/>\n"
-"\t\t\t\t\t\t\tYou need to know how to measure your SEO improvment day by day?"
+"You need to know how to measure your SEO improvment day by day?<br/>\n"
+"You don't know much about SEO but you need visibility?\n"
 "<br/>\n"
-"\t\t\t\t\t\t\tYou don't know much about SEO but you need visibility?\n"
-"\t\t\t\t\t\t\t<br/>\n"
-"\t\t\t\t\t\t\t<br/>\n"
-"\t\t\t\t\t\t\tIn this case, you'll like this option. I assure you to use all "
-"the best coding practice\n"
-"\t\t\t\t\t\t\tto improve your website SEO. Moreover, I can provide some "
-"tools to measure it and \n"
-"\t\t\t\t\t\t\tgive you advices about them."
-msgstr ""
+"<br/>\n"
+"In this case, you'll like this option. I assure you to use all the best "
+"coding practice\n"
+"to improve your website SEO. Moreover, I can provide some tools to measure "
+"it and \n"
+"give you advices about them."
 
-#: MVC/View/Home/services.php:111
+#: MVC/View/Home/services.php:91
 msgid ""
+"You want to host your website online but you're lost?<br/>You need to "
+"reserve your domain name but you don't know how?<br/>You don't have time to "
+"bother about what's the best option among the hosting providers?<br/><br/>So "
+"you'll probably need this option too! I can give you advices about domain "
+"names and hosting solutions. More! I also absolutely can do it for you so "
+"that you don't have to do anything."
+msgstr ""
 "You want to host your website online but you're lost?<br/>\n"
-"\t\t\t\t\t\t\tYou need to reserve your domain name but you don't know how?"
+"You need to reserve your domain name but you don't know how?<br/>\n"
+"You don't have time to bother about what's the best option among the hosting "
+"providers?\n"
+"You heard about cloud but you don't know how to use it?\n"
 "<br/>\n"
-"\t\t\t\t\t\t\tYou don't have time to bother about what's the best option "
-"among the hosting providers?\n"
-"\t\t\t\t\t\t\t<br/>\n"
-"\t\t\t\t\t\t\t<br/>\n"
-"\t\t\t\t\t\t\tSo you'll probably need this option too! I can give you "
-"advices about domain names and hosting solutions.\n"
-"\t\t\t\t\t\t\tMore! I also absolutely can do it for you so that you don't "
-"have to do anything."
-msgstr ""
+"<br/>\n"
+"So you'll probably need this option too! I can give you advices about domain "
+"names and hosting solutions.\n"
+"More! I also absolutely can do it for you so that you don't have to do "
+"anything."
 
-#: MVC/View/Home/services.php:132
-msgid "Tell me more about your project"
+#: MVC/View/Home/services.php:117
+msgid "SERVICES_TEXT_BLOCKCHAIN_AUDIT"
 msgstr ""
+"Are you creating smart contracts but are afraid of their vulnerabilities?<br/"
+">\n"
+"Do you have ideas for using blockchain but don't have the skills in-house?"
+"<br/><br/>\n"
+"Then this option is for you. With a state-recognized diploma, I will study "
+"your needs and offer you a complete web3 support according to them"
+
+#: MVC/View/Home/services.php:126
+msgid "Tell me more about your project"
+msgstr "Tell me more about your project"
 
 #: MVC/View/Home/work.php:1
 msgid "What does my freelance work look like - Thibault Developer"
-msgstr ""
+msgstr "What does my freelance work look like - Thibault Web Architect"
 
 #: MVC/View/Home/work.php:22
 msgid "My last projects"
-msgstr ""
+msgstr "My last projects"
 
 #: MVC/View/Home/work.php:23
 msgid "Happy spending my time to this projects"
-msgstr ""
+msgstr "Happy spending my time to this projects"
 
-#: MVC/View/Home/work.php:53
+#: MVC/View/Home/work.php:56
 msgid "See the website"
-msgstr ""
+msgstr "See the website"
 
-#: MVC/View/Home/work.php:69
+#: MVC/View/Home/work.php:72
 msgid "Convinced? Write me for yours!"
-msgstr ""
+msgstr "Convinced? Write me for yours!"
 
 #: Partial/footer.php:7
 msgid ""
@@ -383,22 +455,25 @@ msgid ""
 "always do my best to fit your needs. Contact me and we will see what we can "
 "arrange!"
 msgstr ""
+"Every project, every business needs a great showcase. Yours too. I will "
+"always do my best to fit your needs. Contact me and we will see what we can "
+"arrange!"
 
 #: Partial/footer.php:9
 msgid "Tell me about your project"
-msgstr ""
+msgstr "Tell me about your project"
 
 #: Partial/header.php:20
 msgid "Home"
-msgstr ""
+msgstr "Home"
 
 #: Partial/header.php:21
 msgid "About"
-msgstr ""
+msgstr "About"
 
 #: Partial/header.php:22
 msgid "Services"
-msgstr ""
+msgstr "Services"
 
 #~ msgid "Who I am - Thibault"
 #~ msgstr "Who I am - Thibault"

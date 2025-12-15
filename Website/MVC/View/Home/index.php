@@ -114,6 +114,7 @@ $workRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "work"
 							<h4><?php echo _("Membership management"); ?></h4>
 							<h4><?php echo _("Payment"); ?></h4>
 							<h4><?php echo _("Algorithm"); ?></h4>
+							<h4><?php echo _("Blockchain/Web3"); ?></h4>
 						</div>
 					</div>
 				</div>
@@ -140,6 +141,7 @@ $workRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "work"
 							<h3><a href="#"><?php echo _("Hosting"); ?></a></h3>
 							<h4><?php echo _("Domain name reservation"); ?></h4>
 							<h4><?php echo _("Hosting solutions"); ?></h4>
+							<h4><?php echo _("Cloud Architecture"); ?></h4>
 							<h4><?php echo _("Advices for more"); ?></h4>
 						</div>
 					</div>
