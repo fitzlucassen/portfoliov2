@@ -23,28 +23,26 @@
 						<h1><?php echo _("Head of Platform &amp; engineering leader"); ?></h1>
 					</div>
 				</div>
-			<div class="row row-padded-bottom">
-				<div class="col-md-6 animate-box">
-					<picture>
-						<source srcset="/<?php echo __image_directory__; ?>/img_bg_2_1.webp" type="image/webp">
-						<source srcset="/<?php echo __image_directory__; ?>/img_bg_2_1.webp" type="image/jpeg">
-						<img src="/<?php echo __image_directory__; ?>/img_bg_2_1.jpg" class="about-2 img-responsive" alt="Picture of me, taking inspiration">
-					</picture>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="about-desc">
-							<h1><?php echo _("I'm Thibault,<br/>Head of Platform &amp;<br/>engineering leader<br/>based in France."); ?></h1>
+				<div class="row row-padded-bottom about-hero">
+					<div class="col-md-7 animate-box">
+						<div class="about-desc">
+								<h1><?php echo _("I'm Thibault,<br/>Head of Platform &amp;<br/>engineering leader<br/>based in France."); ?></h1>
+								<p><?php echo _("After a web &amp; e-business master, where I graduated top of my class, I worked in very different environments: agencies, e-commerce, startups and fintech."); ?></p>
+								<p><?php echo _("Curious by nature, I've touched many aspects of the job: backend and frontend development, SEO, server management, architecture, cloud, web3… This breadth gives me a holistic view of the systems I build."); ?></p>
+								<p><?php echo _("Today, as Head of Platform at Mangopay, I focus on designing robust and scalable platforms, strengthening security and compliance, improving developer experience and supporting engineering teams."); ?></p>
+						</div>
+					</div>
+					<div class="col-md-5 animate-box">
+						<picture>
+							<source srcset="/<?php echo __image_directory__; ?>/img_bg_2_1.webp" type="image/webp">
+							<source srcset="/<?php echo __image_directory__; ?>/img_bg_2_1.webp" type="image/jpeg">
+							<img src="/<?php echo __image_directory__; ?>/img_bg_2_1.jpg" class="about-2 img-responsive" alt="Picture of me, taking inspiration">
+						</picture>
 					</div>
 				</div>
-			</div>
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1">
-						<div class="about-info animate-box" style="text-align: justify;">
-							<p><?php echo _("After a web &amp; e-business master, where I graduated top of my class, I worked in very different environments: agencies, e-commerce, startups and fintech."); ?></p>
-							<p><?php echo _("Curious by nature, I've touched many aspects of the job: backend and frontend development, SEO, server management, architecture, cloud, web3… This breadth gives me a holistic view of the systems I build."); ?></p>
-							<p><?php echo _("Today, as Head of Platform at Mangopay, I focus on designing robust and scalable platforms, improving developer experience and supporting engineering teams."); ?></p>
-						</div>
-				<div class="about-info animate-box">
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="about-info animate-box">
 					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading intro-heading-2">
 						<span style="font-size:18px;"><?php echo _("Experience"); ?></span>
 					</div>

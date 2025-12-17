@@ -204,7 +204,7 @@ $workRoute = fitzlucassen\FLFramework\Library\Core\Router::GetUrl("home", "work"
 			<div class="container">
 			<div class="row row-padded-bottom">
 					<div class="col-md-8 col-md-offset-2 text-center animate-box" itemprop="description">
-							<p><?php echo _("As Head of Platform at Mangopay, I help engineering teams design and run resilient, scalable and secure payment platforms."); ?></p>
+									<p><?php echo _("As Head of Platform at Mangopay, I help engineering teams design and run resilient, scalable, secure and compliant payment platforms."); ?></p>
 							<p><?php echo _("After a web &amp; e‑business master (top of my class) and 10+ years across agencies, e‑commerce, startups and fintech, I grew from backend developer to lead developer and platform engineering leader."); ?></p>
 							<p style="margin-bottom: 0;">
 								<a href="<?php echo $aboutRoute; ?>" class="resume">

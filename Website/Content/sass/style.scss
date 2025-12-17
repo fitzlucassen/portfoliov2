@@ -802,13 +802,28 @@ header{
 
 
 //ABOUT
+.colorlib-about{
+	background: $brand-body-bg;
+}
 .about-2{
 	margin-bottom: 20px;
+	@include border-radius(16px);
+	overflow: hidden;
+	-webkit-box-shadow: 0 18px 45px rgba($brand-secondary,.08);
+	-moz-box-shadow: 0 18px 45px rgba($brand-secondary,.08);
+	box-shadow: 0 18px 45px rgba($brand-secondary,.08);
 }
 .about-desc{
-	h2{
-		font-size: 48px;
+	background: $brand-white;
+	@include border-radius(16px);
+	padding: 2.5em 3em;
+	-webkit-box-shadow: 0 18px 45px rgba($brand-secondary,.08);
+	-moz-box-shadow: 0 18px 45px rgba($brand-secondary,.08);
+	box-shadow: 0 18px 45px rgba($brand-secondary,.08);
+	h2, h1{
+		font-size: 36px;
 		font-weight: 700;
+		line-height: 1.2;
 		@media screen and(max-width: $screen-sm){
 	   	font-size: 24px;
 	   }
@@ -821,11 +836,17 @@ header{
 		font-weight: 600;
 	}
 	.wrap{
-		border-bottom: 1px solid lighten($brand-black,85%);
+		border-bottom: none;
+		background: $brand-white;
+		@include border-radius(12px);
+		padding: 1.75em 2em;
 		display: block;
 		width: 100%;
 		float: left;
 		margin-bottom: 2em;
+		-webkit-box-shadow: 0 14px 35px rgba($brand-secondary,.06);
+		-moz-box-shadow: 0 14px 35px rgba($brand-secondary,.06);
+		box-shadow: 0 14px 35px rgba($brand-secondary,.06);
 		.job{
 			margin-bottom: 10px;
 			font-weight: 500;
@@ -1677,27 +1698,29 @@ input[type="text"] {
 			width: 100%;
 		}
 		input::-webkit-input-placeholder {
-			color: lighten($brand-black,20%);
+				color: rgba($brand-white,.8);
 		}
 		input::-moz-input-placeholder {
-			color: lighten($brand-black,20%);
+				color: rgba($brand-white,.8);
 		}
 		input::-ms-input-placeholder {
-			color: lighten($brand-black,20%);
+				color: rgba($brand-white,.8);
 		}
 		input::-o-input-placeholder {
-			color: lighten($brand-black,20%);
+				color: rgba($brand-white,.8);
 		}
 		input::input-placeholder {
-			color: lighten($brand-black,20%);
+				color: rgba($brand-white,.8);
 		}
 	}
-	#email {
+		#email,
+		#name,
+		#message {
 		font-size: 14px;
 		width: 100%;
 		border: none;
-		border-bottom: 1px solid lighten($brand-black,10%);
-		color: lighten($brand-black,20%) !important;
+			border-bottom: 1px solid rgba($brand-white,.4);
+			color: $brand-white !important;
 	}
 	button {
 		border-top-left-radius: 0px!important;
