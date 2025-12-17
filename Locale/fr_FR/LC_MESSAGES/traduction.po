@@ -17,7 +17,7 @@ msgstr ""
 
 #: MVC/View/Home/about.php:1
 msgid "About - Thibault Dulon"
-msgstr ""
+msgstr "À propos - Thibault Dulon"
 
 #: MVC/View/Home/about.php:22
 msgid "Who I am"
@@ -25,10 +25,9 @@ msgstr "Qui suis-je"
 
 #: MVC/View/Home/about.php:23
 msgid "Head of Platform &amp; engineering leader"
-msgstr ""
+msgstr "Head of Platform &amp; leader d'ingénierie"
 
 #: MVC/View/Home/about.php:29
-#, fuzzy
 #| msgid ""
 #| "I’m Thibault,<br/>Web developer &amp;<br/>Web architect<br/>based in "
 #| "Paris."
@@ -36,7 +35,8 @@ msgid ""
 "I'm Thibault,<br/>Head of Platform &amp;<br/>engineering leader<br/>based in "
 "France."
 msgstr ""
-"Je suis Thibault,<br/>Lead Tech &amp;<br/>Architecte web<br/>basé à Paris."
+"Je suis Thibault,<br/>Head of Platform &amp;<br/>engineering leader<br/>basé "
+"en France."
 
 #: MVC/View/Home/about.php:30
 msgid ""
@@ -44,6 +44,9 @@ msgid ""
 "worked in very different environments: agencies, e-commerce, startups and "
 "fintech."
 msgstr ""
+"Après un master en web &amp; e-business, dont je suis sorti major de "
+"promotion, j'ai travaillé dans des environnements très variés : agences, e-"
+"commerce, startups et fintech."
 
 #: MVC/View/Home/about.php:31
 msgid ""
@@ -51,6 +54,10 @@ msgid ""
 "frontend development, SEO, server management, architecture, cloud, web3… "
 "This breadth gives me a holistic view of the systems I build."
 msgstr ""
+"De nature curieuse, j'ai touché à de nombreux aspects du métier : "
+"développement backend et frontend, SEO, gestion de serveurs, architecture, "
+"cloud, web3… Cette diversité me donne une vision holistique des systèmes que "
+"je conçois."
 
 #: MVC/View/Home/about.php:32
 msgid ""
@@ -58,6 +65,10 @@ msgid ""
 "scalable platforms, strengthening security and compliance, improving "
 "developer experience and supporting engineering teams."
 msgstr ""
+"Aujourd'hui, en tant que Head of Platform chez Mangopay, je me concentre sur "
+"la conception de plateformes robustes et évolutives, le renforcement de la "
+"sécurité et de la conformité, l'amélioration de l'expérience développeur et "
+"l'accompagnement des équipes d'ingénierie."
 
 #: MVC/View/Home/about.php:47
 msgid "Experience"
@@ -100,32 +111,38 @@ msgstr ""
 
 #: MVC/View/Home/about.php:156
 msgid "Contributions &amp; talks"
-msgstr ""
+msgstr "Contributions &amp; conférences"
 
 #: MVC/View/Home/about.php:161
 msgid ""
 "Medium article &mdash; How building a tiny home in a van made me a better "
 "lead dev."
 msgstr ""
+"Article Medium &mdash; Comment la construction d'une tiny house dans un van "
+"a fait de moi un meilleur lead dev."
 
 #: MVC/View/Home/about.php:162 MVC/View/Home/about.php:169
 msgid "Read the article"
-msgstr ""
+msgstr "Lire l'article"
 
 #: MVC/View/Home/about.php:168
 msgid ""
 "Medium article &mdash; Parallels between scaling the Matterhorn and building "
 "technical platforms."
 msgstr ""
+"Article Medium &mdash; Parallèles entre l'ascension du Cervin et la "
+"construction de plateformes techniques."
 
 #: MVC/View/Home/about.php:175
 msgid ""
 "Podcast (FR) &mdash; Conversation about my journey and platform engineering."
 msgstr ""
+"Podcast (FR) &mdash; Conversation autour de mon parcours et de l'ingénierie "
+"de plateforme."
 
 #: MVC/View/Home/about.php:176
 msgid "Listen to the episode"
-msgstr ""
+msgstr "Écouter l'épisode"
 
 #: MVC/View/Home/about.php:191
 msgid "Skills"
@@ -189,121 +206,117 @@ msgstr ""
 
 #: MVC/View/Home/about.php:362
 msgid "Want to talk? Get in touch."
-msgstr ""
+msgstr "Envie d'échanger ? Contactez-moi."
 
 #: MVC/View/Home/index.php:1
 msgid "Thibault Dulon - Head of Platform &amp; Engineering Leader"
-msgstr ""
+msgstr "Thibault Dulon - Head of Platform &amp; Engineering Leader"
 
 #: MVC/View/Home/index.php:51
-#, fuzzy
 #| msgid ""
 #| "I'm <b itemprop=\"name\">Thibault</b>, a developer from around Paris."
 msgid ""
 "I'm <b itemprop=\"name\">Thibault</b>, a Head of Platform and engineering "
 "leader."
 msgstr ""
-"Je suis <b itemprop=\"name\">Thibault</b>, un ingénieur web de la région de "
-"Paris."
+"Je suis <b itemprop=\"name\">Thibault</b>, Head of Platform et leader "
+"d'ingénierie."
 
 #: MVC/View/Home/index.php:52 MVC/View/Home/index.php:75
 #: MVC/View/Home/index.php:218
 msgid "Get in touch"
-msgstr ""
+msgstr "Me contacter"
 
 #: MVC/View/Home/index.php:74
 msgid "I design resilient, scalable platforms for fintech."
-msgstr ""
+msgstr "Je conçois des plateformes résilientes et évolutives pour la fintech."
 
 #: MVC/View/Home/index.php:89 MVC/View/Home/services.php:23
-#, fuzzy
 #| msgid "What I Do"
 msgid "What I do"
 msgstr "Ce que je fais"
 
 #: MVC/View/Home/index.php:90
 msgid "Platforms, engineering leadership &amp; developer experience"
-msgstr ""
+msgstr "Plateformes, leadership d'ingénierie &amp; expérience développeur"
 
 #: MVC/View/Home/index.php:100
 msgid "Engineering leadership"
-msgstr ""
+msgstr "Leadership d'ingénierie"
 
 #: MVC/View/Home/index.php:101
 msgid "Technical vision aligned with business"
-msgstr ""
+msgstr "Vision technique alignée avec le business"
 
 #: MVC/View/Home/index.php:102
 msgid "Coaching, mentoring &amp; team culture"
-msgstr ""
+msgstr "Coaching, mentorat &amp; culture d'équipe"
 
 #: MVC/View/Home/index.php:103
 msgid "Technical roadmapping &amp; prioritisation"
-msgstr ""
+msgstr "Roadmap technique &amp; priorisation"
 
 #: MVC/View/Home/index.php:113 MVC/View/Home/services.php:54
-#, fuzzy
 #| msgid "Cloud Architecture"
 msgid "Platform &amp; architecture"
-msgstr "Architecture Cloud"
+msgstr "Plateforme &amp; architecture"
 
 #: MVC/View/Home/index.php:114
 msgid "Distributed systems"
-msgstr ""
+msgstr "Systèmes distribués"
 
 #: MVC/View/Home/index.php:115
 msgid "Scalable and resilient payment platforms"
-msgstr ""
+msgstr "Plateformes de paiement scalables et résilientes"
 
 #: MVC/View/Home/index.php:116
 msgid "API gateway, identity provider, queuing, logging...etc."
-msgstr ""
+msgstr "API gateway, fournisseur d'identité, files de messages, logging...etc."
 
 #: MVC/View/Home/index.php:126
-#, fuzzy
 #| msgid "Experience"
 msgid "Developer experience"
-msgstr "Expérience"
+msgstr "Expérience développeur"
 
 #: MVC/View/Home/index.php:127
 msgid "Internal tooling, CI/CD and test automation"
-msgstr ""
+msgstr "Outillage interne, CI/CD et automatisation des tests"
 
 #: MVC/View/Home/index.php:128
 msgid "Shared libraries and internal platforms"
-msgstr ""
+msgstr "Bibliothèques partagées et plateformes internes"
 
 #: MVC/View/Home/index.php:129
 msgid "Documentation and architecture decision records"
-msgstr ""
+msgstr "Documentation et architecture decision records (ADR)"
 
 #: MVC/View/Home/index.php:140
 msgid "Cloud &amp; operations"
-msgstr ""
+msgstr "Cloud &amp; opérations"
 
 #: MVC/View/Home/index.php:141
 msgid "Operability, observability and incident management"
-msgstr ""
+msgstr "Opérabilité, observabilité et gestion des incidents"
 
 #: MVC/View/Home/index.php:142
 msgid "SRE culture and platform reliability"
-msgstr ""
+msgstr "Culture SRE et fiabilité des plateformes"
 
 #: MVC/View/Home/index.php:143
 msgid "AWS, containers, Kubernetes, FinOps"
-msgstr ""
+msgstr "AWS, conteneurs, Kubernetes, FinOps"
 
 #: MVC/View/Home/index.php:152
 msgid "Learn more about how I can help"
-msgstr ""
+msgstr "En savoir plus sur la façon dont je peux aider"
 
 #: MVC/View/Home/index.php:163 MVC/View/Home/work.php:22
 msgid "Projects"
-msgstr ""
+msgstr "Projets"
 
 #: MVC/View/Home/index.php:164
 msgid "A selection of technical projects I'm proud of"
-msgstr ""
+msgstr "Une sélection de projets techniques dont je suis fier"
 
 #: MVC/View/Home/index.php:188
 msgid "See details"
@@ -314,6 +327,9 @@ msgid ""
 "As Head of Platform at Mangopay, I help engineering teams design and run "
 "resilient, scalable, secure and compliant payment platforms."
 msgstr ""
+"En tant que Head of Platform chez Mangopay, j'aide les équipes d'ingénierie "
+"à concevoir et opérer des plateformes de paiement résilientes, scalables, "
+"sécurisées et conformes."
 
 #: MVC/View/Home/index.php:208
 msgid ""
@@ -321,18 +337,23 @@ msgid ""
 "agencies, e‑commerce, startups and fintech, I grew from backend developer to "
 "lead developer and platform engineering leader."
 msgstr ""
+"Après un master en web &amp; e‑business (dont je suis sorti major de "
+"promotion) et plus de 10 ans passés entre agences, e‑commerce, startups et "
+"fintech, je suis passé de développeur backend à lead developer puis à "
+"responsable de l'ingénierie de plateforme."
 
 #: MVC/View/Home/index.php:211
-#, fuzzy
 #| msgid "Tell me more about your project"
 msgid "Read more about my journey"
-msgstr "Dites m'en plus sur votre projet"
+msgstr "En savoir plus sur mon parcours"
 
 #: MVC/View/Home/index.php:219
 msgid ""
 "Have an opportunity, a collaboration idea or just want to chat? Drop me a "
 "message."
 msgstr ""
+"Vous avez une opportunité, une idée de collaboration ou simplement envie "
+"d'échanger ? Envoyez-moi un message."
 
 #: MVC/View/Home/index.php:229
 msgid "Enter your name"
@@ -352,15 +373,15 @@ msgstr "Envoyer"
 
 #: MVC/View/Home/services.php:1
 msgid "How I help engineering teams - Thibault Dulon"
-msgstr ""
+msgstr "Comment j'aide les équipes d'ingénierie - Thibault Dulon"
 
 #: MVC/View/Home/services.php:24
 msgid "Platform, engineering leadership &amp; developer experience"
-msgstr ""
+msgstr "Plateforme, leadership d'ingénierie &amp; expérience développeur"
 
 #: MVC/View/Home/services.php:39
 msgid "Engineering leadership &amp; platform vision"
-msgstr ""
+msgstr "Leadership d'ingénierie &amp; vision plateforme"
 
 #: MVC/View/Home/services.php:41
 msgid ""
@@ -368,6 +389,10 @@ msgid ""
 "vision: aligning platform strategy with business goals, setting a direction "
 "and making it actionable for the teams."
 msgstr ""
+"En tant que Head of Platform, j'aide les équipes produit et tech à définir "
+"une vision technique claire : aligner la stratégie plateforme sur les "
+"objectifs business, fixer une direction et la rendre actionnable pour les "
+"équipes."
 
 #: MVC/View/Home/services.php:44
 msgid ""
@@ -375,6 +400,10 @@ msgid ""
 "run rituals (design reviews, architecture guilds...) and support engineers "
 "through mentoring and coaching."
 msgstr ""
+"Je construis des roadmaps techniques, j'aide à arbitrer les compromis "
+"(risque / impact / coût), j'anime des rituels (design reviews, guildes "
+"d'architecture...) et j'accompagne les ingénieurs via le mentoring et le "
+"coaching."
 
 #: MVC/View/Home/services.php:56
 msgid ""
@@ -382,6 +411,10 @@ msgid ""
 "volume payment APIs and designing cross-cutting components (identity "
 "provider, API gateway, messaging, logging...)."
 msgstr ""
+"J'ai travaillé sur la transformation de monolithes en systèmes distribués, "
+"la construction d'API de paiement à fort volume et la conception de "
+"composants transverses (identity provider, API gateway, messaging, "
+"logging...)."
 
 #: MVC/View/Home/services.php:59
 msgid ""
@@ -389,10 +422,13 @@ msgid ""
 "patterns (CQRS, event-driven, microservices when it makes sense) and keep "
 "architectures simple enough to be operable."
 msgstr ""
+"J'aide les équipes à définir les bons périmètres fonctionnels, à choisir les "
+"bons patterns (CQRS, événements, microservices quand c'est pertinent) et à "
+"garder des architectures suffisamment simples pour rester opérables."
 
 #: MVC/View/Home/services.php:83
 msgid "Developer experience &amp; internal tooling"
-msgstr ""
+msgstr "Expérience développeur &amp; outillage interne"
 
 #: MVC/View/Home/services.php:85
 msgid ""
@@ -400,16 +436,21 @@ msgid ""
 "libraries, CLIs and generators, CI/CD pipelines, living documentation, ADR "
 "templates, and healthy code review practices."
 msgstr ""
+"Je conçois des plateformes internes et des outils pour rendre les ingénieurs "
+"plus rapides : bibliothèques partagées, CLIs et générateurs, pipelines CI/CD, "
+"documentation vivante, modèles d'ADR et bonnes pratiques de revue de code."
 
 #: MVC/View/Home/services.php:88
 msgid ""
 "The goal is to reduce the time from idea to production while keeping a high "
 "standard of quality and reliability."
 msgstr ""
+"Le but est de réduire le temps entre l'idée et la mise en production tout en "
+"gardant un haut niveau de qualité et de fiabilité."
 
 #: MVC/View/Home/services.php:98
 msgid "Cloud, reliability &amp; compliance"
-msgstr ""
+msgstr "Cloud, fiabilité &amp; conformité"
 
 #: MVC/View/Home/services.php:100
 msgid ""
@@ -417,6 +458,9 @@ msgid ""
 "operable: observability, incident management, SRE practices, automation and "
 "FinOps."
 msgstr ""
+"Je travaille avec les équipes produit, sécurité et opérations pour rendre "
+"les systèmes réellement opérables : observabilité, gestion des incidents, "
+"pratiques SRE, automatisation et FinOps."
 
 #: MVC/View/Home/services.php:103
 msgid ""
@@ -424,6 +468,9 @@ msgid ""
 "remain aligned with regulatory constraints (especially in a fintech / "
 "payments context)."
 msgstr ""
+"Je collabore aussi avec les équipes risque, conformité et juridique pour que "
+"les architectures restent alignées avec les contraintes réglementaires (en "
+"particulier dans un contexte fintech / paiements)."
 
 #: MVC/View/Home/services.php:129
 msgid "SERVICES_TEXT_BLOCKCHAIN_AUDIT"
@@ -438,17 +485,16 @@ msgstr ""
 
 #: MVC/View/Home/services.php:139
 msgid "Want to discuss your platform challenges? Get in touch."
-msgstr ""
+msgstr "Vous voulez discuter de vos enjeux de plateforme ? Contactez-moi."
 
 #: MVC/View/Home/work.php:1
-#, fuzzy
 #| msgid "My last projects - Thibault"
 msgid "My technical projects - Thibault Dulon"
-msgstr "Mes derniers projets - Thibault"
+msgstr "Mes projets techniques - Thibault Dulon"
 
 #: MVC/View/Home/work.php:23
 msgid "A selection of recent technical projects I'm proud of"
-msgstr ""
+msgstr "Une sélection de projets techniques récents dont je suis fier"
 
 #: MVC/View/Home/work.php:56
 msgid "See the website"
@@ -456,7 +502,7 @@ msgstr "Voir le site"
 
 #: MVC/View/Home/work.php:73
 msgid "Want to talk about these projects or collaborate? Get in touch."
-msgstr ""
+msgstr "Vous voulez parler de ces projets ou collaborer ? Contactez-moi."
 
 #: Partial/footer.php:7
 msgid ""
