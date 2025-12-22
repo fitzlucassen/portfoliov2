@@ -2,21 +2,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Portfolio\n"
 "Report-Msgid-Bugs-To: thibault.dulon@gmail.com\n"
-"POT-Creation-Date: 2019-05-28 14:42+0200\n"
-"PO-Revision-Date: 2019-05-28 16:51+0100\n"
-"Last-Translator: Thibault Dulon\n"
+"POT-Creation-Date: 2025-12-17 11:17+0100\n"
+"PO-Revision-Date: 2025-12-17 11:17+0100\n"
+"Last-Translator: \n"
 "Language-Team: Thibault Dulon\n"
-"Language: eng\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Eazy Po 0.9.5.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.8\n"
 "X-Poedit-Basepath: ../../../Website\n"
 "X-Poedit-KeywordsList: __;_\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -390,4 +389,302 @@ msgstr ""
 
 #: Partial/header.php:22
 msgid "Services"
+msgstr ""
+
+# New Head of Platform / platform engineering content (2025)
+
+# About page
+
+#: MVC/View/Home/about.php:1
+msgid "About - Thibault Dulon"
+msgstr ""
+
+#: MVC/View/Home/about.php:23
+msgid "Head of Platform &amp; engineering leader"
+msgstr ""
+
+#: MVC/View/Home/about.php:29
+msgid ""
+"I'm Thibault,<br/>Head of Platform &amp;<br/>engineering leader<br/>based in "
+"France."
+msgstr ""
+
+#: MVC/View/Home/about.php:30
+msgid ""
+"After a web &amp; e-business master, where I graduated top of my class, I "
+"worked in very different environments: agencies, e-commerce, startups and "
+"fintech."
+msgstr ""
+
+#: MVC/View/Home/about.php:31
+msgid ""
+"Curious by nature, I've touched many aspects of the job: backend and "
+"frontend development, SEO, server management, architecture, cloud, web3… "
+"This breadth gives me a holistic view of the systems I build."
+msgstr ""
+
+#: MVC/View/Home/about.php:32
+msgid ""
+"Today, as Head of Platform at Mangopay, I focus on designing robust and "
+"scalable platforms, strengthening security and compliance, improving "
+"developer experience and supporting engineering teams."
+msgstr ""
+
+#: MVC/View/Home/about.php:156
+msgid "Contributions &amp; talks"
+msgstr ""
+
+#: MVC/View/Home/about.php:161
+msgid ""
+"Medium article &mdash; How building a tiny home in a van made me a better "
+"lead dev."
+msgstr ""
+
+#: MVC/View/Home/about.php:162 MVC/View/Home/about.php:169
+msgid "Read the article"
+msgstr ""
+
+#: MVC/View/Home/about.php:168
+msgid ""
+"Medium article &mdash; Parallels between scaling the Matterhorn and building "
+"technical platforms."
+msgstr ""
+
+#: MVC/View/Home/about.php:175
+msgid ""
+"Podcast (FR) &mdash; Conversation about my journey and platform engineering."
+msgstr ""
+
+#: MVC/View/Home/about.php:176
+msgid "Listen to the episode"
+msgstr ""
+
+#: MVC/View/Home/about.php:362
+msgid "Want to talk? Get in touch."
+msgstr ""
+
+# Home page
+
+#: MVC/View/Home/index.php:1
+msgid "Thibault Dulon - Head of Platform &amp; Engineering Leader"
+msgstr ""
+
+#: MVC/View/Home/index.php:51
+msgid ""
+"I'm <b itemprop=\"name\">Thibault</b>, a Head of Platform and engineering "
+"leader."
+msgstr ""
+
+#: MVC/View/Home/index.php:52 MVC/View/Home/index.php:75 MVC/View/Home/index.php:218
+msgid "Get in touch"
+msgstr ""
+
+#: MVC/View/Home/index.php:74
+msgid "I design resilient, scalable platforms for fintech."
+msgstr ""
+
+#: MVC/View/Home/index.php:89 MVC/View/Home/services.php:23
+msgid "What I do"
+msgstr ""
+
+#: MVC/View/Home/index.php:90
+msgid "Platforms, engineering leadership &amp; developer experience"
+msgstr ""
+
+#: MVC/View/Home/index.php:100
+msgid "Engineering leadership"
+msgstr ""
+
+#: MVC/View/Home/index.php:101
+msgid "Technical vision aligned with business"
+msgstr ""
+
+#: MVC/View/Home/index.php:102
+msgid "Coaching, mentoring &amp; team culture"
+msgstr ""
+
+#: MVC/View/Home/index.php:103
+msgid "Technical roadmapping &amp; prioritisation"
+msgstr ""
+
+#: MVC/View/Home/index.php:113 MVC/View/Home/services.php:54
+msgid "Platform &amp; architecture"
+msgstr ""
+
+#: MVC/View/Home/index.php:114
+msgid "Distributed systems"
+msgstr ""
+
+#: MVC/View/Home/index.php:115
+msgid "Scalable and resilient payment platforms"
+msgstr ""
+
+#: MVC/View/Home/index.php:116
+msgid "API gateway, identity provider, queuing, logging...etc."
+msgstr ""
+
+#: MVC/View/Home/index.php:126
+msgid "Developer experience"
+msgstr ""
+
+#: MVC/View/Home/index.php:127
+msgid "Internal tooling, CI/CD and test automation"
+msgstr ""
+
+#: MVC/View/Home/index.php:128
+msgid "Shared libraries and internal platforms"
+msgstr ""
+
+#: MVC/View/Home/index.php:129
+msgid "Documentation and architecture decision records"
+msgstr ""
+
+#: MVC/View/Home/index.php:140
+msgid "Cloud &amp; operations"
+msgstr ""
+
+#: MVC/View/Home/index.php:141
+msgid "Operability, observability and incident management"
+msgstr ""
+
+#: MVC/View/Home/index.php:142
+msgid "SRE culture and platform reliability"
+msgstr ""
+
+#: MVC/View/Home/index.php:143
+msgid "AWS, containers, Kubernetes, FinOps"
+msgstr ""
+
+#: MVC/View/Home/index.php:152
+msgid "Learn more about how I can help"
+msgstr ""
+
+#: MVC/View/Home/index.php:163 MVC/View/Home/work.php:22
+msgid "Projects"
+msgstr ""
+
+#: MVC/View/Home/index.php:164
+msgid "A selection of technical projects I'm proud of"
+msgstr ""
+
+#: MVC/View/Home/index.php:207
+msgid ""
+"As Head of Platform at Mangopay, I help engineering teams design and run "
+"resilient, scalable, secure and compliant payment platforms."
+msgstr ""
+
+#: MVC/View/Home/index.php:208
+msgid ""
+"After a web &amp; e‑business master (top of my class) and 10+ years across "
+"agencies, e‑commerce, startups and fintech, I grew from backend developer to "
+"lead developer and platform engineering leader."
+msgstr ""
+
+#: MVC/View/Home/index.php:211
+msgid "Read more about my journey"
+msgstr ""
+
+#: MVC/View/Home/index.php:219
+msgid ""
+"Have an opportunity, a collaboration idea or just want to chat? Drop me a "
+"message."
+msgstr ""
+
+# Services page
+
+#: MVC/View/Home/services.php:1
+msgid "How I help engineering teams - Thibault Dulon"
+msgstr ""
+
+#: MVC/View/Home/services.php:24
+msgid "Platform, engineering leadership &amp; developer experience"
+msgstr ""
+
+#: MVC/View/Home/services.php:39
+msgid "Engineering leadership &amp; platform vision"
+msgstr ""
+
+#: MVC/View/Home/services.php:41
+msgid ""
+"As Head of Platform, I help product and tech teams define a clear technical "
+"vision: aligning platform strategy with business goals, setting a direction "
+"and making it actionable for the teams."
+msgstr ""
+
+#: MVC/View/Home/services.php:44
+msgid ""
+"I build technical roadmaps, facilitate trade-offs (risk / impact / cost), "
+"run rituals (design reviews, architecture guilds...) and support engineers "
+"through mentoring and coaching."
+msgstr ""
+
+#: MVC/View/Home/services.php:56
+msgid ""
+"I've worked on turning monoliths into distributed systems, building high-"
+"volume payment APIs and designing cross-cutting components (identity "
+"provider, API gateway, messaging, logging...)."
+msgstr ""
+
+#: MVC/View/Home/services.php:59
+msgid ""
+"I help teams define the right domain boundaries, pick the appropriate "
+"patterns (CQRS, event-driven, microservices when it makes sense) and keep "
+"architectures simple enough to be operable."
+msgstr ""
+
+#: MVC/View/Home/services.php:83
+msgid "Developer experience &amp; internal tooling"
+msgstr ""
+
+#: MVC/View/Home/services.php:85
+msgid ""
+"I design internal platforms and tooling to make engineers faster: shared "
+"libraries, CLIs and generators, CI/CD pipelines, living documentation, ADR "
+"templates, and healthy code review practices."
+msgstr ""
+
+#: MVC/View/Home/services.php:88
+msgid ""
+"The goal is to reduce the time from idea to production while keeping a high "
+"standard of quality and reliability."
+msgstr ""
+
+#: MVC/View/Home/services.php:98
+msgid "Cloud, reliability &amp; compliance"
+msgstr ""
+
+#: MVC/View/Home/services.php:100
+msgid ""
+"I work with product, security and operations teams to make systems truly "
+"operable: observability, incident management, SRE practices, automation and "
+"FinOps."
+msgstr ""
+
+#: MVC/View/Home/services.php:103
+msgid ""
+"I also partner with risk, compliance and legal teams so that architectures "
+"remain aligned with regulatory constraints (especially in a fintech / "
+"payments context)."
+msgstr ""
+
+#: MVC/View/Home/services.php:129
+msgid "SERVICES_TEXT_BLOCKCHAIN_AUDIT"
+msgstr ""
+
+#: MVC/View/Home/services.php:139
+msgid "Want to discuss your platform challenges? Get in touch."
+msgstr ""
+
+# Work / projects page
+
+#: MVC/View/Home/work.php:1
+msgid "My technical projects - Thibault Dulon"
+msgstr ""
+
+#: MVC/View/Home/work.php:23
+msgid "A selection of recent technical projects I'm proud of"
+msgstr ""
+
+#: MVC/View/Home/work.php:73
+msgid "Want to talk about these projects or collaborate? Get in touch."
 msgstr ""
