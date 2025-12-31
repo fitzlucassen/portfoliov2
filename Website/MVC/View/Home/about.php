@@ -149,9 +149,72 @@
 								</p>
 							</div>
 						</div>
-						</div>
+							</div>
 
-							<div class="about-info animate-box">
+								<div class="about-info animate-box">
+									<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading intro-heading-2">
+										<span style="font-size:18px;"><?php echo _("Every year, a new challenge"); ?></span>
+									</div>
+									<div class="row">
+										<div class="wrap" style="border:none;">
+											<div class="col-md-3 col-xs-3">
+												<span class="year">2025</span>
+											</div>
+											<div class="col-md-9 col-xs-9">
+												<p class="job">
+													<?php echo _("Coffee brewer, barista and toaster certification"); ?>
+												</p>
+											</div>
+											<div style="clear: both;"></div>
+										</div>
+										<div class="wrap" style="border:none;">
+											<div class="col-md-3 col-xs-3">
+												<span class="year">2024</span>
+											</div>
+											<div class="col-md-9 col-xs-9">
+												<p class="job">
+													<?php echo _("Matterhorn climbing"); ?>
+												</p>
+											</div>
+											<div style="clear: both;"></div>
+										</div>
+										<div class="wrap" style="border:none;">
+											<div class="col-md-3 col-xs-3">
+												<span class="year">2023</span>
+											</div>
+											<div class="col-md-9 col-xs-9">
+												<p class="job">
+													<?php echo _("Web3 &amp; blockchain engineer certification"); ?>
+												</p>
+											</div>
+											<div style="clear: both;"></div>
+										</div>
+										<div class="wrap" style="border:none;">
+											<div class="col-md-3 col-xs-3">
+												<span class="year">2022</span>
+											</div>
+											<div class="col-md-9 col-xs-9">
+												<p class="job">
+													<?php echo _("Building a van tiny house"); ?>
+												</p>
+											</div>
+											<div style="clear: both;"></div>
+										</div>
+										<div class="wrap" style="border:none;">
+											<div class="col-md-3 col-xs-3">
+												<span class="year">2021</span>
+											</div>
+											<div class="col-md-9 col-xs-9">
+												<p class="job">
+													<?php echo _("Landscape photographer certification"); ?>
+												</p>
+											</div>
+											<div style="clear: both;"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="about-info animate-box">
 								<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading intro-heading-2">
 									<span style="font-size:18px;"><?php echo _("Contributions &amp; talks"); ?></span>
 								</div>

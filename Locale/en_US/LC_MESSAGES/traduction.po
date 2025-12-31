@@ -111,6 +111,30 @@ msgstr ""
 "Another great passion of mine is cinema. I'm a movie addict and I never "
 "refuse to go watching a movie, from drama to comedia and biopic to thriller."
 
+#: MVC/View/Home/about.php:152
+msgid "Every year, a new challenge"
+msgstr "Every year, a new challenge"
+
+#: MVC/View/Home/about.php:160
+msgid "Coffee brewer, barista and toaster certification"
+msgstr "Coffee brewer, barista and toaster certification"
+
+#: MVC/View/Home/about.php:167
+msgid "Matterhorn climbing"
+msgstr "Matterhorn climbing"
+
+#: MVC/View/Home/about.php:174
+msgid "Web3 &amp; blockchain engineer certification"
+msgstr "Web3 &amp; blockchain engineer certification"
+
+#: MVC/View/Home/about.php:181
+msgid "Building a van tiny house"
+msgstr "Building a van tiny house"
+
+#: MVC/View/Home/about.php:188
+msgid "Landscape photographer certification"
+msgstr "Landscape photographer certification"
+
 #: MVC/View/Home/about.php:156
 msgid "Contributions &amp; talks"
 msgstr "Contributions &amp; talks"
